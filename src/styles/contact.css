@@ -1,0 +1,307 @@
+/* CSS styles specific to contact.html */
+
+body {
+    background: var(--bg-cream);
+}
+
+/* Page Banner Section */
+.page-banner {
+    height: 65vh;
+    min-height: 450px;
+    background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 100%), url('/images/contact_banner_bg.png') center right/cover no-repeat !important;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 6rem 8% 4rem;
+    color: #fff;
+}
+
+.banner-content {
+    max-width: 800px;
+    z-index: 2;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+.breadcrumb .v-line {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background: #fff;
+}
+
+.banner-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.banner-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #cccccc;
+}
+
+.inquiry-new {
+    background: var(--bg-cream);
+    color: var(--text-dark);
+    min-height: auto;
+    padding-bottom: 2rem;
+}
+
+.inquiry-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 6rem 2% 0;
+    max-width: 100%;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+/* Left side typography */
+.inquiry-label-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 2.5rem;
+}
+
+.x-icon {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #333;
+}
+
+.label-text {
+    font-size: 1.05rem;
+    color: #222;
+    font-weight: 500;
+}
+
+.inquiry-title-bold {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text-dark);
+    letter-spacing: -2px;
+}
+
+.inquiry-title-light {
+    font-size: 3.3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #555;
+    letter-spacing: -1px;
+}
+
+/* Force override inline text-muted and accent colors for light theme visibility */
+.inquiry-left p {
+    color: #666 !important;
+    font-size: 1.05rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.inquiry-left i {
+    color: #999 !important;
+    font-size: 1.2rem;
+    margin-right: 15px !important;
+}
+
+
+/* Right side Form */
+.inquiry-form-new {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.form-row.three-col {
+    grid-template-columns: 0.6fr 1.2fr 1fr;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.8rem;
+}
+
+.form-group label span {
+    color: #d32f2f;
+    margin-left: 5px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 0.5rem 0 1rem;
+    color: #333;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-group textarea {
+    resize: none;
+    min-height: 50px;
+}
+
+/* Styling native select arrows seamlessly */
+.form-group select {
+    cursor: pointer;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') no-repeat right center;
+    background-position: right 0px center;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-bottom-color: #111;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.inquiry-submit-btn {
+    background: var(--primary-gradient);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all 0.3s;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.inquiry-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(177, 125, 38, 0.3);
+}
+
+@media (max-width: 1024px) {
+    .inquiry-container {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+    .form-row, .form-row.three-col {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .inquiry-title-bold {
+        font-size: 3rem;
+    }
+    .inquiry-title-light {
+        font-size: 2.5rem;
+    }
+}
+
+/* Connect Info Section */
+.connect-info-section {
+    background: var(--bg-cream);
+    padding: 6rem 8% 4rem;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+.connect-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.connect-huge-title {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--text-dark);
+    position: sticky;
+    top: 150px;
+}
+.connect-right {
+    display: flex;
+    flex-direction: column;
+}
+.connect-block {
+    padding-bottom: 3.5rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 1px solid #333;
+}
+.connect-block:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.cb-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.cb-meta span.line {
+    width: 35px;
+    height: 1px;
+    background: #888;
+}
+.connect-block h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #111;
+}
+.connect-block p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .connect-container {
+        grid-template-columns: 1fr;
+    }
+    .connect-huge-title {
+        font-size: 3.5rem;
+        position: relative;
+        top: 0;
+        margin-bottom: 2rem;
+    }
+}
