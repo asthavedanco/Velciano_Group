@@ -96,34 +96,7 @@ export default function ECataloguePage() {
       </section>
 
 
-      {/* Profile Section */}
-      <section className="global-head-showcase">
-        <div className="container">
-          <div className="head-profile-card">
-            <div className="head-image">
-              <Image src="/images/business_head_portrait_1776839185116.png" alt="Global Business Head" width={400} height={500} />
-            </div>
-            <div className="head-content">
-              <div className="head-talk-label">
-                <span>Let's Talk</span>
-              </div>
-              <h2><b>Connect with Our</b> <span>Global Business Head</span></h2>
-              <p>As a Global Business Director with over 10 years of experience, I specialize in helping home textile importers overcome challenges and achieve rapid business growth.</p>
-              
-              <div className="head-action-btns-3d">
-                <a href="#" className="btn-33d li-btn">
-                  <i className="fa-brands fa-linkedin-in"></i>
-                  <span>Linkedin</span>
-                </a>
-                <a href="#" className="btn-33d wa-btn">
-                  <i className="fa-brands fa-whatsapp"></i>
-                  <span>Whatsapp</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </main>
   );
 }
