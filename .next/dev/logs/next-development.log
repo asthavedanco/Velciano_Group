@@ -235,3 +235,26 @@
 {"timestamp":"19:14:58.318","source":"Server","level":"WARN","message":"[browser] \"Image with src \\\"/images/Logo_Velciano.png\\\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \\\"auto\\\"' or 'height: \\\"auto\\\"' to maintain the aspect ratio.\""}
 {"timestamp":"19:14:58.318","source":"Browser","level":"WARN","message":"Image with src \"/images/Logo_Velciano.png\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \"auto\"' or 'height: \"auto\"' to maintain the aspect ratio."}
 {"timestamp":"19:14:58.319","source":"Browser","level":"WARN","message":"Image with src \"/images/Logo_Velciano.png\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \"auto\"' or 'height: \"auto\"' to maintain the aspect ratio."}
+{"timestamp":"20:47:09.672","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"20:47:10.455","source":"Browser","level":"WARN","message":"Image with src \"/images/Logo_Velciano.png\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \"auto\"' or 'height: \"auto\"' to maintain the aspect ratio."}
+{"timestamp":"20:47:10.459","source":"Server","level":"WARN","message":"[browser] \"Image with src \\\"/images/Logo_Velciano.png\\\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \\\"auto\\\"' or 'height: \\\"auto\\\"' to maintain the aspect ratio.\""}
+{"timestamp":"20:47:10.461","source":"Browser","level":"WARN","message":"Image with src \"/images/Logo_Velciano.png\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \"auto\"' or 'height: \"auto\"' to maintain the aspect ratio."}
+{"timestamp":"20:47:34.573","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"20:48:44.871","source":"Server","level":"LOG","message":"✓ Compiled in 349ms"}
+{"timestamp":"20:54:08.730","source":"Server","level":"LOG","message":"✓ Compiled in 84ms"}
+{"timestamp":"20:54:49.715","source":"Server","level":"LOG","message":"✓ Compiled in 67ms"}
+{"timestamp":"20:55:36.391","source":"Server","level":"LOG","message":"✓ Compiled in 46ms"}
+{"timestamp":"20:58:16.147","source":"Server","level":"LOG","message":"✓ Compiled in 41ms"}
+{"timestamp":"20:58:27.753","source":"Server","level":"LOG","message":"✓ Compiled in 90ms"}
+{"timestamp":"20:59:05.422","source":"Server","level":"LOG","message":"✓ Compiled in 41ms"}
+{"timestamp":"20:59:18.339","source":"Server","level":"LOG","message":"✓ Compiled in 27ms"}
+{"timestamp":"20:59:34.050","source":"Server","level":"LOG","message":"✓ Compiled in 145ms"}
+{"timestamp":"21:00:03.162","source":"Server","level":"LOG","message":"✓ Compiled in 31ms"}
+{"timestamp":"21:11:11.127","source":"Server","level":"LOG","message":"✓ Compiled in 34ms"}
+{"timestamp":"21:11:49.653","source":"Server","level":"LOG","message":"✓ Compiled in 36ms"}
+{"timestamp":"21:12:15.632","source":"Server","level":"LOG","message":"✓ Compiled in 30ms"}
+{"timestamp":"21:13:48.534","source":"Server","level":"LOG","message":"✓ Compiled in 79ms"}
+{"timestamp":"21:13:59.611","source":"Server","level":"LOG","message":"✓ Compiled in 34ms"}
+{"timestamp":"21:14:11.202","source":"Server","level":"LOG","message":"✓ Compiled in 17ms"}
+{"timestamp":"21:14:15.925","source":"Server","level":"LOG","message":"✓ Compiled in 31ms"}
+{"timestamp":"21:14:21.971","source":"Server","level":"LOG","message":"✓ Compiled in 35ms"}

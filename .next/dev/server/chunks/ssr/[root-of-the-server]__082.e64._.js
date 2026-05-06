@@ -123,10 +123,7 @@ function CollaborateSection() {
                         src: "/images/bedsheet_floral.png",
                         alt: "Home Textile Collection",
                         fill: true,
-                        className: "object-cover",
-                        style: {
-                            objectFit: 'cover'
-                        }
+                        className: "object-cover parallax-cta"
                     }, void 0, false, {
                         fileName: "[project]/src/components/CollaborateSection.tsx",
                         lineNumber: 8,
@@ -136,7 +133,7 @@ function CollaborateSection() {
                         className: "cta-overlay-dark"
                     }, void 0, false, {
                         fileName: "[project]/src/components/CollaborateSection.tsx",
-                        lineNumber: 15,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, this)
                 ]
@@ -155,7 +152,7 @@ function CollaborateSection() {
                             children: "Collaborate for Good"
                         }, void 0, false, {
                             fileName: "[project]/src/components/CollaborateSection.tsx",
-                            lineNumber: 19,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -165,7 +162,7 @@ function CollaborateSection() {
                                     children: "Let's build"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CollaborateSection.tsx",
-                                    lineNumber: 21,
+                                    lineNumber: 20,
                                     columnNumber: 13
                                 }, this),
                                 " ",
@@ -173,19 +170,19 @@ function CollaborateSection() {
                                     children: "the next"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CollaborateSection.tsx",
-                                    lineNumber: 21,
+                                    lineNumber: 20,
                                     columnNumber: 37
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/components/CollaborateSection.tsx",
-                                    lineNumber: 21,
+                                    lineNumber: 20,
                                     columnNumber: 58
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
                                     children: "big thing"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CollaborateSection.tsx",
-                                    lineNumber: 22,
+                                    lineNumber: 21,
                                     columnNumber: 13
                                 }, this),
                                 " ",
@@ -193,13 +190,13 @@ function CollaborateSection() {
                                     children: "together"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CollaborateSection.tsx",
-                                    lineNumber: 22,
+                                    lineNumber: 21,
                                     columnNumber: 30
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/CollaborateSection.tsx",
-                            lineNumber: 20,
+                            lineNumber: 19,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -214,7 +211,7 @@ function CollaborateSection() {
                                             children: "Keep"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CollaborateSection.tsx",
-                                            lineNumber: 26,
+                                            lineNumber: 25,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -223,13 +220,13 @@ function CollaborateSection() {
                                             children: "In"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CollaborateSection.tsx",
-                                            lineNumber: 27,
+                                            lineNumber: 26,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/CollaborateSection.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 24,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -238,24 +235,24 @@ function CollaborateSection() {
                                     children: "Touch"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/CollaborateSection.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 28,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/CollaborateSection.tsx",
-                            lineNumber: 24,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/CollaborateSection.tsx",
-                    lineNumber: 18,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/CollaborateSection.tsx",
-                lineNumber: 17,
+                lineNumber: 16,
                 columnNumber: 7
             }, this)
         ]

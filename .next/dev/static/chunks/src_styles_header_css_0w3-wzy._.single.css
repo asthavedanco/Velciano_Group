@@ -332,10 +332,6 @@ header.scrolled .mega-menu {
     display: block;
   }
 
-  .submenu, .mega-menu {
-    display: none !important;
-  }
-
   .hamburger {
     display: flex;
   }
@@ -352,6 +348,68 @@ header.scrolled .mega-menu {
 @media (max-width: 480px) {
   .nav-menu {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-menu {
+    overflow-y: auto;
+    justify-content: flex-start !important;
+    padding-top: 8rem !important;
+  }
+
+  .mm-icon {
+    margin-left: 10px;
+    font-size: .8rem;
+    transition: transform .3s;
+  }
+
+  .mm-active .mm-icon {
+    color: var(--primary);
+    transform: rotate(180deg);
+  }
+
+  .has-submenu .submenu, .has-mega .mega-menu {
+    width: 100% !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: none !important;
+    border: none !important;
+    padding: 1rem 0 !important;
+    display: none !important;
+    position: static !important;
+    transform: none !important;
+  }
+
+  .mm-active .submenu, .mm-active .mega-menu {
+    display: block !important;
+  }
+
+  .mm-active .mega-content {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+
+  .mm-active .mega-image, .mm-active .mega-links .mega-label {
+    display: none !important;
+  }
+
+  .mm-active .mega-links ul {
+    flex-direction: column;
+    gap: 1rem;
+    display: flex;
+  }
+
+  .submenu a, .mega-links a {
+    text-align: center;
+    color: #ffffffb3 !important;
+    padding: .5rem 0 !important;
+    font-size: 1rem !important;
+  }
+
+  .submenu a:hover, .mega-links a:hover {
+    color: var(--primary) !important;
   }
 }
 

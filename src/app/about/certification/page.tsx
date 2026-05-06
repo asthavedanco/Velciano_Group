@@ -122,13 +122,13 @@ export default function CertificationPage() {
       </section>
 
       {/* Intro Section */}
-      <section style={{ background: 'var(--bg-cream)', padding: '6rem 6%' }}>
+      <section className="bg-cream py-24">
         <div className="container">
-          <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+          <div className="narrow-container text-center">
             <div className="reveal">
-              <span style={{ color: 'var(--primary)', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Commitment to Excellence</span>
-              <h2 style={{ fontSize: '2.8rem', fontWeight: 700, margin: '1.5rem 0', color: '#000', lineHeight: 1.2 }}>The Benchmark of Quality</h2>
-              <p style={{ fontSize: '1.15rem', lineHeight: '1.8', color: '#444' }}>
+              <span className="section-label-gold">Commitment to Excellence</span>
+              <h2 className="testimonials-title">The Benchmark of Quality</h2>
+              <p className="testimonials-subtitle">
                 At Velciano Group, we pride ourselves on adhering to the highest standards of quality and excellence. Our operations are certified and recognized by leading international and domestic bodies.
               </p>
             </div>
@@ -140,46 +140,23 @@ export default function CertificationPage() {
       <section className="py-24 md:py-32 bg-black">
         <div className="container">
           <div className="text-center mb-20 reveal">
-            <span className="section-label text-primary uppercase tracking-[4px] font-bold text-sm block mb-4">OUR CERTIFICATIONS</span>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white">Standards We Uphold</h2>
+            <span className="section-label-gold">OUR CERTIFICATIONS</span>
+            <h2 className="section-title text-white">Standards We Uphold</h2>
           </div>
 
-          <div className="cert-grid" style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-            gap: '2rem'
-          }}>
+          <div className="cert-grid">
             {certifications.map((cert, index) => (
-              <div key={index} className="cert-card" style={{
-                background: '#111',
-                border: '1px solid rgba(255,255,255,0.1)',
-                padding: '2.5rem 2rem',
-                borderRadius: '16px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                textAlign: 'center',
-                transition: 'all 0.3s ease',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.5)'
-              }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-10px)';
-                  e.currentTarget.style.borderColor = 'var(--primary)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)';
-                }}>
-                <div style={{ height: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem', color: 'var(--primary)' }}>
+              <div key={index} className="cert-card reveal">
+                <div className="img-wrap">
                   {cert.img ? (
                     <Image src={cert.img} width={100} height={100} alt={cert.title} style={{ objectFit: 'contain' }} />
                   ) : (
-                    <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'rgba(177,125,38,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem' }}>
+                    <div className="award-icon">
                       <i className="fa-solid fa-award"></i>
                     </div>
                   )}
                 </div>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#fff', marginBottom: '0.5rem' }}>{cert.title}</h3>
+                <h3>{cert.title}</h3>
               </div>
             ))}
           </div>

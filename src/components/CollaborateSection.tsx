@@ -9,8 +9,7 @@ export default function CollaborateSection() {
           src="/images/bedsheet_floral.png" 
           alt="Home Textile Collection" 
           fill
-          className="object-cover"
-          style={{ objectFit: 'cover' }}
+          className="object-cover parallax-cta"
         />
         <div className="cta-overlay-dark"></div>
       </div>

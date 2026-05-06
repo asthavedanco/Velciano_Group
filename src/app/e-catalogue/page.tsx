@@ -54,18 +54,18 @@ export default function ECataloguePage() {
               <div className="catalogue-book-wrap">
                 <div className="book">
                   <div className="book-page-base">
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', width: '100%', height: '100%', gap: '2px' }}>
-                      <div style={{ position: 'relative', overflow: 'hidden' }}>
-                        <Image src="/images/bedsheet_luxury.png" alt="Bedsheets" fill style={{ objectFit: 'cover' }} />
+                    <div className="catalogue-grid-mini">
+                      <div className="relative overflow-hidden">
+                        <Image src="/images/bedsheet_luxury.png" alt="Bedsheets" fill className="object-cover" />
                       </div>
-                      <div style={{ position: 'relative', overflow: 'hidden' }}>
-                        <Image src="/images/curtain_modern.png" alt="Curtains" fill style={{ objectFit: 'cover' }} />
+                      <div className="relative overflow-hidden">
+                        <Image src="/images/curtain_modern.png" alt="Curtains" fill className="object-cover" />
                       </div>
-                      <div style={{ position: 'relative', overflow: 'hidden' }}>
-                        <Image src="/images/pillow_cover_decorative.png" alt="Pillow Covers" fill style={{ objectFit: 'cover' }} />
+                      <div className="relative overflow-hidden">
+                        <Image src="/images/pillow_cover_decorative.png" alt="Pillow Covers" fill className="object-cover" />
                       </div>
-                      <div style={{ position: 'relative', overflow: 'hidden' }}>
-                        <Image src="/images/sofa_cover_luxury.png" alt="Sofa Covers" fill style={{ objectFit: 'cover' }} />
+                      <div className="relative overflow-hidden">
+                        <Image src="/images/sofa_cover_luxury.png" alt="Sofa Covers" fill className="object-cover" />
                       </div>
                     </div>
                   </div>

@@ -187,27 +187,12 @@ function TestimonialsPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "intro-section",
-                style: {
-                    background: 'var(--bg-cream)',
-                    padding: '6rem 6%'
-                },
+                className: "testimonials-intro bg-cream",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "container",
-                    style: {
-                        maxWidth: '900px',
-                        margin: '0 auto',
-                        textAlign: 'center'
-                    },
+                    className: "container narrow-container text-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "reveal",
-                            style: {
-                                color: 'var(--primary)',
-                                fontWeight: 700,
-                                letterSpacing: '0.1em',
-                                textTransform: 'uppercase'
-                            },
+                            className: "reveal section-label-gold",
                             children: "Client Success"
                         }, void 0, false, {
                             fileName: "[project]/src/app/about/testimonials/page.tsx",
@@ -215,14 +200,7 @@ function TestimonialsPage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "reveal",
-                            style: {
-                                fontSize: 'clamp(2rem, 5vw, 3.2rem)',
-                                fontWeight: 700,
-                                margin: '1.5rem 0',
-                                color: '#000',
-                                lineHeight: 1.2
-                            },
+                            className: "reveal testimonials-title",
                             children: "Real Stories from Real Customers"
                         }, void 0, false, {
                             fileName: "[project]/src/app/about/testimonials/page.tsx",
@@ -230,12 +208,7 @@ function TestimonialsPage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "reveal",
-                            style: {
-                                fontSize: '1.15rem',
-                                lineHeight: '1.8',
-                                color: '#444'
-                            },
+                            className: "reveal testimonials-subtitle",
                             children: "Discover why our clients trust Velciano Group. Read their testimonials and learn how our high-quality premium textiles have made a positive impact on their businesses and operations."
                         }, void 0, false, {
                             fileName: "[project]/src/app/about/testimonials/page.tsx",
@@ -254,54 +227,28 @@ function TestimonialsPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "testimonials-section",
-                style: {
-                    background: '#000',
-                    padding: '8rem 6%'
-                },
+                className: "testimonials-grid-section",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "container",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            style: {
-                                textAlign: 'center',
-                                marginBottom: '5rem'
-                            },
+                            className: "text-center mb-20",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "reveal",
-                                style: {
-                                    color: 'var(--primary)',
-                                    fontWeight: 600,
-                                    fontSize: '0.9rem',
-                                    letterSpacing: '0.2em',
-                                    textTransform: 'uppercase',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    gap: '1rem'
-                                },
+                                className: "reveal verified-label",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        style: {
-                                            width: '30px',
-                                            height: '1px',
-                                            background: 'var(--primary)'
-                                        }
+                                        className: "label-line"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 101,
                                         columnNumber: 15
                                     }, this),
                                     "Verified Client Feedback",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        style: {
-                                            width: '30px',
-                                            height: '1px',
-                                            background: 'var(--primary)'
-                                        }
+                                        className: "label-line"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                        lineNumber: 113,
+                                        lineNumber: 103,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -317,23 +264,8 @@ function TestimonialsPage() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "testimonial-grid",
-                            style: {
-                                display: 'grid',
-                                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                                gap: '2.5rem'
-                            },
                             children: testimonials.map((t, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "testimonial-card",
-                                    style: {
-                                        background: 'rgba(255, 255, 255, 0.05)',
-                                        borderRadius: '16px',
-                                        border: '1px solid rgba(255, 255, 255, 0.1)',
-                                        overflow: 'hidden',
-                                        position: 'relative',
-                                        height: '600px',
-                                        transition: 'transform 0.3s ease',
-                                        boxShadow: '0 20px 40px rgba(0,0,0,0.3)'
-                                    },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         src: t.screenshot,
                                         alt: `Testimonial ${i + 1}`,
@@ -341,17 +273,17 @@ function TestimonialsPage() {
                                         className: "object-cover object-top"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                        lineNumber: 133,
+                                        lineNumber: 110,
                                         columnNumber: 17
                                     }, this)
                                 }, i, false, {
                                     fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                    lineNumber: 123,
+                                    lineNumber: 109,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/about/testimonials/page.tsx",
-                            lineNumber: 117,
+                            lineNumber: 107,
                             columnNumber: 11
                         }, this)
                     ]
@@ -366,110 +298,64 @@ function TestimonialsPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "success-section",
-                style: {
-                    background: 'var(--bg-cream)',
-                    padding: '10rem 0'
-                },
+                className: "success-section bg-cream",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "container",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        style: {
-                            display: 'grid',
-                            gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
-                            gap: '6rem',
-                            alignItems: 'center'
-                        },
+                        className: "success-grid",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "fade-up",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "section-label",
-                                        style: {
-                                            color: 'var(--primary)',
-                                            fontWeight: 700,
-                                            fontSize: '0.9rem',
-                                            letterSpacing: '0.15em',
-                                            textTransform: 'uppercase',
-                                            marginBottom: '1rem',
-                                            display: 'block'
-                                        },
+                                        className: "section-label-gold",
                                         children: "Success Driven"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                        lineNumber: 150,
+                                        lineNumber: 127,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        style: {
-                                            fontSize: '3rem',
-                                            fontWeight: 700,
-                                            lineHeight: 1.2,
-                                            color: '#000',
-                                            marginBottom: '2rem'
-                                        },
+                                        className: "success-title",
                                         children: [
                                             "Driven by Success",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                                lineNumber: 151,
-                                                columnNumber: 136
+                                                lineNumber: 128,
+                                                columnNumber: 62
                                             }, this),
                                             "Why Velciano Group"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                        lineNumber: 151,
+                                        lineNumber: 128,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        style: {
-                                            fontSize: '1.2rem',
-                                            lineHeight: '1.8',
-                                            color: '#444',
-                                            marginBottom: '3rem'
-                                        },
+                                        className: "success-text",
                                         children: "Choose Velciano Group as your trusted partner for premium home textiles and a commitment to shared growth. With industry expertise and relentless innovation at our core, we provide the support, resources, and reliable luxury solutions to empower your business success."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 129,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         href: "/about/why-us",
-                                        className: "btn-gold",
-                                        style: {
-                                            display: 'inline-block',
-                                            padding: '1.2rem 3rem',
-                                            background: '#000',
-                                            color: '#fff',
-                                            textDecoration: 'none',
-                                            fontWeight: 600,
-                                            borderRadius: '4px',
-                                            transition: 'all 0.3s'
-                                        },
+                                        className: "btn-black",
                                         children: "WHY VELCIANO"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                        lineNumber: 155,
+                                        lineNumber: 132,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                lineNumber: 149,
+                                lineNumber: 126,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "fade-up",
-                                style: {
-                                    position: 'relative',
-                                    height: '500px',
-                                    borderRadius: '24px',
-                                    overflow: 'hidden',
-                                    boxShadow: '0 30px 60px rgba(0,0,0,0.15)'
-                                },
+                                className: "fade-up success-img-wrap",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     src: "/images/shaking_hands_business_cta_1776849464795.png",
                                     alt: "Success Partnership",
@@ -477,28 +363,28 @@ function TestimonialsPage() {
                                     className: "object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                    lineNumber: 160,
+                                    lineNumber: 137,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/about/testimonials/page.tsx",
-                                lineNumber: 159,
+                                lineNumber: 136,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/about/testimonials/page.tsx",
-                        lineNumber: 148,
+                        lineNumber: 125,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/about/testimonials/page.tsx",
-                    lineNumber: 147,
+                    lineNumber: 124,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/about/testimonials/page.tsx",
-                lineNumber: 146,
+                lineNumber: 123,
                 columnNumber: 7
             }, this)
         ]

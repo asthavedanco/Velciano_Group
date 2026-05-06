@@ -84,8 +84,8 @@ export default function AboutPage() {
       <section className="promise-section py-32 bg-cream">
         <div className="container">
           <div className="promise-header text-center mb-24 reveal">
-            <span className="section-label">OUR PROMISE</span>
-            <h2 className="text-4xl md:text-5xl font-extrabold mt-4 leading-tight tracking-tighter" style={{ color: 'var(--text-dark)' }}>
+            <span className="section-label-gold">OUR PROMISE</span>
+            <h2 className="promise-title">
               We ensure top-quality home textiles with dedication, <br className="hidden md:block" />
               innovation, and customer satisfaction.
             </h2>
@@ -96,8 +96,8 @@ export default function AboutPage() {
               <div className="promise-icon mb-8 flex justify-center">
                 <i className="fa-solid fa-bullseye text-6xl text-primary"></i>
               </div>
-              <h3 className="promise-card-title" style={{ color: 'var(--text-dark)' }}>Our Mission</h3>
-              <p className="promise-card-text" style={{ color: 'rgba(26, 26, 26, 0.7)' }}>
+              <h3 className="promise-card-title" >Our Mission</h3>
+              <p className="promise-card-text" >
                 To deliver high-quality bedsheets, curtains, and sofa covers with consistency and excellence, while supporting partners and promoting sustainable textile practices.
               </p>
             </div>
@@ -106,8 +106,8 @@ export default function AboutPage() {
               <div className="promise-icon mb-8 flex justify-center">
                 <i className="fa-solid fa-eye text-6xl text-primary"></i>
               </div>
-              <h3 className="promise-card-title" style={{ color: 'var(--text-dark)' }}>Our Vision</h3>
-              <p className="promise-card-text" style={{ color: 'rgba(26, 26, 26, 0.7)' }}>
+              <h3 className="promise-card-title" >Our Vision</h3>
+              <p className="promise-card-text" >
                 To become a globally trusted name in home textiles, recognized for premium quality, innovative designs, and dependable service.
               </p>
             </div>
@@ -116,8 +116,8 @@ export default function AboutPage() {
               <div className="promise-icon mb-8 flex justify-center">
                 <i className="fa-solid fa-gem text-6xl text-primary"></i>
               </div>
-              <h3 className="promise-card-title" style={{ color: 'var(--text-dark)' }}>Core Value</h3>
-              <p className="promise-card-text" style={{ color: 'rgba(26, 26, 26, 0.7)' }}>
+              <h3 className="promise-card-title" >Core Value</h3>
+              <p className="promise-card-text" >
                 At Velciano Group, we focus on quality, reliability, and innovation to deliver premium home textile products while ensuring complete customer satisfaction.
               </p>
             </div>
@@ -128,9 +128,9 @@ export default function AboutPage() {
       {/* Team Section */}
       <section className="team-section pb-32 pt-0 bg-cream">
         <div className="container">
-          <div className="team-card bg-white rounded-[40px] shadow-2xl p-16 md:p-24 pb-10 md:pb-20 reveal">
+          <div className="team-card reveal">
             <div className="team-header text-center mb-60">
-              <h2 className="text-4xl font-extrabold tracking-tight" style={{ color: 'var(--text-dark)' }}>Executive Team</h2>
+              <h2 className="team-main-title">Executive Team</h2>
               <div className="h-1 w-20 bg-primary mx-auto mt-6"></div>
             </div>
 
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 <div className="member-img-wrap mb-10 mx-auto">
                   <Image src="/images/amit.jpeg" alt="Amit Chug" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
                 </div>
-                <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--text-dark)' }}>Amit Chug</h3>
+                <h3 className="text-xl font-bold mb-2" >Amit Chug</h3>
                 <p className="text-gray-500 font-medium mt-2">Founder</p>
               </div>
 
@@ -147,7 +147,7 @@ export default function AboutPage() {
                 <div className="member-img-wrap mb-10">
                   <Image src="/images/Nachiket.jpeg" alt="Nachiket Patel" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
                 </div>
-                <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--text-dark)' }}>Nachiket Patel</h3>
+                <h3 className="text-xl font-bold mb-2" >Nachiket Patel</h3>
                 <p className="text-gray-500 font-medium mt-2">Co-Founder</p>
               </div>
 
@@ -155,7 +155,7 @@ export default function AboutPage() {
                 <div className="member-img-wrap mb-10 mx-auto">
                   <Image src="/images/vansh.jpeg" alt="Vansh Chug" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
                 </div>
-                <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--text-dark)' }}>Vansh Chug</h3>
+                <h3 className="text-xl font-bold mb-2" >Vansh Chug</h3>
                 <p className="text-gray-500 font-medium mt-2">Global Business Head</p>
               </div>
 
@@ -163,7 +163,7 @@ export default function AboutPage() {
                 <div className="member-img-wrap mb-10 mx-auto">
                   <Image src="/images/Khush.jpeg" alt="Khush Patel" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
                 </div>
-                <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--text-dark)' }}>Khush Patel</h3>
+                <h3 className="text-xl font-bold mb-2" >Khush Patel</h3>
                 <p className="text-gray-500 font-medium mt-2">Regional Business & R&D Head</p>
               </div>
             </div>
@@ -174,24 +174,24 @@ export default function AboutPage() {
       <section className="explore-section py-32 bg-cream">
         <div className="container">
           <div className="explore-header mb-32 reveal">
-            <span className="section-label" style={{ color: 'var(--primary)' }}>EXPLORE MORE</span>
-            <h2 className="text-6xl md:text-8xl font-light tracking-tighter mt-4 leading-tight" style={{ color: 'var(--text-dark)' }}>
+            <span className="section-label-gold">EXPLORE MORE</span>
+            <h2 className="explore-title">
               Get to <br /> Know Us Better
             </h2>
           </div>
 
           <div className="explore-list" style={{ borderTop: '1px solid #e5e7eb' }}>
             {/* manufacturing */}
-            <div className="explore-row-grid" style={{ padding: '3rem 0', borderBottom: '1px solid #e5e7eb' }}>
+            <div className="explore-row-grid" >
               <div>
-                <h3 className="text-3xl font-bold" style={{ color: 'var(--text-dark)' }}>Manufacturing</h3>
+                <h3 className="text-3xl font-bold" >Manufacturing</h3>
               </div>
               <div>
-                <p className="text-lg leading-relaxed" style={{ color: '#4b5563' }}>
+                <p className="text-lg leading-relaxed" >
                   Our manufacturing units are equipped with advanced technology and located in key textile hubs, ensuring high-quality production, efficiency, and consistency.
                 </p>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <div >
                 <Link href="/about/manufacturing" className="explore-btn-badge shadow-sm">
                   <span>Explore <br /> More</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -200,16 +200,16 @@ export default function AboutPage() {
             </div>
 
             {/* Testimonials */}
-            <div className="explore-row-grid" style={{ padding: '3rem 0', borderBottom: '1px solid #e5e7eb' }}>
+            <div className="explore-row-grid" >
               <div>
-                <h3 className="text-3xl font-bold" style={{ color: 'var(--text-dark)' }}>Testimonials</h3>
+                <h3 className="text-3xl font-bold" >Testimonials</h3>
               </div>
               <div>
-                <p className="text-lg leading-relaxed" style={{ color: '#4b5563' }}>
+                <p className="text-lg leading-relaxed" >
                   Our global clients trust Velciano Group for reliable quality, timely delivery, and long-term business relationships.
                 </p>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <div >
                 <Link href="/about/testimonials" className="explore-btn-badge shadow-sm">
                   <span>Explore <br /> More</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -218,16 +218,16 @@ export default function AboutPage() {
             </div>
 
             {/* Dealership */}
-            <div className="explore-row-grid" style={{ padding: '3rem 0', borderBottom: '1px solid #e5e7eb' }}>
+            <div className="explore-row-grid" >
               <div>
-                <h3 className="text-3xl font-bold" style={{ color: 'var(--text-dark)' }}>Dealership</h3>
+                <h3 className="text-3xl font-bold" >Dealership</h3>
               </div>
               <div>
-                <p className="text-lg leading-relaxed" style={{ color: '#4b5563' }}>
+                <p className="text-lg leading-relaxed" >
                   Join our dealer network to unlock better margins, exclusive designs, and complete business support for growth.
                 </p>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <div >
                 <Link href="/about/dealership" className="explore-btn-badge shadow-sm">
                   <span>Explore <br /> More</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -236,16 +236,16 @@ export default function AboutPage() {
             </div>
 
             {/* Why Us */}
-            <div className="explore-row-grid" style={{ padding: '3rem 0', borderBottom: '1px solid #e5e7eb' }}>
+            <div className="explore-row-grid" >
               <div>
-                <h3 className="text-3xl font-bold" style={{ color: 'var(--text-dark)' }}>Why Us</h3>
+                <h3 className="text-3xl font-bold" >Why Us</h3>
               </div>
               <div>
-                <p className="text-lg leading-relaxed" style={{ color: '#4b5563' }}>
+                <p className="text-lg leading-relaxed" >
                   We deliver premium home textile products with quality assurance, reliable service, and global standards.
                 </p>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <div >
                 <Link href="/about/why-us" className="explore-btn-badge shadow-sm">
                   <span>Explore <br /> More</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -254,16 +254,16 @@ export default function AboutPage() {
             </div>
 
             {/* Global Demand */}
-            <div className="explore-row-grid" style={{ padding: '3rem 0', borderBottom: '1px solid #e5e7eb' }}>
+            <div className="explore-row-grid" >
               <div>
-                <h3 className="text-3xl font-bold" style={{ color: 'var(--text-dark)' }}>Global Demand</h3>
+                <h3 className="text-3xl font-bold" >Global Demand</h3>
               </div>
               <div>
-                <p className="text-lg leading-relaxed" style={{ color: '#4b5563' }}>
+                <p className="text-lg leading-relaxed" >
                   Indian home textiles are in high global demand, creating strong opportunities for growth and export partnerships.
                 </p>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <div >
                 <Link href="/about/global-demand" className="explore-btn-badge shadow-sm">
                   <span>Explore <br /> More</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -272,16 +272,16 @@ export default function AboutPage() {
             </div>
 
             {/* CSR Activity */}
-            <div className="explore-row-grid" style={{ padding: '3rem 0', borderBottom: '1px solid #e5e7eb' }}>
+            <div className="explore-row-grid" >
               <div>
-                <h3 className="text-3xl font-bold" style={{ color: 'var(--text-dark)' }}>CSR Activity</h3>
+                <h3 className="text-3xl font-bold" >CSR Activity</h3>
               </div>
               <div>
-                <p className="text-lg leading-relaxed" style={{ color: '#4b5563' }}>
+                <p className="text-lg leading-relaxed" >
                   We support community development and sustainable practices, contributing positively to society and the environment.
                 </p>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <div >
                 <Link href="/about/csr" className="explore-btn-badge shadow-sm">
                   <span>Explore <br /> More</span>
                   <i className="fa-solid fa-arrow-right"></i>
@@ -290,16 +290,16 @@ export default function AboutPage() {
             </div>
 
             {/* Certifications */}
-            <div className="explore-row-grid" style={{ padding: '3rem 0', borderBottom: '1px solid #e5e7eb' }}>
+            <div className="explore-row-grid" >
               <div>
-                <h3 className="text-3xl font-bold" style={{ color: 'var(--text-dark)' }}>Certifications</h3>
+                <h3 className="text-3xl font-bold" >Certifications</h3>
               </div>
               <div>
-                <p className="text-lg leading-relaxed" style={{ color: '#4b5563' }}>
+                <p className="text-lg leading-relaxed" >
                   We are certified and compliant with global standards, ensuring trust, quality, and reliability in every product.
                 </p>
               </div>
-              <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+              <div >
                 <Link href="/about/certification" className="explore-btn-badge shadow-sm">
                   <span>Explore <br /> More</span>
                   <i className="fa-solid fa-arrow-right"></i>
