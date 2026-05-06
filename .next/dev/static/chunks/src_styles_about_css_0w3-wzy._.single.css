@@ -132,4 +132,58 @@
   line-height: 1.9;
 }
 
+@media (max-width: 1024px) {
+  .about-hero {
+    padding: 0 6%;
+  }
+
+  .about-title {
+    font-size: 4rem;
+  }
+
+  .mosaic-about {
+    padding: 8rem 6% !important;
+  }
+
+  .mosaic-title {
+    font-size: 4rem !important;
+  }
+
+  .mosaic-text {
+    font-size: 2rem;
+  }
+
+  .mosaic-grid {
+    gap: 4rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    text-align: center;
+    min-height: 400px;
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .about-sub {
+    font-size: 1.1rem;
+  }
+
+  .mosaic-title {
+    font-size: 2.5rem !important;
+  }
+
+  .mosaic-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .mosaic-header {
+    margin-bottom: 3rem !important;
+  }
+}
+
 /*# sourceMappingURL=src_styles_about_css_0w3-wzy._.single.css.map*/

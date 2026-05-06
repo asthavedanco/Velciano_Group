@@ -1334,54 +1334,235 @@ section {
 }
 
 @media (max-width: 1200px) {
-  .slide-content h1 {
-    font-size: 4.5rem;
+  .slide-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .slide-content h2 {
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .categories-grid, .stats-grid, .footer-grid {
+  section {
+    padding: 8rem 6%;
+  }
+
+  .categories-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .mosaic-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .why-new-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .promise-header h2 {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .hamburger span {
-    background: #fff;
-    width: 28px;
-    height: 2px;
-    margin: 6px 0;
-    transition: all .4s;
-    display: block;
-  }
-
-  .slide-content h1 {
-    font-size: 3.2rem;
-  }
-
-  .logo-img {
-    height: 50px;
-  }
-
-  .about {
-    flex-direction: column-reverse;
-    gap: 4rem;
+  section {
+    padding: 6rem 6%;
   }
 
   .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+  }
+
+  .section-label {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .hero-nav-wrapper {
+    display: none;
+  }
+
+  .slide-content {
+    text-align: center;
+    margin-top: 40%;
+    padding: 0;
+  }
+
+  .slide-content h3 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .slide-content h2 {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 1rem 2.5rem;
+    font-size: .8rem;
+  }
+
+  .mosaic-header {
+    margin-bottom: 2rem;
+  }
+
+  .mosaic-title {
+    font-size: 2rem;
+  }
+
+  .mosaic-text {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .mosaic-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .mosaic-img-small {
+    max-width: 100%;
+    height: 200px;
+  }
+
+  .why-header-combo {
+    text-align: center;
+  }
+
+  .why-header-combo h1, .why-header-combo h2 {
+    font-size: 2.5rem !important;
+  }
+
+  .why-long-text {
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+
+  .why-long-text p {
+    font-size: 1rem;
+  }
+
+  .why-item-new {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .why-icon-new {
+    font-size: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .stat-item h2 {
     font-size: 2.5rem;
   }
 
-  .why-grid, .blog-grid {
-    grid-template-columns: 1fr;
+  .built-banner {
+    padding: 8rem 6%;
   }
 
   .built-banner h2 {
+    font-size: 2rem;
+  }
+
+  .built-banner p {
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .inquiry-new {
+    padding: 6rem 6%;
+  }
+
+  .inquiry-container {
+    gap: 3rem;
+  }
+
+  .inquiry-left {
+    text-align: center;
+  }
+
+  .inquiry-label-wrapper {
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .inquiry-title-bold {
     font-size: 2.5rem;
+  }
+
+  .inquiry-title-light {
+    font-size: 1.5rem;
+  }
+
+  .inquiry-form-new {
+    gap: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .promise-card {
+    padding: 2rem 0;
+  }
+
+  .promise-card-title {
+    font-size: 1.3rem;
+  }
+
+  .promise-card-text {
+    font-size: 1rem;
+  }
+
+  .team-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .team-card h2 {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    height: 400px;
+  }
+
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .btn-gold {
+    text-align: center;
+    width: 100%;
   }
 }
 

@@ -23,7 +23,17 @@ export default function Footer() {
           <h3>Quick Links</h3>
           <div className="fm-links-grid">
             <ul>
-              <li><Link href="/">Home</Link></li>
+              <li>
+                <a 
+                  href="/" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = "/";
+                  }}
+                >
+                  Home
+                </a>
+              </li>
               <li><Link href="/about">About Us</Link></li>
               <li><Link href="#">Testimonial</Link></li>
             </ul>
@@ -37,7 +47,13 @@ export default function Footer() {
         </div>
         <div className="fm-col fm-center-col">
           <p>Velciano Group is a top manufacturer & exporter of premium home textile solutions. We are committed to quality, innovation, and customer satisfaction.</p>
-          <Link href="/">
+          <a 
+            href="/" 
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "/";
+            }}
+          >
             <Image 
               src="/images/Logo_Velciano.png" 
               alt="Velciano" 
@@ -45,7 +61,7 @@ export default function Footer() {
               width={150}
               height={50}
             />
-          </Link>
+          </a>
           <div className="f-socials">
             <Link href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-youtube"></i></Link>
             <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></Link>

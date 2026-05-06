@@ -201,26 +201,6 @@ body {
   box-shadow: 0 10px 20px #b17d264d;
 }
 
-@media (max-width: 1024px) {
-  .inquiry-container {
-    grid-template-columns: 1fr;
-    gap: 5rem;
-  }
-
-  .form-row, .form-row.three-col {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .inquiry-title-bold {
-    font-size: 3rem;
-  }
-
-  .inquiry-title-light {
-    font-size: 2.5rem;
-  }
-}
-
 .connect-info-section {
   background: var(--bg-cream);
   border-top: 1px solid #0000000d;
@@ -293,6 +273,24 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .inquiry-container {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .form-row, .form-row.three-col {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .inquiry-title-bold {
+    font-size: 3rem;
+  }
+
+  .inquiry-title-light {
+    font-size: 2.5rem;
+  }
+
   .connect-container {
     grid-template-columns: 1fr;
   }
@@ -302,6 +300,48 @@ body {
     font-size: 3.5rem;
     position: relative;
     top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-banner {
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    min-height: 350px;
+    padding: 8rem 6% 3rem;
+  }
+
+  .breadcrumb {
+    justify-content: center;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .inquiry-container {
+    padding-top: 3rem;
+  }
+
+  .inquiry-title-bold {
+    font-size: 2.2rem;
+  }
+
+  .inquiry-title-light {
+    font-size: 1.8rem;
+  }
+
+  .connect-huge-title {
+    font-size: 2.5rem;
+  }
+
+  .connect-block h3 {
+    font-size: 1.8rem;
   }
 }
 

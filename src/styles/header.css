@@ -266,38 +266,39 @@ header.scrolled .mega-menu {
 
 .hamburger {
     display: none;
-    cursor: pointer;
-    z-index: 1001;
-}
-
-.hamburger span {
-    display: block;
-    width: 28px;
-    height: 2px;
-    background: white;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.hamburger-menu-minimal {
-    display: flex;
     flex-direction: column;
     gap: 6px;
     cursor: pointer;
+    z-index: 1001;
+    transition: var(--transition-fast);
 }
 
-.hamburger-menu-minimal span {
+.hamburger span {
     display: block;
     width: 25px;
     height: 2px;
     background: var(--text-white);
     transition: var(--transition-fast);
+    transform-origin: center;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Mobile Header Styles */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     header {
-        padding: 1.5rem 6%;
+        padding: 1rem 6%;
     }
 
     .nav-menu {
@@ -305,108 +306,53 @@ header.scrolled .mega-menu {
         top: 0;
         right: -100%;
         width: 100%;
+        max-width: 400px;
         height: 100vh;
-        background: #000;
+        background: #0a0a0a;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
+        gap: 2rem;
         transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        padding: 5rem 2rem;
+        z-index: 1000;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
     }
 
     .nav-menu.active {
         right: 0;
     }
 
-    .has-submenu .submenu {
-        position: static;
+    .nav-menu li {
         width: 100%;
-        background: transparent;
-        border: none;
-        opacity: 1;
-        visibility: visible;
-        display: none;
-        transform: none;
         text-align: center;
-        padding: 1rem 0 0 0;
     }
 
-    .has-submenu.open .submenu {
+    .nav-menu a {
+        font-size: 1.1rem;
         display: block;
+        padding: 0.5rem 0;
     }
 
-    .nav-menu .has-submenu > a::after {
-        content: '\f0d7';
-        font-family: 'Font Awesome 6 Free';
-        font-weight: 900;
-        margin-left: 10px;
-        font-size: 0.8rem;
-        transition: transform 0.3s ease;
-    }
-
-    .has-submenu.open > a::after {
-        transform: rotate(180deg);
-    }
-
-    /* Mobile Mega Menu */
-    .has-mega .mega-menu {
-        position: static;
-        width: 100%;
-        background: transparent;
-        padding: 0;
-        opacity: 1;
-        visibility: visible;
-        display: none;
-        transform: none;
-        box-shadow: none;
-    }
-
-    .has-mega.open .mega-menu {
-        display: block;
-    }
-
-    .mega-content {
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        gap: 0;
-        padding: 1rem 0;
-    }
-
-    .mega-image {
-        display: none;
-    }
-
-    .mega-links .mega-label {
-        font-size: 0.8rem;
-        margin-bottom: 1.5rem;
-        color: var(--primary);
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-        padding-bottom: 0.5rem;
-    }
-
-    .mega-links a {
-        color: rgba(255,255,255,0.7) !important;
-        font-size: 0.8rem !important;
-    }
-
-    .nav-menu .has-mega > a::after {
-        content: '\f0d7';
-        font-family: 'Font Awesome 6 Free';
-        font-weight: 900;
-        margin-left: 10px;
-        font-size: 0.8rem;
-        transition: transform 0.3s ease;
-    }
-
-    .has-mega.open > a::after {
-        transform: rotate(180deg);
+    .submenu, .mega-menu {
+        display: none !important; /* Hide complex submenus on mobile for simplicity, or could be made accordions */
     }
 
     .hamburger {
-        display: block;
+        display: flex;
     }
 
     .logo-img {
         height: 50px;
+    }
+
+    .header-actions .btn-gold {
+        display: none; /* Hide button on mobile to save space, it's in nav menu or just too big */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        max-width: 100%;
     }
 }

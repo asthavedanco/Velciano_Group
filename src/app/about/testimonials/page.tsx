@@ -47,42 +47,12 @@ export default function TestimonialsPage() {
   }, []);
 
   const testimonials = [
-    {
-      name: "Global Export Partner",
-      role: "Logistics Manager",
-      text: "Velciano has been a game-changer for me. I can't stress enough how their timely deliveries have made my life easier. Every single order I've placed arrived right on schedule. Neatly packed and in pristine condition. It's hard to find such dependable and efficient service elsewhere!",
-      image: "/images/business_head_portrait_1776839185116.png"
-    },
-    {
-      name: "Retail Distributor",
-      role: "Store Owner, India",
-      text: "The Bedsheets arrived safely and everything looks great! The fabric quality is soft and premium, colour and exactly as shown and the stitching is excellent. My customers are already loving them. Thank you for the smooth export process and your support.",
-      image: "/images/business_head_portrait_1776839185116.png"
-    },
-    {
-      name: "Boutique Hotelier",
-      role: "Operations Manager",
-      text: "I can't say enough about the incredible customer support at Velciano Group. They're not just about selling products; they genuinely care about their customers. Wherever I've had any a question or an issue, their team has been there, quick to respond & always ready to help.",
-      image: "/images/business_head_portrait_1776839185116.png"
-    },
-    {
-      name: "Interior Solutions",
-      role: "Senior Consultant",
-      text: "Velciano's Big collection of bedding and multiple designs which attract my clients. The diversity in patterns and the quality of the material make it an easy choice for any interior project.",
-      image: "/images/business_head_portrait_1776839185116.png"
-    },
-    {
-      name: "Luxury Resort Guest House",
-      role: "Hospitality Manager",
-      text: "Velciano's Big collection of bedding and multiple designs which attract my clients. The diversity in patterns and quality make it an easy choice for any interior project.",
-      image: "/images/business_head_portrait_1776839185116.png"
-    },
-    {
-      name: "Hospitality Partner",
-      role: "Hotel Manager",
-      text: "Our guests love the comforters you supplied! Super soft, breathable, and give a premium feel. Thank you for helping us upgrade our rooms and elevate the guest experience.",
-      image: "/images/business_head_portrait_1776839185116.png"
-    }
+    { screenshot: "/images/1.png" },
+    { screenshot: "/images/2.png" },
+    { screenshot: "/images/3.png" },
+    { screenshot: "/images/4.png" },
+    { screenshot: "/images/5.png" },
+    { screenshot: "/images/6.png" }
   ];
 
   return (
@@ -90,10 +60,10 @@ export default function TestimonialsPage() {
       {/* Hero Section */}
       <section className="sub-hero">
         <div className="hero-bg">
-          <Image 
-            src="/images/bedsheet_floral.png" 
-            alt="Testimonials" 
-            fill 
+          <Image
+            src="/images/bedsheet_floral.png"
+            alt="Testimonials"
+            fill
             className="object-cover"
             priority
           />
@@ -126,35 +96,46 @@ export default function TestimonialsPage() {
       {/* Testimonials Grid Section */}
       <section className="testimonials-section" style={{ background: '#000', padding: '8rem 6%' }}>
         <div className="container">
-          <div className="testimonials-grid" style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
-            gap: '2.5rem' 
+          <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
+            <span className="reveal" style={{
+              color: 'var(--primary)',
+              fontWeight: 600,
+              fontSize: '0.9rem',
+              letterSpacing: '0.2em',
+              textTransform: 'uppercase',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '1rem'
+            }}>
+              <span style={{ width: '30px', height: '1px', background: 'var(--primary)' }}></span>
+              Verified Client Feedback
+              <span style={{ width: '30px', height: '1px', background: 'var(--primary)' }}></span>
+            </span>
+          </div>
+
+          <div className="testimonial-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '2.5rem'
           }}>
             {testimonials.map((t, i) => (
               <div key={i} className="testimonial-card" style={{
-                background: 'rgba(255, 255, 255, 0.04)',
-                padding: '3rem 2.5rem',
-                borderRadius: '20px',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
-                display: 'flex',
-                flexDirection: 'column',
-                height: '100%',
-                position: 'relative'
+                background: 'rgba(255, 255, 255, 0.05)',
+                borderRadius: '16px',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+                overflow: 'hidden',
+                position: 'relative',
+                height: '600px',
+                transition: 'transform 0.3s ease',
+                boxShadow: '0 20px 40px rgba(0,0,0,0.3)'
               }}>
-                <div style={{ fontSize: '3rem', color: 'var(--primary)', opacity: 0.2, marginBottom: '1rem', fontFamily: 'serif' }}>“</div>
-                <p style={{ fontSize: '1.05rem', lineHeight: '1.7', color: 'rgba(255, 255, 255, 0.7)', fontStyle: 'italic', marginBottom: '2.5rem' }}>
-                  {t.text}
-                </p>
-                <div style={{ marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
-                  <div style={{ position: 'relative', width: '54px', height: '54px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
-                    <Image src={t.image} alt={t.name} fill className="object-cover" />
-                  </div>
-                  <div>
-                    <h4 style={{ color: '#fff', fontSize: '1.05rem', fontWeight: 600 }}>{t.name}</h4>
-                    <span style={{ color: 'var(--primary)', fontSize: '0.85rem', fontWeight: 500 }}>{t.role}</span>
-                  </div>
-                </div>
+                <Image
+                  src={t.screenshot}
+                  alt={`Testimonial ${i + 1}`}
+                  fill
+                  className="object-cover object-top"
+                />
               </div>
             ))}
           </div>

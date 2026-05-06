@@ -269,6 +269,7 @@
     .footer-middle {
         grid-template-columns: 1fr;
         gap: 4rem;
+        text-align: center;
     }
 
     .fm-center-col {
@@ -281,9 +282,28 @@
     .fm-col {
         padding: 0;
     }
+
+    .fm-links-grid {
+        justify-content: center;
+    }
+
+    .footer-bottom-bar {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
+    .nl-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nl-form input, .nl-form button {
+        width: 100%;
+    }
+
     .download-badge {
         width: 80px;
         height: 80px;

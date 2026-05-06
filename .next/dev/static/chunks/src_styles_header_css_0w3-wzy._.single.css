@@ -266,145 +266,92 @@ header.scrolled .mega-menu {
 .hamburger {
   cursor: pointer;
   z-index: 1001;
+  transition: var(--transition-fast);
+  flex-direction: column;
+  gap: 6px;
   display: none;
 }
 
 .hamburger span {
-  background: #fff;
-  width: 28px;
-  height: 2px;
-  margin: 6px 0;
-  transition: all .4s;
-  display: block;
-}
-
-.hamburger-menu-minimal {
-  cursor: pointer;
-  flex-direction: column;
-  gap: 6px;
-  display: flex;
-}
-
-.hamburger-menu-minimal span {
   background: var(--text-white);
   width: 25px;
   height: 2px;
   transition: var(--transition-fast);
+  transform-origin: center;
   display: block;
 }
 
-@media (max-width: 768px) {
+.hamburger.active span:first-child {
+  transform: translateY(8px)rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px)rotate(-45deg);
+}
+
+@media (max-width: 991px) {
   header {
-    padding: 1.5rem 6%;
+    padding: 1rem 6%;
   }
 
   .nav-menu {
-    background: #000;
+    z-index: 1000;
+    background: #0a0a0a;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     width: 100%;
+    max-width: 400px;
     height: 100vh;
+    padding: 5rem 2rem;
     transition: all .6s cubic-bezier(.22, 1, .36, 1);
     position: fixed;
     top: 0;
     right: -100%;
+    box-shadow: -10px 0 30px #00000080;
   }
 
   .nav-menu.active {
     right: 0;
   }
 
-  .has-submenu .submenu {
-    opacity: 1;
-    visibility: visible;
+  .nav-menu li {
     text-align: center;
-    background: none;
-    border: none;
     width: 100%;
-    padding: 1rem 0 0;
-    display: none;
-    position: static;
-    transform: none;
   }
 
-  .has-submenu.open .submenu {
+  .nav-menu a {
+    padding: .5rem 0;
+    font-size: 1.1rem;
     display: block;
   }
 
-  .nav-menu .has-submenu > a:after {
-    content: "";
-    margin-left: 10px;
-    font-family: "Font Awesome 6 Free";
-    font-size: .8rem;
-    font-weight: 900;
-    transition: transform .3s;
-  }
-
-  .has-submenu.open > a:after {
-    transform: rotate(180deg);
-  }
-
-  .has-mega .mega-menu {
-    opacity: 1;
-    visibility: visible;
-    width: 100%;
-    box-shadow: none;
-    background: none;
-    padding: 0;
-    display: none;
-    position: static;
-    transform: none;
-  }
-
-  .has-mega.open .mega-menu {
-    display: block;
-  }
-
-  .mega-content {
-    flex-direction: column;
-    grid-template-columns: 1fr;
-    gap: 0;
-    padding: 1rem 0;
-  }
-
-  .mega-image {
-    display: none;
-  }
-
-  .mega-links .mega-label {
-    color: var(--primary);
-    border-bottom: 1px solid #ffffff1a;
-    margin-bottom: 1.5rem;
-    padding-bottom: .5rem;
-    font-size: .8rem;
-  }
-
-  .mega-links a {
-    color: #ffffffb3 !important;
-    font-size: .8rem !important;
-  }
-
-  .nav-menu .has-mega > a:after {
-    content: "";
-    margin-left: 10px;
-    font-family: "Font Awesome 6 Free";
-    font-size: .8rem;
-    font-weight: 900;
-    transition: transform .3s;
-  }
-
-  .has-mega.open > a:after {
-    transform: rotate(180deg);
+  .submenu, .mega-menu {
+    display: none !important;
   }
 
   .hamburger {
-    display: block;
+    display: flex;
   }
 
   .logo-img {
     height: 50px;
+  }
+
+  .header-actions .btn-gold {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu {
+    max-width: 100%;
   }
 }
 

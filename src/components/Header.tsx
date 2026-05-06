@@ -27,7 +27,14 @@ export default function Header() {
 
   return (
     <header className={`${scrolled ? "scrolled" : "transparent-top"}`}>
-      <Link href="/" className="logo">
+      <a 
+        href="/" 
+        className="logo"
+        onClick={(e) => {
+          e.preventDefault();
+          window.location.href = "/";
+        }}
+      >
         <Image 
           src="/images/Logo_Velciano.png" 
           alt="Velciano" 
@@ -36,10 +43,20 @@ export default function Header() {
           height={70}
           priority
         />
-      </Link>
+      </a>
       <nav>
         <ul className={`nav-menu ${mobileMenuOpen ? "active" : ""}`}>
-          <li><Link href="/">HOME</Link></li>
+          <li>
+            <a 
+              href="/" 
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "/";
+              }}
+            >
+              HOME
+            </a>
+          </li>
           <li className="has-submenu">
             <Link href="/about">ABOUT</Link>
             <ul className="submenu">
