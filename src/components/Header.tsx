@@ -27,20 +27,31 @@ export default function Header() {
   };
 
   const toggleSubMenu = (menu: string, e: React.MouseEvent) => {
-    if (window.innerWidth <= 991) {
-      e.preventDefault();
-      setActiveSubMenu(activeSubMenu === menu ? null : menu);
+    if (window.innerWidth <= 1024) {
+      if (activeSubMenu !== menu) {
+        e.preventDefault();
+        e.stopPropagation();
+        setActiveSubMenu(menu);
+      } else {
+        // If already active, navigate and close menu
+        closeMenu();
+      }
     }
+  };
+
+  const closeMenu = () => {
+    setMobileMenuOpen(false);
+    setActiveSubMenu(null);
   };
 
   return (
     <header className={`${scrolled ? "scrolled" : "transparent-top"}`}>
-      <a 
+      <Link 
         href="/" 
         className="logo"
-        onClick={(e) => {
-          e.preventDefault();
-          window.location.href = "/";
+        onClick={() => {
+          setMobileMenuOpen(false);
+          setActiveSubMenu(null);
         }}
       >
         <Image 
@@ -51,49 +62,49 @@ export default function Header() {
           height={70}
           priority
         />
-      </a>
+      </Link>
       <nav>
         <ul className={`nav-menu ${mobileMenuOpen ? "active" : ""}`}>
           <li>
-            <a 
-              href="/" 
-              onClick={(e) => {
-                if (window.innerWidth <= 991) {
-                  setMobileMenuOpen(false);
-                } else {
-                  e.preventDefault();
-                  window.location.href = "/";
-                }
-              }}
-            >
-              HOME
-            </a>
+            <Link href="/" onClick={closeMenu}>HOME</Link>
           </li>
           <li className={`has-submenu ${activeSubMenu === "about" ? "mm-active" : ""}`}>
-            <Link href="/about" onClick={(e) => toggleSubMenu("about", e)}>
+            <Link 
+              href="/about" 
+              className="menu-toggle"
+              onClick={(e) => toggleSubMenu("about", e)}
+            >
               ABOUT <i className="fa-solid fa-chevron-down mm-icon"></i>
             </Link>
             <ul className="submenu">
-              <li><Link href="/about/manufacturing" onClick={() => setMobileMenuOpen(false)}>Manufacturing</Link></li>
-              <li><Link href="/about/dealership" onClick={() => setMobileMenuOpen(false)}>Dealership</Link></li>
-              <li><Link href="/about/testimonials" onClick={() => setMobileMenuOpen(false)}>Testimonials</Link></li>
-              <li><Link href="/about/why-us" onClick={() => setMobileMenuOpen(false)}>Why Us</Link></li>
-              <li><Link href="/about/global-demand" onClick={() => setMobileMenuOpen(false)}>Global Demand</Link></li>
-              <li><Link href="/about/csr" onClick={() => setMobileMenuOpen(false)}>CSR</Link></li>
-              <li><Link href="/about/certification" onClick={() => setMobileMenuOpen(false)}>Certification</Link></li>
+              <li className="mm-only"><Link href="/about" onClick={closeMenu} style={{ fontWeight: '800', color: 'var(--primary) !important' }}>About Overview</Link></li>
+              <li><Link href="/about/manufacturing" onClick={closeMenu}>Manufacturing</Link></li>
+              <li><Link href="/about/dealership" onClick={closeMenu}>Dealership</Link></li>
+              <li><Link href="/about/testimonials" onClick={closeMenu}>Testimonials</Link></li>
+              <li><Link href="/about/why-us" onClick={closeMenu}>Why Us</Link></li>
+              <li><Link href="/about/global-demand" onClick={closeMenu}>Global Demand</Link></li>
+              <li><Link href="/about/csr" onClick={closeMenu}>CSR</Link></li>
+              <li><Link href="/about/certification" onClick={closeMenu}>Certification</Link></li>
             </ul>
           </li>
-          <li className="has-mega">
-            <Link href="/collection">COLLECTION</Link>
+          <li className={`has-mega ${activeSubMenu === "collection" ? "mm-active" : ""}`}>
+            <Link 
+              href="/collection" 
+              className="menu-toggle"
+              onClick={(e) => toggleSubMenu("collection", e)}
+            >
+              COLLECTION <i className="fa-solid fa-chevron-down mm-icon"></i>
+            </Link>
             <div className="mega-menu">
               <div className="mega-content">
                 <div className="mega-links">
                   <span className="mega-label">OUR PRODUCTS</span>
                   <ul>
-                    <li><Link href="/collection/bedsheets" data-image="images/bedsheet_luxury.png" onMouseEnter={handleLinkHover} onClick={() => setMobileMenuOpen(false)}>BEDSHEETS</Link></li>
-                    <li><Link href="/collection/curtains" data-image="images/curtain_modern.png" onMouseEnter={handleLinkHover} onClick={() => setMobileMenuOpen(false)}>CURTAINS</Link></li>
-                    <li><Link href="/collection/sofa-covers" data-image="images/sofa_cover_luxury.png" onMouseEnter={handleLinkHover} onClick={() => setMobileMenuOpen(false)}>SOFA COVERS</Link></li>
-                    <li><Link href="/collection/pillow-covers" data-image="images/pillow_cover_decorative.png" onMouseEnter={handleLinkHover} onClick={() => setMobileMenuOpen(false)}>PILLOW COVERS</Link></li>
+                    <li className="mm-only"><Link href="/collection" onClick={closeMenu} style={{ fontWeight: '800', color: 'var(--primary) !important' }}>Collection Overview</Link></li>
+                    <li><Link href="/collection/bedsheets" data-image="images/bedsheet_luxury.png" onMouseEnter={handleLinkHover} onClick={closeMenu}>BEDSHEETS</Link></li>
+                    <li><Link href="/collection/curtains" data-image="images/curtain_modern.png" onMouseEnter={handleLinkHover} onClick={closeMenu}>CURTAINS</Link></li>
+                    <li><Link href="/collection/sofa-covers" data-image="images/sofa_cover_luxury.png" onMouseEnter={handleLinkHover} onClick={closeMenu}>SOFA COVERS</Link></li>
+                    <li><Link href="/collection/pillow-covers" data-image="images/pillow_cover_decorative.png" onMouseEnter={handleLinkHover} onClick={closeMenu}>PILLOW COVERS</Link></li>
                   </ul>
                 </div>
                 <div className="mega-image">
@@ -109,11 +120,11 @@ export default function Header() {
               </div>
             </div>
           </li>
-          <li><Link href="/export" onClick={() => setMobileMenuOpen(false)}>EXPORT</Link></li>
-          <li><Link href="/e-catalogue" onClick={() => setMobileMenuOpen(false)}>E-CATALOGUE</Link></li>
-          <li><Link href="/contact" onClick={() => setMobileMenuOpen(false)}>CONTACT</Link></li>
+          <li><Link href="/export" onClick={closeMenu}>EXPORT</Link></li>
+          <li><Link href="/e-catalogue" onClick={closeMenu}>E-CATALOGUE</Link></li>
+          <li><Link href="/contact" onClick={closeMenu}>CONTACT</Link></li>
           <li className="mm-only mt-10">
-            <Link href="/contact" className="btn-gold w-full" onClick={() => setMobileMenuOpen(false)}>ENQUIRE NOW</Link>
+            <Link href="/contact" className="btn-gold w-full" onClick={closeMenu}>ENQUIRE NOW</Link>
           </li>
         </ul>
       </nav>
