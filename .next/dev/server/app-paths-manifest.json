@@ -6,5 +6,6 @@
   "/collection/bedsheets/page": "app/collection/bedsheets/page.js",
   "/collection/page": "app/collection/page.js",
   "/contact/page": "app/contact/page.js",
+  "/export/page": "app/export/page.js",
   "/page": "app/page.js"
 }

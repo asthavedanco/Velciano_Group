@@ -2020,15 +2020,15 @@ section {
 
 .explore-btn-badge {
   text-align: center;
-  width: 140px;
-  height: 140px;
-  color: var(--text-dark);
+  color: #fff;
   z-index: 1;
   background: none;
   border: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 140px;
+  height: 140px;
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.3;
@@ -2603,6 +2603,76 @@ section {
 
 .group.cursor-pointer.block.no-underline:hover h3 {
   color: var(--primary) !important;
+}
+
+.sub-hero {
+  background: #000;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  min-height: 450px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-overlay-dark {
+  z-index: 2;
+  background: linear-gradient(#0006, #000c);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-title {
+  letter-spacing: -2px;
+  margin-bottom: 1.5rem;
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #fff !important;
+}
+
+.hero-subtitle {
+  max-width: 600px;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 500;
+  color: #fffc !important;
+}
+
+@media (max-width: 768px) {
+  .sub-hero {
+    text-align: center;
+    height: 50vh;
+    min-height: 350px;
+  }
+
+  .hero-subtitle {
+    margin: 0 auto;
+  }
+}
+
+.sub-page h2, .sub-page h3, .sub-page p {
+  color: #fff !important;
+}
+
+.sub-page p {
+  color: #ffffffd9 !important;
+}
+
+.sub-page .btn-gold {
+  color: #fff !important;
 }
 
 /*# sourceMappingURL=src_app_globals_css_0w3-wzy._.single.css.map*/
