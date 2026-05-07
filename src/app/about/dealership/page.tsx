@@ -103,7 +103,7 @@ export default function DealershipPage() {
       </section>
 
       {/* Why Partner */}
-      <section className="dealer-content" className="bg-cream py-32">
+      <section className="dealer-content bg-cream py-32">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
             {/* Image */}
@@ -146,17 +146,16 @@ export default function DealershipPage() {
       {/* Benefits Grid */}
       <section className="bg-black py-32">
         <div className="container">
-          <div className="fade-up" className="text-center mb-20">
+          <div className="fade-up text-center mb-20">
             <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.75rem" }}>What You Get</p>
             <h2 style={{ fontSize: "3rem", fontWeight: 700, color: "#fff", letterSpacing: "-0.02em", maxWidth: "600px", margin: "0 auto" }}>
               Benefits of Partnering with Us
             </h2>
           </div>
-          <div className="benefits-grid" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="benefits-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {benefits.map((b, i) => (
               <div
                 key={i}
-                className="benefit-card"
                 className="benefit-card"
                 onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "var(--primary)"; (e.currentTarget as HTMLDivElement).style.transform = "translateY(-5px)"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(255,255,255,0.08)"; (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)"; }}
@@ -175,7 +174,7 @@ export default function DealershipPage() {
       {/* Application Process */}
       <section className="bg-cream py-32">
         <div className="container">
-          <div className="fade-up" className="text-center mb-20">
+          <div className="fade-up text-center mb-20">
             <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.75rem" }}>How It Works</p>
             <h2 style={{ fontSize: "3rem", fontWeight: 700, color: "var(--text-dark)", letterSpacing: "-0.02em" }}>Application Process</h2>
           </div>

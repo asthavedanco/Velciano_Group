@@ -1,0 +1,177 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/about/certification",
+      "regex": "^/about/certification(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/certification(?:/)?$"
+    },
+    {
+      "page": "/about/csr",
+      "regex": "^/about/csr(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/csr(?:/)?$"
+    },
+    {
+      "page": "/about/dealership",
+      "regex": "^/about/dealership(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/dealership(?:/)?$"
+    },
+    {
+      "page": "/about/global-demand",
+      "regex": "^/about/global\\-demand(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/global\\-demand(?:/)?$"
+    },
+    {
+      "page": "/about/manufacturing",
+      "regex": "^/about/manufacturing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/manufacturing(?:/)?$"
+    },
+    {
+      "page": "/about/testimonials",
+      "regex": "^/about/testimonials(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/testimonials(?:/)?$"
+    },
+    {
+      "page": "/about/why-us",
+      "regex": "^/about/why\\-us(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/why\\-us(?:/)?$"
+    },
+    {
+      "page": "/api/inquiry",
+      "regex": "^/api/inquiry(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/inquiry(?:/)?$"
+    },
+    {
+      "page": "/blogs",
+      "regex": "^/blogs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blogs(?:/)?$"
+    },
+    {
+      "page": "/collection",
+      "regex": "^/collection(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/collection(?:/)?$"
+    },
+    {
+      "page": "/collection/bedsheets",
+      "regex": "^/collection/bedsheets(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/collection/bedsheets(?:/)?$"
+    },
+    {
+      "page": "/collection/curtains",
+      "regex": "^/collection/curtains(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/collection/curtains(?:/)?$"
+    },
+    {
+      "page": "/collection/pillow-covers",
+      "regex": "^/collection/pillow\\-covers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/collection/pillow\\-covers(?:/)?$"
+    },
+    {
+      "page": "/collection/sofa-covers",
+      "regex": "^/collection/sofa\\-covers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/collection/sofa\\-covers(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/e-catalogue",
+      "regex": "^/e\\-catalogue(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/e\\-catalogue(?:/)?$"
+    },
+    {
+      "page": "/export",
+      "regex": "^/export(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/export(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
