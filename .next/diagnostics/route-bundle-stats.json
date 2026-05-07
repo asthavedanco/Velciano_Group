@@ -177,11 +177,11 @@
   },
   {
     "route": "/collection",
-    "firstLoadUncompressedJsBytes": 616543,
+    "firstLoadUncompressedJsBytes": 616564,
     "firstLoadChunkPaths": [
       ".next\\static\\chunks\\0le26xh7xy_c1.js",
       ".next\\static\\chunks\\0d3shmwh5_nmn.js",
-      ".next\\static\\chunks\\0przzvmu3cm16.js",
+      ".next\\static\\chunks\\0kpiqpu1da9pe.js",
       ".next\\static\\chunks\\147nfhi2rmhe5.js",
       ".next\\static\\chunks\\0gxwci3e5-ykx.js",
       ".next\\static\\chunks\\0dgq26a5_oy.a.js",
@@ -206,11 +206,11 @@
   },
   {
     "route": "/collection/bedsheets",
-    "firstLoadUncompressedJsBytes": 547827,
+    "firstLoadUncompressedJsBytes": 547846,
     "firstLoadChunkPaths": [
       ".next\\static\\chunks\\0le26xh7xy_c1.js",
       ".next\\static\\chunks\\0d3shmwh5_nmn.js",
-      ".next\\static\\chunks\\0ybd70_0b2rzn.js",
+      ".next\\static\\chunks\\17u1h-yn0gjtr.js",
       ".next\\static\\chunks\\0gxwci3e5-ykx.js",
       ".next\\static\\chunks\\0dgq26a5_oy.a.js",
       ".next\\static\\chunks\\10~x95jhs6ns3.js",
@@ -220,11 +220,11 @@
   },
   {
     "route": "/collection/curtains",
-    "firstLoadUncompressedJsBytes": 547827,
+    "firstLoadUncompressedJsBytes": 547846,
     "firstLoadChunkPaths": [
       ".next\\static\\chunks\\0le26xh7xy_c1.js",
       ".next\\static\\chunks\\0d3shmwh5_nmn.js",
-      ".next\\static\\chunks\\0ybd70_0b2rzn.js",
+      ".next\\static\\chunks\\17u1h-yn0gjtr.js",
       ".next\\static\\chunks\\0gxwci3e5-ykx.js",
       ".next\\static\\chunks\\0dgq26a5_oy.a.js",
       ".next\\static\\chunks\\10~x95jhs6ns3.js",
@@ -234,11 +234,11 @@
   },
   {
     "route": "/collection/pillow-covers",
-    "firstLoadUncompressedJsBytes": 547827,
+    "firstLoadUncompressedJsBytes": 547846,
     "firstLoadChunkPaths": [
       ".next\\static\\chunks\\0le26xh7xy_c1.js",
       ".next\\static\\chunks\\0d3shmwh5_nmn.js",
-      ".next\\static\\chunks\\0ybd70_0b2rzn.js",
+      ".next\\static\\chunks\\17u1h-yn0gjtr.js",
       ".next\\static\\chunks\\0gxwci3e5-ykx.js",
       ".next\\static\\chunks\\0dgq26a5_oy.a.js",
       ".next\\static\\chunks\\10~x95jhs6ns3.js",
@@ -248,11 +248,11 @@
   },
   {
     "route": "/collection/sofa-covers",
-    "firstLoadUncompressedJsBytes": 547827,
+    "firstLoadUncompressedJsBytes": 547846,
     "firstLoadChunkPaths": [
       ".next\\static\\chunks\\0le26xh7xy_c1.js",
       ".next\\static\\chunks\\0d3shmwh5_nmn.js",
-      ".next\\static\\chunks\\0ybd70_0b2rzn.js",
+      ".next\\static\\chunks\\17u1h-yn0gjtr.js",
       ".next\\static\\chunks\\0gxwci3e5-ykx.js",
       ".next\\static\\chunks\\0dgq26a5_oy.a.js",
       ".next\\static\\chunks\\10~x95jhs6ns3.js",

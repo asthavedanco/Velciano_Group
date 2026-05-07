@@ -2580,4 +2580,29 @@ section {
   }
 }
 
+.collection-card-wrap h3 {
+  color: #fff !important;
+}
+
+.collection-card-wrap p {
+  color: #ffffffe6 !important;
+}
+
+.collection-card-wrap:hover h3 {
+  color: var(--primary) !important;
+}
+
+.collection-card-wrap:hover p {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.group.cursor-pointer.block.no-underline h3 {
+  color: #fff !important;
+}
+
+.group.cursor-pointer.block.no-underline:hover h3 {
+  color: var(--primary) !important;
+}
+
 /*# sourceMappingURL=src_app_globals_css_0w3-wzy._.single.css.map*/

@@ -2507,3 +2507,32 @@ section {
     .w-full { width: 100%; }
 }
 
+
+/* Force Collection Card Visibility */
+.collection-card-wrap h3 {
+    color: #ffffff !important;
+}
+
+.collection-card-wrap p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.collection-card-wrap:hover h3 {
+    color: var(--primary) !important;
+}
+
+.collection-card-wrap:hover p {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+/* Individual Product Visibility in Collection Layout */
+.group.cursor-pointer.block.no-underline h3 {
+    color: #ffffff !important;
+}
+
+.group.cursor-pointer.block.no-underline:hover h3 {
+    color: var(--primary) !important;
+}
+

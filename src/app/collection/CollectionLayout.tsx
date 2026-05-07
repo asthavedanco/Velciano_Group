@@ -65,15 +65,15 @@ export default function CollectionLayout({
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>
           {products.map((p: any, i: number) => (
-            <div key={i} className="group cursor-pointer">
+            <Link key={i} href="/contact" className="group cursor-pointer block no-underline">
               <div style={{ position: 'relative', height: '300px', borderRadius: '16px', overflow: 'hidden', marginBottom: '1.5rem', border: '1px solid var(--glass-border)' }}>
                 <Image src={p.image} alt={p.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
               </div>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-white)' }}>{p.name}</h3>
+              <h3 className="group-hover:!text-primary transition-colors duration-300" style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.5rem', color: 'var(--text-white)' }}>{p.name}</h3>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <Link href="/contact" style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Explore More</Link>
+                <span style={{ color: 'var(--primary)', fontWeight: 600, textDecoration: 'underline' }}>Enquire Now</span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
