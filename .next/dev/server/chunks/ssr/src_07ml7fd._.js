@@ -467,13 +467,6 @@ const products = [
         desc: "Finely finished covers for modern interiors.",
         img: "/images/pillow_cover_decorative.png",
         link: "/collection/pillow-covers"
-    },
-    {
-        label: "ARTISTIC",
-        title: "Floral Prints",
-        desc: "Fresh and airy bedroom designs.",
-        img: "/images/bedsheet_floral.png",
-        link: "/collection/bedsheets"
     }
 ];
 function ProductSlider() {
@@ -524,7 +517,7 @@ function ProductSlider() {
                             children: "OUR COLLECTIONS"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProductSlider.tsx",
-                            lineNumber: 90,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -532,13 +525,13 @@ function ProductSlider() {
                             children: "Signature Textiles"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProductSlider.tsx",
-                            lineNumber: 91,
+                            lineNumber: 84,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ProductSlider.tsx",
-                    lineNumber: 89,
+                    lineNumber: 82,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -560,7 +553,7 @@ function ProductSlider() {
                                             className: "product-img"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/ProductSlider.tsx",
-                                            lineNumber: 99,
+                                            lineNumber: 92,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -571,7 +564,7 @@ function ProductSlider() {
                                                     children: p.label
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProductSlider.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 94,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -579,7 +572,7 @@ function ProductSlider() {
                                                     children: p.title
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/ProductSlider.tsx",
-                                                    lineNumber: 102,
+                                                    lineNumber: 95,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -589,58 +582,58 @@ function ProductSlider() {
                                                             children: "EXPLORE"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProductSlider.tsx",
-                                                            lineNumber: 104,
+                                                            lineNumber: 97,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                                             className: "fa-solid fa-arrow-right"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProductSlider.tsx",
-                                                            lineNumber: 105,
+                                                            lineNumber: 98,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProductSlider.tsx",
-                                                    lineNumber: 103,
+                                                    lineNumber: 96,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/ProductSlider.tsx",
-                                            lineNumber: 100,
+                                            lineNumber: 93,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/ProductSlider.tsx",
-                                    lineNumber: 98,
+                                    lineNumber: 91,
                                     columnNumber: 17
                                 }, this)
                             }, i, false, {
                                 fileName: "[project]/src/components/ProductSlider.tsx",
-                                lineNumber: 97,
+                                lineNumber: 90,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/ProductSlider.tsx",
-                        lineNumber: 95,
+                        lineNumber: 88,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/ProductSlider.tsx",
-                    lineNumber: 94,
+                    lineNumber: 87,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ProductSlider.tsx",
-            lineNumber: 88,
+            lineNumber: 81,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/ProductSlider.tsx",
-        lineNumber: 87,
+        lineNumber: 80,
         columnNumber: 5
     }, this);
 }

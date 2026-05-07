@@ -39,13 +39,6 @@ const products = [
     img: "/images/pillow_cover_decorative.png",
     link: "/collection/pillow-covers",
   },
-  {
-    label: "ARTISTIC",
-    title: "Floral Prints",
-    desc: "Fresh and airy bedroom designs.",
-    img: "/images/bedsheet_floral.png",
-    link: "/collection/bedsheets",
-  },
 ];
 
 export default function ProductSlider() {
