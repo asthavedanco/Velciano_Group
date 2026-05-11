@@ -107,6 +107,7 @@
     line-height: 1 !important;
     letter-spacing: -3px !important;
     margin-top: 1rem;
+    color: #fff;
 }
 
 .mosaic-grid {
@@ -127,11 +128,10 @@
 }
 
 .mosaic-text {
-    font-size: 3rem;
-    line-height: 1.9;
-    text-align: justify;
-    hyphens: auto;
-    color: rgba(26, 26, 26, 0.85);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 1024px) {

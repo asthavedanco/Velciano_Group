@@ -1486,6 +1486,7 @@ header.scrolled .mega-menu {
 }
 
 .mosaic-title {
+  color: #fff;
   margin-top: 1rem;
   letter-spacing: -3px !important;
   font-size: 6rem !important;
@@ -1511,12 +1512,10 @@ header.scrolled .mega-menu {
 }
 
 .mosaic-text {
-  text-align: justify;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-  color: #1a1a1ad9;
-  font-size: 3rem;
-  line-height: 1.9;
+  color: #ffffffb3;
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+  line-height: 1.8;
 }
 
 @media (max-width: 1024px) {
@@ -4823,12 +4822,14 @@ section {
 .promise-header h2 {
   letter-spacing: -.02em;
   text-align: center;
+  color: var(--text-dark);
   font-size: 2.5rem;
   line-height: 1.3;
 }
 
 .promise-card-title {
   letter-spacing: -.5px;
+  color: var(--text-dark);
   margin-bottom: 1rem;
   font-family: Open Sans, sans-serif;
   font-size: 1.5rem;
@@ -4837,6 +4838,7 @@ section {
 
 .promise-card-text {
   text-wrap: balance;
+  color: #444;
   max-width: 360px;
   margin: 0 auto;
   font-family: Open Sans, sans-serif;
@@ -4847,6 +4849,16 @@ section {
 
 .bg-cream {
   background-color: var(--bg-cream);
+  color: var(--text-dark);
+}
+
+.bg-cream .circular-cta {
+  color: var(--text-dark);
+  border-color: #00000026;
+}
+
+.bg-cream .circular-cta .scroll-dot {
+  background: var(--primary);
 }
 
 .text-primary {
@@ -4880,6 +4892,10 @@ section {
 
 .team-card h2 {
   font-size: 3rem !important;
+}
+
+.team-main-title {
+  color: var(--text-dark);
 }
 
 .member-img-wrap {
@@ -4971,7 +4987,7 @@ section {
 
 .explore-btn-badge {
   text-align: center;
-  color: #fff;
+  color: #000;
   z-index: 1;
   background: none;
   border: none;
@@ -5048,18 +5064,21 @@ section {
 }
 
 .explore-row-grid h3 {
+  color: var(--text-dark);
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 2.5rem;
 }
 
 .explore-row-grid p {
+  color: #444;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
 .explore-header h2 {
   letter-spacing: -.05em;
+  color: var(--text-dark);
   margin-top: 1rem;
   font-size: 3.75rem;
   font-weight: 300;
@@ -5293,10 +5312,10 @@ section {
 }
 
 .benefit-card {
-  borderRadius: 16px;
   transition: var(--transition-fast);
   background: #ffffff0a;
   border: 1px solid #ffffff14;
+  border-radius: 16px;
   padding: 2rem;
 }
 

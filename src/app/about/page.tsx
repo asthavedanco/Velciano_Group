@@ -129,7 +129,7 @@ export default function AboutPage() {
       <section className="team-section pb-32 pt-0 bg-cream">
         <div className="container">
           <div className="team-card reveal">
-            <div className="team-header text-center mb-60">
+            <div className="team-header text-center mb-20">
               <h2 className="team-main-title">Executive Team</h2>
               <div className="h-1 w-20 bg-primary mx-auto mt-6"></div>
             </div>
