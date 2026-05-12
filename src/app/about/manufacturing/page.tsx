@@ -35,29 +35,36 @@ export default function ManufacturingPage() {
 
     // Small timeout to ensure Next.js transition is complete
     const ctx = gsap.context(() => {
-      gsap.from(".fade-up", {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.18,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".mfg-content",
-          start: "top 85%",
-        },
+      gsap.utils.toArray(".fade-up").forEach((elem: any) => {
+        gsap.fromTo(elem,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: elem,
+              start: "top 85%"
+            }
+          }
+        );
       });
 
-      gsap.from(".feature-card", {
-        y: 40,
-        opacity: 0,
-        duration: 0.9,
-        stagger: 0.15,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".features-grid",
-          start: "top 85%",
-        },
-      });
+      gsap.fromTo(".feature-card",
+        { y: 40, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.9,
+          stagger: 0.15,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".features-grid",
+            start: "top 85%"
+          }
+        }
+      );
     });
 
     // Refresh ScrollTrigger after a short delay
@@ -101,7 +108,7 @@ export default function ManufacturingPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="mfg-content" style={{ background: "var(--bg-cream)", padding: "7rem 6%" }}>
+      <section className="mfg-content bg-cream" style={{ background: "var(--bg-cream)", padding: "7rem 6%" }}>
         <div className="container">
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(420px, 1fr))", gap: "6rem", alignItems: "center" }}>
             {/* Image */}
@@ -122,7 +129,7 @@ export default function ManufacturingPage() {
 
             {/* Text */}
             <div className="fade-up">
-              <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "1rem" }}>
+              <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "1rem" }}>
                 Our Facilities
               </p>
               <h2 style={{ fontSize: "2.8rem", fontWeight: 700, lineHeight: 1.2, color: "var(--text-dark)", marginBottom: "1.5rem", letterSpacing: "-0.02em" }}>
@@ -239,11 +246,11 @@ export default function ManufacturingPage() {
       </section>
 
       {/* Packaging Highlight */}
-      <section style={{ background: "var(--bg-cream)", padding: "7rem 6%" }}>
+      <section className="bg-cream" style={{ background: "var(--bg-cream)", padding: "7rem 6%" }}>
         <div className="container">
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "6rem", alignItems: "center" }}>
             <div className="fade-up">
-              <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "1rem" }}>
+              <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "1rem" }}>
                 Packaging &amp; Delivery
               </p>
               <h2 style={{ fontSize: "2.8rem", fontWeight: 700, color: "var(--text-dark)", marginBottom: "1.5rem", letterSpacing: "-0.02em" }}>
