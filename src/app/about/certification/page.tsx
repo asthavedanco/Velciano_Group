@@ -70,16 +70,20 @@ export default function CertificationPage() {
     gsap.registerPlugin(ScrollTrigger);
 
     const ctx = gsap.context(() => {
-      gsap.from(".reveal", {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".sub-hero",
-          start: "top 90%",
-        }
+      gsap.utils.toArray(".reveal").forEach((elem: any) => {
+        gsap.fromTo(elem,
+          { y: 30, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: elem,
+              start: "top 90%"
+            }
+          }
+        );
       });
     });
 

@@ -18,30 +18,37 @@ export default function GlobalDemandPage() {
     gsap.registerPlugin(ScrollTrigger);
 
     const ctx = gsap.context(() => {
-      gsap.from(".reveal", {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".sub-hero",
-          start: "top 90%",
-        }
+      gsap.utils.toArray(".reveal").forEach((elem: any) => {
+        gsap.fromTo(elem,
+          { y: 30, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: elem,
+              start: "top 90%"
+            }
+          }
+        );
       });
 
-      // Animate points grid with a safer trigger
-      gsap.from(".point-card", {
-        y: 30,
-        opacity: 0,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".points-grid",
-          start: "top bottom-=100", // Starts as soon as the top of the grid is near the bottom
-          toggleActions: "play none none none"
-        }
+      gsap.utils.toArray(".point-card").forEach((elem: any) => {
+        gsap.fromTo(elem,
+          { y: 40, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: elem,
+              start: "top 90%",
+              toggleActions: "play none none none"
+            }
+          }
+        );
       });
     });
 
@@ -132,8 +139,7 @@ export default function GlobalDemandPage() {
                 background: 'rgba(255, 255, 255, 0.03)',
                 padding: '3rem 2.5rem',
                 borderRadius: '20px',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
-                transition: 'all 0.3s ease'
+                border: '1px solid rgba(255, 255, 255, 0.08)'
               }}>
                 <div style={{ width: '50px', height: '50px', borderRadius: '12px', background: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem' }}>
                   <i className={`fa-solid ${point.icon}`} style={{ color: '#fff', fontSize: '1.2rem' }}></i>
