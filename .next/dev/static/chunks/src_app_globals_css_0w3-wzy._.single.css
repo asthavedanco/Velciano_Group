@@ -2683,12 +2683,24 @@ section {
   }
 }
 
-.sub-page h2, .sub-page h3, .sub-page p {
+.sub-page h2:not(.bg-cream h2):not(.bg-white h2), .sub-page h3:not(.bg-cream h3):not(.bg-white h3), .sub-page h4:not(.bg-cream h4):not(.bg-white h4) {
   color: #fff !important;
 }
 
-.sub-page p {
+.sub-page p:not(.bg-cream p):not(.bg-white p) {
   color: #ffffffd9 !important;
+}
+
+.bg-cream h2, .bg-cream h3, .bg-cream h4, .bg-white h2, .bg-white h3, .bg-white h4 {
+  color: var(--text-dark) !important;
+}
+
+.bg-cream p, .bg-white p {
+  color: #555 !important;
+}
+
+.primary-text {
+  color: var(--primary) !important;
 }
 
 .sub-page .btn-gold {

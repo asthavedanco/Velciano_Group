@@ -40,29 +40,36 @@ export default function DealershipPage() {
     gsap.registerPlugin(ScrollTrigger);
 
     const ctx = gsap.context(() => {
-      gsap.from(".fade-up", {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.15,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".dealer-content",
-          start: "top 80%"
-        }
+      gsap.utils.toArray(".fade-up").forEach((elem: any) => {
+        gsap.fromTo(elem,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: elem,
+              start: "top 85%"
+            }
+          }
+        );
       });
 
-      gsap.from(".benefit-card", {
-        y: 40,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.08,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".benefits-grid",
-          start: "top 80%"
+      gsap.fromTo(".benefit-card",
+        { y: 40, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.08,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".benefits-grid",
+            start: "top 85%"
+          }
         }
-      });
+      );
     });
 
     const timeout = setTimeout(() => {
@@ -115,14 +122,14 @@ export default function DealershipPage() {
               <Image src="/images/curtain_modern.png" alt="Partnership" fill style={{ objectFit: "cover" }} />
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 55%)" }}></div>
               <div style={{ position: "absolute", bottom: "2.5rem", left: "2.5rem", right: "2.5rem" }}>
-                <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.85rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Trusted Partner Network</p>
+                <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.85rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Trusted Partner Network</p>
                 <h3 style={{ color: "#fff", fontSize: "1.6rem", fontWeight: 700, lineHeight: 1.3 }}>Join the Velciano dealer family and grow together</h3>
               </div>
             </div>
 
             {/* Text */}
             <div className="fade-up">
-              <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "1rem" }}>Grow with Us</p>
+              <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "1rem" }}>Grow with Us</p>
               <h2 style={{ fontSize: "2.8rem", fontWeight: 700, lineHeight: 1.2, color: "var(--text-dark)", marginBottom: "1.5rem", letterSpacing: "-0.02em" }}>
                 Why Partner With Velciano
               </h2>
@@ -151,7 +158,7 @@ export default function DealershipPage() {
       <section className="bg-black py-32">
         <div className="container">
           <div className="fade-up text-center mb-20">
-            <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.75rem" }}>What You Get</p>
+            <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.75rem" }}>What You Get</p>
             <h2 style={{ fontSize: "3rem", fontWeight: 700, color: "#fff", letterSpacing: "-0.02em", maxWidth: "600px", margin: "0 auto" }}>
               Benefits of Partnering with Us
             </h2>
@@ -179,7 +186,7 @@ export default function DealershipPage() {
       <section className="bg-cream py-32">
         <div className="container">
           <div className="fade-up text-center mb-20">
-            <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.75rem" }}>How It Works</p>
+            <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.75rem" }}>How It Works</p>
             <h2 style={{ fontSize: "3rem", fontWeight: 700, color: "var(--text-dark)", letterSpacing: "-0.02em" }}>Application Process</h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "3rem" }}>
