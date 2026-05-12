@@ -2352,8 +2352,21 @@ section {
 
 .testimonial-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(1, 1fr);
     gap: 2.5rem;
+    align-items: stretch;
+}
+
+@media (min-width: 768px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .testimonial-card {
@@ -2362,7 +2375,7 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.1);
     overflow: hidden;
     position: relative;
-    height: 600px;
+    height: 100%;
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }

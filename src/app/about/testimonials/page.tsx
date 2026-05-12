@@ -11,29 +11,52 @@ export default function TestimonialsPage() {
     gsap.registerPlugin(ScrollTrigger);
 
     const ctx = gsap.context(() => {
-      gsap.from(".reveal", {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".sub-hero",
-          start: "top 90%",
-        }
+      gsap.utils.toArray(".reveal").forEach((elem: any) => {
+        gsap.fromTo(elem,
+          { y: 30, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: elem,
+              start: "top 90%"
+            }
+          }
+        );
       });
 
-      gsap.from(".testimonial-card", {
-        y: 40,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".testimonial-grid",
-          start: "top 80%",
-        }
+      gsap.utils.toArray(".fade-up").forEach((elem: any) => {
+        gsap.fromTo(elem,
+          { y: 40, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: elem,
+              start: "top 85%"
+            }
+          }
+        );
       });
+
+      gsap.fromTo(".testimonial-card",
+        { y: 40, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.15,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".testimonial-grid",
+            start: "top 80%"
+          }
+        }
+      );
     });
 
     const timeout = setTimeout(() => {
@@ -107,11 +130,10 @@ export default function TestimonialsPage() {
           <div className="testimonial-grid">
             {testimonials.map((t, i) => (
               <div key={i} className="testimonial-card">
-                <Image
+                <img
                   src={t.screenshot}
                   alt={`Testimonial ${i + 1}`}
-                  fill
-                  className="object-cover object-top"
+                  style={{ width: '100%', height: 'auto', display: 'block' }}
                 />
               </div>
             ))}
