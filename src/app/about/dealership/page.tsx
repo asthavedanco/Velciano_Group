@@ -78,7 +78,11 @@ export default function DealershipPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
-    setTimeout(() => setStatus("success"), 1500);
+    setTimeout(() => {
+      setStatus("success");
+      setFormData({ name: "", email: "", phone: "", city: "", state: "", message: "" });
+      setTimeout(() => setStatus("idle"), 3000);
+    }, 1500);
   };
 
   return (
@@ -105,7 +109,7 @@ export default function DealershipPage() {
       {/* Why Partner */}
       <section className="dealer-content bg-cream py-32">
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "6rem", alignItems: "center" }}>
             {/* Image */}
             <div className="fade-up" style={{ position: "relative", height: "560px", borderRadius: "16px", overflow: "hidden", boxShadow: "0 24px 64px rgba(0,0,0,0.12)" }}>
               <Image src="/images/curtain_modern.png" alt="Partnership" fill style={{ objectFit: "cover" }} />
@@ -152,7 +156,7 @@ export default function DealershipPage() {
               Benefits of Partnering with Us
             </h2>
           </div>
-          <div className="benefits-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="benefits-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}>
             {benefits.map((b, i) => (
               <div
                 key={i}
@@ -178,7 +182,7 @@ export default function DealershipPage() {
             <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.75rem" }}>How It Works</p>
             <h2 style={{ fontSize: "3rem", fontWeight: 700, color: "var(--text-dark)", letterSpacing: "-0.02em" }}>Application Process</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "3rem" }}>
             {steps.map((step, i) => (
               <div key={i} className="fade-up" style={{ background: "#fff", borderRadius: "16px", padding: "2.5rem", boxShadow: "0 8px 32px rgba(0,0,0,0.06)", border: "1px solid rgba(0,0,0,0.05)", position: "relative", overflow: "hidden" }}>
                 <span style={{ position: "absolute", top: "1.5rem", right: "1.5rem", fontSize: "4rem", fontWeight: 900, color: "rgba(0,0,0,0.04)", lineHeight: 1 }}>{step.num}</span>
@@ -193,6 +197,58 @@ export default function DealershipPage() {
         </div>
       </section>
 
+      {/* Dealership Application Form */}
+      <section className="inquiry-new bg-white" id="apply" style={{ padding: "6rem 6% 6rem" }}>
+        <div className="inquiry-container fade-up" style={{ alignItems: "stretch" }}>
+          <div className="inquiry-left" style={{ position: "relative", minHeight: "400px", background: "var(--primary)", borderRadius: "16px", padding: "4rem", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <h2 style={{ color: "#fff", fontSize: "2.8rem", fontWeight: 700, marginBottom: "1.5rem", lineHeight: 1.2 }}>Apply Now</h2>
+            <p style={{ color: "rgba(255,255,255,0.9)", fontSize: "1.1rem", marginBottom: "2.5rem", lineHeight: 1.6 }}>Take the first step towards a profitable partnership. Fill out the application form, and our team will get back to you shortly.</p>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1.5rem" }}>
+              <li style={{ display: "flex", alignItems: "center", gap: "1rem", color: "#fff", fontSize: "1.1rem" }}><i className="fa-solid fa-check-circle" style={{ color: "var(--bg-cream)", fontSize: "1.2rem" }}></i> Fast Approval Process</li>
+              <li style={{ display: "flex", alignItems: "center", gap: "1rem", color: "#fff", fontSize: "1.1rem" }}><i className="fa-solid fa-check-circle" style={{ color: "var(--bg-cream)", fontSize: "1.2rem" }}></i> No Advance Deposit</li>
+              <li style={{ display: "flex", alignItems: "center", gap: "1rem", color: "#fff", fontSize: "1.1rem" }}><i className="fa-solid fa-check-circle" style={{ color: "var(--bg-cream)", fontSize: "1.2rem" }}></i> Dedicated Support</li>
+            </ul>
+          </div>
+          <div className="inquiry-right">
+            <h2 className="form-heading" style={{ fontSize: "1.3rem", fontWeight: "800", textTransform: "uppercase", marginBottom: "2.5rem" }}>DEALERSHIP APPLICATION</h2>
+            <form className="inquiry-form-new" onSubmit={handleSubmit}>
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Name:<span>*</span></label>
+                  <input type="text" placeholder="Enter Full Name" required value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} />
+                </div>
+                <div className="form-group">
+                  <label>Email:<span>*</span></label>
+                  <input type="email" placeholder="Enter Email Address" required value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} />
+                </div>
+              </div>
+              <div className="form-row three-col">
+                <div className="form-group">
+                  <label>Phone/WhatsApp:<span>*</span></label>
+                  <input type="text" placeholder="Mobile Number" required value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} />
+                </div>
+                <div className="form-group">
+                  <label>City:<span>*</span></label>
+                  <input type="text" placeholder="City" required value={formData.city} onChange={(e) => setFormData({...formData, city: e.target.value})} />
+                </div>
+                <div className="form-group">
+                  <label>State:<span>*</span></label>
+                  <input type="text" placeholder="State" required value={formData.state} onChange={(e) => setFormData({...formData, state: e.target.value})} />
+                </div>
+              </div>
+              <div className="form-group">
+                <label>Message/Inquiry Details:</label>
+                <textarea placeholder="Tell us about your current business and experience..." value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}></textarea>
+              </div>
+              <button type="submit" className="inquiry-submit-btn" disabled={status === "loading"}>
+                {status === "loading" ? "Submitting..." : status === "success" ? "Submitted Successfully!" : "Submit Application"}
+              </button>
+              {status === "success" && <p style={{ color: "green", marginTop: "1rem", fontWeight: "500" }}>Thank you for your interest! We will contact you soon.</p>}
+            </form>
+          </div>
+        </div>
+      </section>
+
       {/* Products Strip */}
       <section className="bg-cream py-24">
         <div className="container">
@@ -200,7 +256,7 @@ export default function DealershipPage() {
             <h2 style={{ fontSize: "2.5rem", fontWeight: 700, color: "var(--text-dark)", letterSpacing: "-0.02em" }}>Our Product Range</h2>
             <p style={{ fontSize: "1.05rem", color: "#666", marginTop: "1rem" }}>Explore the premium textile collection you will be distributing as a dealer.</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.5rem" }}>
             {[
               { img: "/images/bedsheet_luxury.png", name: "Bedsheets", href: "/collection/bedsheets" },
               { img: "/images/curtain_modern.png", name: "Curtains", href: "/collection/curtains" },
