@@ -26,7 +26,6 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    code: "",
     phone: "",
     subject: "-Select-",
     message: "",
@@ -47,7 +46,7 @@ export default function ContactPage() {
       if (data.success) {
         setStatus("success");
         setResponseMsg(data.message);
-        setFormData({ name: "", email: "", code: "", phone: "", subject: "-Select-", message: "" });
+        setFormData({ name: "", email: "", phone: "", subject: "-Select-", message: "" });
       } else {
         setStatus("error");
         setResponseMsg(data.message);
@@ -59,7 +58,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="sub-page" style={{ backgroundColor: 'var(--bg-cream)' }}>
+    <main className="sub-page bg-cream" style={{ backgroundColor: 'var(--bg-cream)' }}>
       <section className="sub-hero">
         <div className="hero-bg">
           <Image 
@@ -144,21 +143,13 @@ export default function ContactPage() {
                   />
                 </div>
               </div>
-              <div className="form-row three-col">
-                <div className="form-group">
-                  <label>Code:<span>*</span></label>
-                  <input 
-                    type="text" 
-                    placeholder="Code" 
-                    value={formData.code}
-                    onChange={(e) => setFormData({...formData, code: e.target.value})}
-                  />
-                </div>
+              <div className="form-row">
                 <div className="form-group">
                   <label>Phone/WhatsApp:<span>*</span></label>
                   <input 
                     type="text" 
                     placeholder="Mobile Number" 
+                    required
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
                   />
@@ -167,19 +158,23 @@ export default function ContactPage() {
                   <label>Subject:<span>*</span></label>
                   <select 
                     value={formData.subject}
+                    required
                     onChange={(e) => setFormData({...formData, subject: e.target.value})}
                   >
                     <option>-Select-</option>
-                    <option>Gym Mats</option>
-                    <option>Cow Mats</option>
-                    <option>Export Inquiry</option>
+                    <option>Bedsheets</option>
+                    <option>Curtains</option>
+                    <option>Sofa Covers</option>
+                    <option>Pillow Covers</option>
+                    <option>Custom Inquiry</option>
                   </select>
                 </div>
               </div>
               <div className="form-group">
-                <label>Message:</label>
+                <label>Message:<span>*</span></label>
                 <textarea 
                   placeholder="Enter Your Requirements"
+                  required
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
                 ></textarea>

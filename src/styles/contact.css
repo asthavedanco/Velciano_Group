@@ -254,7 +254,7 @@ body {
     align-items: center;
     gap: 15px;
     font-size: 0.95rem;
-    color: #666;
+    color: #666 !important;
     margin-bottom: 1rem;
     font-weight: 500;
 }
@@ -267,12 +267,12 @@ body {
     font-size: 2.2rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
-    color: #111;
+    color: #111 !important;
 }
 .connect-block p {
     font-size: 1.05rem;
     line-height: 1.7;
-    color: #555;
+    color: #555 !important;
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
