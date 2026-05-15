@@ -1,7 +1,9 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/about/manufacturing/page": "app/about/manufacturing/page.js",
   "/about/page": "app/about/page.js",
   "/collection/bedsheets/page": "app/collection/bedsheets/page.js",
+  "/collection/curtains/page": "app/collection/curtains/page.js",
   "/collection/page": "app/collection/page.js",
   "/collection/sofa-covers/page": "app/collection/sofa-covers/page.js",
   "/contact/page": "app/contact/page.js",

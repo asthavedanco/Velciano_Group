@@ -17,10 +17,8 @@ export const metadata: Metadata = {
   title: "Velciano Solutions | Premium Products",
   description: "Velciano - Global leader in high-performance solutions, gym mats, and industrial flooring.",
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/favicon.ico',
-  }
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
