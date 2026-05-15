@@ -185,4 +185,12 @@
   }
 }
 
+.explore-section .explore-btn-badge {
+  color: #000 !important;
+}
+
+.explore-section .explore-btn-badge:hover {
+  color: #fff !important;
+}
+
 /*# sourceMappingURL=src_styles_about_css_0w3-wzy._.single.css.map*/

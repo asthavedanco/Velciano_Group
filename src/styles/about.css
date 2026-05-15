@@ -151,4 +151,13 @@
     .mosaic-text { font-size: 1.2rem; line-height: 1.6; }
     .mosaic-header { margin-bottom: 3rem !important; }
 }
+
+/* Force Explore buttons text to black only in About page */
+.explore-section .explore-btn-badge {
+    color: #000 !important;
+}
+
+.explore-section .explore-btn-badge:hover {
+    color: #fff !important;
+}
 

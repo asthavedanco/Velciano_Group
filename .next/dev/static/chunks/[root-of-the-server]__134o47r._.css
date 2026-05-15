@@ -1572,6 +1572,14 @@ header.scrolled .mega-menu {
   }
 }
 
+.explore-section .explore-btn-badge {
+  color: #000 !important;
+}
+
+.explore-section .explore-btn-badge:hover {
+  color: #fff !important;
+}
+
 /* [project]/src/styles/collection.css [app-client] (css) */
 
 
