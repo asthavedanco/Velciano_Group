@@ -52,27 +52,29 @@ export default function ProductSlider() {
 
       if (!track || !section) return;
 
-      gsap.to(track, {
-        x: () => {
-          const scrollDistance = track.scrollWidth - window.innerWidth;
-          return scrollDistance > 0 ? -scrollDistance - (window.innerWidth * 0.06) : 0;
-        },
-        ease: "none",
-        scrollTrigger: {
-          trigger: section,
-          start: "center center",
-          end: () => `+=${track.scrollWidth}`,
-          pin: true,
-          scrub: 1,
-          invalidateOnRefresh: true,
-          anticipatePin: 1,
-        }
-      });
+      // Calculate how much we need to scroll horizontally
+      const getScrollDistance = () => track.scrollWidth - window.innerWidth + (window.innerWidth * 0.12);
+
+      // Only apply scroll hijacking if the track is wider than the screen
+      if (getScrollDistance() > 0) {
+        gsap.to(track, {
+          x: () => -getScrollDistance(),
+          ease: "none",
+          scrollTrigger: {
+            trigger: section,
+            start: "center center",
+            end: () => `+=${getScrollDistance()}`,
+            pin: true,
+            scrub: 1,
+            invalidateOnRefresh: true,
+            anticipatePin: 1,
+          }
+        });
+      }
     }, sectionRef);
 
     return () => {
       ctx.revert();
-      ScrollTrigger.getAll().forEach(t => t.kill());
     };
   }, []);
 
@@ -89,13 +91,11 @@ export default function ProductSlider() {
             {products.map((p, i) => (
               <div className="product-item" key={i}>
                 <Link href={p.link} className="category-card">
-                  <Image src={p.img} alt={p.title} width={380} height={480} className="product-img" />
+                  <Image src={p.img} alt={p.title} width={500} height={350} className="product-img" />
                   <div className="category-overlay">
-                    <span className="card-label">{p.label}</span>
-                    <h3 className="card-title">{p.title}</h3>
-                    <div className="card-explore">
-                      <span>EXPLORE</span>
-                      <i className="fa-solid fa-arrow-right"></i>
+                    <div className="card-content-wrap">
+                      <span className="card-label">{p.label}</span>
+                      <h3 className="card-title">{p.title}</h3>
                     </div>
                   </div>
                 </Link>

@@ -456,13 +456,13 @@ section {
 
 .category-card {
   background: #111;
-  border-radius: 25px;
-  height: 560px;
+  border-radius: 20px;
+  height: 350px;
   transition: all .6s cubic-bezier(.23, 1, .32, 1);
   display: block;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 50px #00000026;
+  box-shadow: 0 10px 30px #0000001a;
 }
 
 .category-card img {
@@ -477,15 +477,15 @@ section {
 }
 
 .category-overlay {
-  color: #fff;
   z-index: 10;
   pointer-events: none;
-  background: linear-gradient(to top, #000000f2 0%, #00000080 50%, #0000 100%);
+  background: linear-gradient(to top, #000c 0%, #0000004d 60%, #0000 100%);
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
   width: 100%;
-  padding: 2.5rem 3rem;
+  height: 60%;
+  padding: 2rem;
   display: flex;
   position: absolute;
   bottom: 0;
@@ -493,28 +493,20 @@ section {
 }
 
 .card-label {
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  color: var(--primary);
+  color: #fffc;
+  letter-spacing: 1px;
   margin-bottom: .5rem;
-  font-size: .8rem;
-  font-weight: 600;
-  opacity: 1 !important;
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
 }
 
 .card-title {
-  letter-spacing: -.01em;
   color: #fff;
-  text-shadow: 0 2px 10px #0009;
-  margin-bottom: .8rem;
-  font-size: 2.2rem;
+  margin: 0;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.1;
-  opacity: 1 !important;
-}
-
-.card-explore {
-  display: none;
 }
 
 .card-explore i {
@@ -526,30 +518,7 @@ section {
 }
 
 .category-card:hover .category-overlay h3 {
-  color: var(--text-dark);
-}
-
-.category-card:hover .category-overlay p {
-  opacity: 1;
-  color: #000000b3;
-  transform: translateY(0);
-}
-
-.category-overlay .btn-link {
-  color: var(--primary);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: var(--transition-fast);
-  align-items: center;
-  gap: 10px;
-  font-size: .8rem;
-  font-weight: 800;
-  text-decoration: none;
-  display: inline-flex;
-}
-
-.category-card:hover .btn-link, .category-card:hover .btn-link i {
-  color: #000 !important;
+  color: #fff;
 }
 
 .stats {
@@ -747,9 +716,9 @@ section {
 }
 
 .product-item {
-  flex: 0 0 380px;
-  height: 480px;
-  margin-right: 3rem;
+  flex: 0 0 500px;
+  height: 350px;
+  margin-right: 2rem;
 }
 
 .slider-controls {

@@ -16,6 +16,11 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Velciano Solutions | Premium Products",
   description: "Velciano - Global leader in high-performance solutions, gym mats, and industrial flooring.",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
+  }
 };
 
 export default function RootLayout({

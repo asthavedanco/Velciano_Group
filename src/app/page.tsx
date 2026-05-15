@@ -178,7 +178,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Inquiry Section */}
       <section className="inquiry-new" id="contact" data-theme="light">
         <div className="inquiry-container">
