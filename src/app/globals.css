@@ -774,6 +774,60 @@ section {
     width: 100%;
 }
 
+.slider-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 20;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    outline: none;
+}
+
+.slider-nav-btn i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.slider-nav-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(199, 154, 78, 0.35);
+}
+
+.slider-nav-btn.prev-btn {
+    left: 2rem;
+}
+
+.slider-nav-btn.next-btn {
+    right: 2rem;
+}
+
+.slider-nav-btn.prev-btn:hover i {
+    transform: translateX(-3px);
+}
+
+.slider-nav-btn.next-btn:hover i {
+    transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+    .slider-nav-btn {
+        display: none;
+    }
+}
+
 .product-track {
     display: flex;
     gap: 3rem;

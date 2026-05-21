@@ -1,4 +1,10 @@
 {
-  "/about/page": "app/about/page.js",
+  "/about/global-demand/page": "app/about/global-demand/page.js",
+  "/about/manufacturing/page": "app/about/manufacturing/page.js",
+  "/collection/bedsheets/page": "app/collection/bedsheets/page.js",
+  "/collection/curtains/page": "app/collection/curtains/page.js",
+  "/collection/page": "app/collection/page.js",
+  "/collection/sofa-covers/page": "app/collection/sofa-covers/page.js",
+  "/export/page": "app/export/page.js",
   "/page": "app/page.js"
 }

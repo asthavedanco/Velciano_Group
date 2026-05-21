@@ -64,8 +64,9 @@ export default function Footer() {
           </a>
           <div className="f-socials">
             <Link href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-youtube"></i></Link>
-            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></Link>
-            <Link href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin-in"></i></Link>
+            <Link href="https://www.instagram.com/velcianogroup" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i></Link>
+            <Link href="https://www.linkedin.com/in/vansh-chug-velciano-bedsheets-flatbedsheet-hotellinen-cottonbedsheets-printedbedsheets-duvetcover/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin-in"></i></Link>
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-facebook-f"></i></Link>
           </div>
         </div>
         <div className="fm-col fm-contact-col">
@@ -82,7 +83,7 @@ export default function Footer() {
       </div>
 
       {/* Download Badge */}
-      <a href="/Velciano%20Catalouge.pdf" download="Velciano_Catalogue.pdf" className="download-badge" style={{ textDecoration: 'none', color: 'inherit', display: 'flex' }}>
+      <a href="/COMPANY%20PROFILE%20VELCIANO.pdf" download="COMPANY_PROFILE_VELCIANO.pdf" className="download-badge" style={{ textDecoration: 'none', color: 'inherit', display: 'flex' }}>
         <div className="badge-inner">
           <i className="fa-solid fa-file-pdf"></i>
           <span>PROFILE<br />DOWNLOAD</span>

@@ -19,6 +19,17 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest(".has-submenu") && !target.closest(".has-mega")) {
+        setActiveSubMenu(null);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
   const handleLinkHover = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const img = e.currentTarget.getAttribute("data-image");
     if (img) {
@@ -28,13 +39,12 @@ export default function Header() {
 
   const toggleSubMenu = (menu: string, e: React.MouseEvent) => {
     if (window.innerWidth <= 1024) {
+      e.preventDefault();
+      e.stopPropagation();
       if (activeSubMenu !== menu) {
-        e.preventDefault();
-        e.stopPropagation();
         setActiveSubMenu(menu);
       } else {
-        // If already active, navigate and close menu
-        closeMenu();
+        setActiveSubMenu(null);
       }
     }
   };
@@ -68,7 +78,19 @@ export default function Header() {
           <li>
             <Link href="/" onClick={closeMenu}>HOME</Link>
           </li>
-          <li className={`has-submenu ${activeSubMenu === "about" ? "mm-active" : ""}`}>
+          <li 
+            className={`has-submenu ${activeSubMenu === "about" ? "mm-active" : ""}`}
+            onMouseEnter={() => {
+              if (window.innerWidth > 1024) {
+                setActiveSubMenu("about");
+              }
+            }}
+            onMouseLeave={() => {
+              if (window.innerWidth > 1024) {
+                setActiveSubMenu(null);
+              }
+            }}
+          >
             <Link 
               href="/about" 
               className="menu-toggle"
@@ -78,16 +100,28 @@ export default function Header() {
             </Link>
             <ul className="submenu">
               <li className="mm-only"><Link href="/about" onClick={closeMenu} style={{ fontWeight: '800', color: 'var(--primary) !important' }}>About Overview</Link></li>
-              <li><Link href="/about/manufacturing" onClick={closeMenu}>Manufacturing</Link></li>
+              <li><Link href="/about/why-us" onClick={closeMenu}>Why Velciano</Link></li>
+              <li><Link href="/about/manufacturing" onClick={closeMenu}>Velciano Workshop</Link></li>
               <li><Link href="/about/dealership" onClick={closeMenu}>Dealership</Link></li>
+              <li><Link href="/about/csr" onClick={closeMenu}>CSR Activities</Link></li>
               <li><Link href="/about/testimonials" onClick={closeMenu}>Testimonials</Link></li>
-              <li><Link href="/about/why-us" onClick={closeMenu}>Why Us</Link></li>
-              <li><Link href="/about/global-demand" onClick={closeMenu}>Global Demand</Link></li>
-              <li><Link href="/about/csr" onClick={closeMenu}>CSR</Link></li>
               <li><Link href="/about/certification" onClick={closeMenu}>Certification</Link></li>
+              <li><Link href="/about/global-demand" onClick={closeMenu}>Global Demand</Link></li>
             </ul>
           </li>
-          <li className={`has-mega ${activeSubMenu === "collection" ? "mm-active" : ""}`}>
+          <li 
+            className={`has-mega ${activeSubMenu === "collection" ? "mm-active" : ""}`}
+            onMouseEnter={() => {
+              if (window.innerWidth > 1024) {
+                setActiveSubMenu("collection");
+              }
+            }}
+            onMouseLeave={() => {
+              if (window.innerWidth > 1024) {
+                setActiveSubMenu(null);
+              }
+            }}
+          >
             <Link 
               href="/collection" 
               className="menu-toggle"

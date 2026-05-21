@@ -45,6 +45,46 @@ export default function ProductSlider() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
 
+  const scrollSlider = (direction: 'prev' | 'next') => {
+    const track = trackRef.current;
+    const section = sectionRef.current;
+    if (!track || !section) return;
+
+    const scrollDistance = track.scrollWidth - window.innerWidth + (window.innerWidth * 0.12);
+    if (scrollDistance <= 0) return;
+
+    const st = ScrollTrigger.getAll().find(instance => instance.trigger === section);
+    if (!st) {
+      // Fallback if ScrollTrigger is not ready/active
+      const scrollAmount = 520;
+      track.scrollBy({
+        left: direction === 'next' ? scrollAmount : -scrollAmount,
+        behavior: 'smooth'
+      });
+      return;
+    }
+
+    const progress = st.progress;
+    const steps = products.length - 1;
+    const currentStep = Math.round(progress * steps);
+
+    let targetStep = currentStep;
+    if (direction === 'next') {
+      targetStep = Math.min(currentStep + 1, steps);
+    } else {
+      targetStep = Math.max(currentStep - 1, 0);
+    }
+
+    const startScroll = st.start;
+    const targetProgress = targetStep / steps;
+    const targetScroll = startScroll + targetProgress * scrollDistance + (targetStep > 0 ? 2 : 0);
+
+    window.scrollTo({
+      top: targetScroll,
+      behavior: 'smooth'
+    });
+  };
+
   useEffect(() => {
     let ctx = gsap.context(() => {
       const track = trackRef.current;
@@ -87,6 +127,22 @@ export default function ProductSlider() {
         </div>
         
         <div className="product-slider-container">
+          <button 
+            className="slider-nav-btn prev-btn" 
+            onClick={() => scrollSlider('prev')}
+            aria-label="Previous categories"
+          >
+            <i className="fa-solid fa-chevron-left"></i>
+          </button>
+          
+          <button 
+            className="slider-nav-btn next-btn" 
+            onClick={() => scrollSlider('next')}
+            aria-label="Next categories"
+          >
+            <i className="fa-solid fa-chevron-right"></i>
+          </button>
+
           <div className="product-track" ref={trackRef}>
             {products.map((p, i) => (
               <div className="product-item" key={i}>

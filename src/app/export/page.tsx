@@ -95,22 +95,9 @@ export default function ExportPage() {
       <section className="fade-up" style={{ background: 'var(--glass)', padding: '8rem 0', textAlign: 'center', borderTop: '1px solid var(--glass-border)', borderBottom: '1px solid var(--glass-border)' }}>
         <div className="container">
           <h2 style={{ fontSize: '3.5rem', fontWeight: 300, color: 'var(--text-white)', maxWidth: '900px', margin: '0 auto', lineHeight: 1.3, letterSpacing: '-0.02em' }}>
-            Exporting to over <span style={{ color: 'var(--primary)', fontWeight: 700 }}>40 countries</span> worldwide, ensuring uncompromising quality and reliability.
+            Exporting to over <span style={{ color: 'var(--primary)', fontWeight: 700 }}>20+ countries</span> worldwide, ensuring uncompromising quality and reliability.
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem', marginTop: '5rem' }}>
-             <div style={{ padding: '2rem', border: '1px solid var(--glass-border)', borderRadius: '12px' }}>
-                <h3 style={{ fontSize: '3rem', color: 'var(--primary)', marginBottom: '1rem', fontWeight: 700 }}>100+</h3>
-                <p style={{ color: 'var(--text-white)', fontSize: '1.25rem' }}>Global Partners</p>
-             </div>
-             <div style={{ padding: '2rem', border: '1px solid var(--glass-border)', borderRadius: '12px' }}>
-                <h3 style={{ fontSize: '3rem', color: 'var(--primary)', marginBottom: '1rem', fontWeight: 700 }}>15+</h3>
-                <p style={{ color: 'var(--text-white)', fontSize: '1.25rem' }}>Years of Export</p>
-             </div>
-             <div style={{ padding: '2rem', border: '1px solid var(--glass-border)', borderRadius: '12px' }}>
-                <h3 style={{ fontSize: '3rem', color: 'var(--primary)', marginBottom: '1rem', fontWeight: 700 }}>10K+</h3>
-                <p style={{ color: 'var(--text-white)', fontSize: '1.25rem' }}>Shipments Delivered</p>
-             </div>
-          </div>
+          
         </div>
       </section>
 

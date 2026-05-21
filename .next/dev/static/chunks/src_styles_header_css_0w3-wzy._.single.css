@@ -110,7 +110,7 @@ nav {
   box-shadow: 0 15px 30px #0000001a;
 }
 
-.has-submenu:hover .submenu {
+.has-submenu.mm-active .submenu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -165,7 +165,7 @@ header.scrolled .mega-menu {
   top: 100%;
 }
 
-.has-mega:hover .mega-menu {
+.has-mega.mm-active .mega-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -230,7 +230,7 @@ header.scrolled .mega-menu {
   transition: transform 1s, opacity .3s;
 }
 
-.has-mega:hover .mega-image img {
+.has-mega.mm-active .mega-image img {
   transform: scale(1.05);
 }
 
