@@ -38,14 +38,12 @@ export default function Header() {
   };
 
   const toggleSubMenu = (menu: string, e: React.MouseEvent) => {
-    if (window.innerWidth <= 1024) {
-      e.preventDefault();
-      e.stopPropagation();
-      if (activeSubMenu !== menu) {
-        setActiveSubMenu(menu);
-      } else {
-        setActiveSubMenu(null);
-      }
+    e.preventDefault();
+    e.stopPropagation();
+    if (activeSubMenu !== menu) {
+      setActiveSubMenu(menu);
+    } else {
+      setActiveSubMenu(null);
     }
   };
 
@@ -78,19 +76,7 @@ export default function Header() {
           <li>
             <Link href="/" onClick={closeMenu}>HOME</Link>
           </li>
-          <li 
-            className={`has-submenu ${activeSubMenu === "about" ? "mm-active" : ""}`}
-            onMouseEnter={() => {
-              if (window.innerWidth > 1024) {
-                setActiveSubMenu("about");
-              }
-            }}
-            onMouseLeave={() => {
-              if (window.innerWidth > 1024) {
-                setActiveSubMenu(null);
-              }
-            }}
-          >
+          <li className={`has-submenu ${activeSubMenu === "about" ? "mm-active" : ""}`}>
             <Link 
               href="/about" 
               className="menu-toggle"
@@ -99,7 +85,7 @@ export default function Header() {
               ABOUT <i className="fa-solid fa-chevron-down mm-icon"></i>
             </Link>
             <ul className="submenu">
-              <li className="mm-only"><Link href="/about" onClick={closeMenu} style={{ fontWeight: '800', color: 'var(--primary) !important' }}>About Overview</Link></li>
+              <li><Link href="/about" onClick={closeMenu} style={{ fontWeight: '800', color: 'var(--primary)' }}>About Overview</Link></li>
               <li><Link href="/about/why-us" onClick={closeMenu}>Why Velciano</Link></li>
               <li><Link href="/about/manufacturing" onClick={closeMenu}>Velciano Workshop</Link></li>
               <li><Link href="/about/dealership" onClick={closeMenu}>Dealership</Link></li>
@@ -109,19 +95,7 @@ export default function Header() {
               <li><Link href="/about/global-demand" onClick={closeMenu}>Global Demand</Link></li>
             </ul>
           </li>
-          <li 
-            className={`has-mega ${activeSubMenu === "collection" ? "mm-active" : ""}`}
-            onMouseEnter={() => {
-              if (window.innerWidth > 1024) {
-                setActiveSubMenu("collection");
-              }
-            }}
-            onMouseLeave={() => {
-              if (window.innerWidth > 1024) {
-                setActiveSubMenu(null);
-              }
-            }}
-          >
+          <li className={`has-mega ${activeSubMenu === "collection" ? "mm-active" : ""}`}>
             <Link 
               href="/collection" 
               className="menu-toggle"
@@ -134,7 +108,7 @@ export default function Header() {
                 <div className="mega-links">
                   <span className="mega-label">OUR PRODUCTS</span>
                   <ul>
-                    <li className="mm-only"><Link href="/collection" onClick={closeMenu} style={{ fontWeight: '800', color: 'var(--primary) !important' }}>Collection Overview</Link></li>
+                    <li><Link href="/collection" onClick={closeMenu} style={{ fontWeight: '800', color: 'var(--primary)' }}>Collection Overview</Link></li>
                     <li><Link href="/collection/bedsheets" data-image="images/bedsheet_luxury.png" onMouseEnter={handleLinkHover} onClick={closeMenu}>BEDSHEETS</Link></li>
                     <li><Link href="/collection/curtains" data-image="images/curtain_modern.png" onMouseEnter={handleLinkHover} onClick={closeMenu}>CURTAINS</Link></li>
                     <li><Link href="/collection/sofa-covers" data-image="images/sofa_cover_luxury.png" onMouseEnter={handleLinkHover} onClick={closeMenu}>SOFA COVERS</Link></li>

@@ -6,8 +6,8 @@ export default function CollaborateSection() {
     <section className="collaborate-cta">
       <div className="cta-bg">
         <Image 
-          src="/images/bedsheet_floral.png" 
-          alt="Home Textile Collection" 
+          src="/images/shaking_hands_business_cta_1776849464795.png" 
+          alt="Shaking Hands Business Collaboration" 
           fill
           className="object-cover parallax-cta"
         />

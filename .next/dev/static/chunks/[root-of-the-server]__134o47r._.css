@@ -4916,6 +4916,7 @@ section {
   padding: 2rem 0;
   position: relative;
   overflow: hidden;
+  background-color: #000 !important;
 }
 
 .team-card {
@@ -4932,11 +4933,11 @@ section {
 }
 
 .team-main-title {
-  color: var(--text-dark);
+  color: var(--text-white);
 }
 
 .member-img-wrap {
-  background: #fff;
+  background: #f5f5f7;
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -4955,7 +4956,7 @@ section {
 
 .team-member h3 {
   letter-spacing: -.01em;
-  color: #000;
+  color: var(--text-white);
   margin-top: 1.5rem;
   font-size: 1.25rem;
   font-weight: 700;
@@ -4967,7 +4968,7 @@ section {
   margin-top: .5rem;
   font-size: .75rem;
   font-weight: 600;
-  color: #666 !important;
+  color: #fff9 !important;
 }
 
 .team-header {

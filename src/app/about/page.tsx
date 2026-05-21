@@ -126,7 +126,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="team-section pb-32 pt-0 bg-cream">
+      <section className="team-section pb-32 pt-0 bg-black">
         <div className="container">
           <div className="team-card reveal">
             <div className="team-header text-center mb-20">
@@ -137,7 +137,7 @@ export default function AboutPage() {
             <div className="team-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-20">
               <div className="team-member text-center">
                 <div className="member-img-wrap mb-10 mx-auto">
-                  <Image src="/images/amit.jpeg" alt="Amit Chug" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
+                  <Image src="/images/amit.png" alt="Amit Chug" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
                 </div>
                 <h3 className="text-xl font-bold mb-2" >Amit Chug</h3>
                 <p className="text-gray-500 font-medium mt-2">Founder</p>
@@ -145,7 +145,7 @@ export default function AboutPage() {
 
               <div className="team-member text-center">
                 <div className="member-img-wrap mb-10">
-                  <Image src="/images/Nachiket.jpeg" alt="Nachiket Patel" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
+                  <Image src="/images/Nachiket.png" alt="Nachiket Patel" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
                 </div>
                 <h3 className="text-xl font-bold mb-2" >Nachiket Patel</h3>
                 <p className="text-gray-500 font-medium mt-2">Co-Founder</p>
@@ -153,7 +153,7 @@ export default function AboutPage() {
 
               <div className="team-member text-center">
                 <div className="member-img-wrap mb-10 mx-auto">
-                  <Image src="/images/vansh.jpeg" alt="Vansh Chug" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
+                  <Image src="/images/vansh.png" alt="Vansh Chug" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
                 </div>
                 <h3 className="text-xl font-bold mb-2" >Vansh Chug</h3>
                 <p className="text-gray-500 font-medium mt-2">Global Business Head</p>
@@ -161,7 +161,7 @@ export default function AboutPage() {
 
               <div className="team-member text-center">
                 <div className="member-img-wrap mb-10 mx-auto">
-                  <Image src="/images/Khush.jpeg" alt="Khush Patel" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
+                  <Image src="/images/Khush.png" alt="Khush Patel" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
                 </div>
                 <h3 className="text-xl font-bold mb-2" >Khush Patel</h3>
                 <p className="text-gray-500 font-medium mt-2">Regional Business & R&D Head</p>

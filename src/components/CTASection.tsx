@@ -27,8 +27,8 @@ export default function CTASection() {
     <section className="cta-section relative h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image 
-          src="/images/bedsheet_floral.png" 
-          alt="Collaborate" 
+          src="/images/shaking_hands_business_cta_1776849464795.png" 
+          alt="Shaking Hands Business Collaboration" 
           fill 
           className="object-cover"
         />
