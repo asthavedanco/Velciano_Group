@@ -5,6 +5,9 @@ import Image from "next/image";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import dynamic from "next/dynamic";
+
+const WorldMap = dynamic(() => import("./WorldMap"), { ssr: false });
 
 export default function ExportPage() {
   useEffect(() => {
@@ -97,7 +100,19 @@ export default function ExportPage() {
           <h2 style={{ fontSize: '3.5rem', fontWeight: 300, color: 'var(--text-white)', maxWidth: '900px', margin: '0 auto', lineHeight: 1.3, letterSpacing: '-0.02em' }}>
             Exporting to over <span style={{ color: 'var(--primary)', fontWeight: 700 }}>20+ countries</span> worldwide, ensuring uncompromising quality and reliability.
           </h2>
-          
+        </div>
+      </section>
+
+      {/* Global Presence Map Section */}
+      <section className="fade-up" style={{ padding: '8rem 0', backgroundColor: '#050505', borderBottom: '1px solid var(--glass-border)' }}>
+        <div className="container text-center">
+          <h2 style={{ fontSize: '3rem', fontWeight: 800, color: 'var(--text-white)', marginBottom: '1.5rem', letterSpacing: '-1.5px' }}>
+            Velciano Global Reach
+          </h2>
+          <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', maxWidth: '800px', margin: '0 auto 4rem', lineHeight: 1.7 }}>
+            Our bespoke luxury bedsheets, curtains, and fine home textiles are exported to some of the world's most sophisticated markets. Hover over highlighted countries to discover our premium presence.
+          </p>
+          <WorldMap />
         </div>
       </section>
 

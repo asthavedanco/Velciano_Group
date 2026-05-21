@@ -150,13 +150,13 @@
     width: 320px;
     height: 420px;
     transform-style: preserve-3d;
-    transform: rotateX(25deg) rotateY(-20deg) rotateZ(-5deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
 }
 
 .catalogue-book-wrap:hover .book {
-    transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 }
 
 .book-cover {
@@ -194,35 +194,46 @@
     border-radius: 4px 8px 8px 4px;
 }
 
-.catalogue-book-wrap:hover .book-cover {
-    transform: rotateY(-110deg);
+/* Stacked page effect & transition logic — parent .book handles the 3D tilt */
+.book-cover:nth-child(2) {
+    z-index: 20;
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), filter 1s ease;
+    transition-delay: 0.4s; /* Closes last */
 }
 
-/* Stacked page effect — simple offsets only, parent .book handles the 3D tilt */
 .book-cover:nth-child(3) {
     z-index: 18;
     transform: translateX(5px) translateY(3px);
     filter: brightness(0.85);
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), filter 1s ease;
+    transition-delay: 0.2s; /* Closes second */
 }
 
 .book-cover:nth-child(4) {
     z-index: 16;
     transform: translateX(10px) translateY(6px);
     filter: brightness(0.72);
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), filter 1s ease;
+    transition-delay: 0s; /* Closes first */
 }
 
-/* On hover: only the first (top) cover flips open */
+/* On hover: pages flip open turn by turn (fanning out beautifully) */
 .catalogue-book-wrap:hover .book-cover:nth-child(2) {
-    transform: rotateY(-110deg);
+    transform: rotateY(-140deg);
+    transition-delay: 0s; /* Opens first */
+    filter: brightness(1);
 }
 
-/* Keep the other covers in their stacked position during hover */
 .catalogue-book-wrap:hover .book-cover:nth-child(3) {
-    transform: translateX(5px) translateY(3px);
+    transform: rotateY(-120deg);
+    transition-delay: 0.2s; /* Opens second */
+    filter: brightness(0.95);
 }
 
 .catalogue-book-wrap:hover .book-cover:nth-child(4) {
-    transform: translateX(10px) translateY(6px);
+    transform: rotateY(-100deg);
+    transition-delay: 0.4s; /* Opens third */
+    filter: brightness(0.9);
 }
 
 .book-page-base {
@@ -569,12 +580,9 @@
     .book {
         width: 280px;
         height: 380px;
-        transform: rotateX(15deg) rotateY(-10deg);
+        transform: rotateX(0deg) rotateY(0deg);
     }
 
-    .catalogue-book-wrap:hover .book-cover {
-        transform: rotateY(-140deg);
-    }
 
     .featured-title {
         font-size: 2.8rem;

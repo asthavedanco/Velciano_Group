@@ -1827,10 +1827,11 @@ section {
 
 .sub-hero .hero-subtitle {
     font-size: clamp(1.1rem, 2vw, 1.3rem);
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.95) !important;
     max-width: 600px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.6;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .breadcrumb {
@@ -2824,13 +2825,15 @@ section {
     line-height: 1;
     margin-bottom: 1.5rem;
     letter-spacing: -2px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-.hero-subtitle {
+.sub-hero .hero-subtitle {
     font-size: clamp(1.1rem, 2vw, 1.4rem);
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
     max-width: 600px;
     font-weight: 500;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 @media (max-width: 768px) {

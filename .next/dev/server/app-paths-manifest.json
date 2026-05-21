@@ -5,6 +5,8 @@
   "/collection/curtains/page": "app/collection/curtains/page.js",
   "/collection/page": "app/collection/page.js",
   "/collection/sofa-covers/page": "app/collection/sofa-covers/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/e-catalogue/page": "app/e-catalogue/page.js",
   "/export/page": "app/export/page.js",
   "/page": "app/page.js"
 }

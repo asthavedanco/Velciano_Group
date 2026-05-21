@@ -85,7 +85,7 @@ export default function ECataloguePage() {
               <h2 className="featured-title">Download<br /><span>Catalogue</span></h2>
               <p className="featured-desc">Download our comprehensive e-catalogue to explore our full range of high-quality home textile products. Find detailed information, specifications, and options to meet your needs.</p>
               
-              <a href="/Velciano_Catalogue.pdf" download className="download-file-btn">
+              <a href="/Velciano_Catalogue.pdf" download="Velciano Catalogue.pdf" className="download-file-btn">
                 <div className="btn-arrow"><i className="fa-solid fa-arrow-down"></i></div>
                 <div className="btn-text">DOWNLOAD<br />FILE</div>
                 <div className="btn-pdf-icon"><i className="fa-solid fa-file-pdf"></i></div>
