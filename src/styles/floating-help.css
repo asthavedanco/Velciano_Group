@@ -1,0 +1,226 @@
+/* Floating Help Button Stack CSS */
+
+.floating-help-container {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 99999; /* Ensure it stays above everything, including footer download badge */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 14px;
+    pointer-events: none; /* Let clicks pass through container gaps */
+}
+
+/* Individual buttons base style */
+.floating-help-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                box-shadow 0.3s ease, 
+                opacity 0.3s ease,
+                background-color 0.3s ease;
+    pointer-events: auto; /* Enable clicks on the buttons itself */
+}
+
+.floating-help-btn:hover {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.floating-help-btn:active {
+    transform: scale(0.95);
+}
+
+/* Main Trigger Button */
+.floating-help-trigger {
+    width: 56px;
+    height: 56px;
+    background: var(--primary-gradient); /* Theme Gold gradient */
+    font-size: 1.5rem;
+    padding: 0;
+    overflow: hidden;
+}
+
+.floating-help-trigger:hover {
+    background: var(--primary);
+    box-shadow: 0 8px 25px rgba(177, 125, 38, 0.45); /* Gold-tinted premium shadow */
+}
+
+/* Icon transition wrapper */
+.floating-help-trigger .icon-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-help-trigger .trigger-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                opacity 0.4s ease;
+}
+
+/* Closed State (Help icon visible, close icon hidden) */
+.floating-help-trigger .icon-close {
+    opacity: 0;
+    transform: scale(0.6) rotate(-90deg);
+}
+
+.floating-help-trigger .icon-help {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+/* Open State (Help icon hidden, close icon visible) */
+.floating-help-container.open .floating-help-trigger .icon-close {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+.floating-help-container.open .floating-help-trigger .icon-help {
+    opacity: 0;
+    transform: scale(0.6) rotate(90deg);
+}
+
+/* Stack Option Buttons */
+.floating-help-option {
+    width: 48px;
+    height: 48px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.7);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                opacity 0.3s ease, 
+                visibility 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Open states for option buttons with Staggered Delays */
+.floating-help-container.open .floating-help-option {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+/* Cascading pop-up delays (WhatsApp is closest, LinkedIn is furthest) */
+.floating-help-container.open .floating-help-option.whatsapp-btn {
+    transition-delay: 0.05s;
+}
+
+.floating-help-container.open .floating-help-option.linkedin-btn {
+    transition-delay: 0.1s;
+}
+
+/* Cascading collapse delays (reverse order for closing) */
+.floating-help-container:not(.open) .floating-help-option.whatsapp-btn {
+    transition-delay: 0.05s;
+}
+
+.floating-help-container:not(.open) .floating-help-option.linkedin-btn {
+    transition-delay: 0s;
+}
+
+/* WhatsApp Button styling */
+.floating-help-option.whatsapp-btn {
+    background-color: #25d366; /* WhatsApp Green */
+    font-size: 1.4rem;
+}
+
+.floating-help-option.whatsapp-btn:hover {
+    background-color: #20ba5a;
+}
+
+/* LinkedIn Button styling */
+.floating-help-option.linkedin-btn {
+    background-color: #0a66c2; /* LinkedIn Blue */
+    font-size: 1.3rem;
+}
+
+.floating-help-option.linkedin-btn:hover {
+    background-color: #08529c;
+}
+
+/* Custom Premium Tooltips */
+.floating-help-btn .btn-tooltip {
+    position: absolute;
+    left: calc(100% + 14px);
+    top: 50%;
+    transform: translateY(-50%) translateX(-10px);
+    background-color: rgba(17, 17, 17, 0.95);
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: opacity 0.25s ease, 
+                transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                visibility 0.25s ease;
+}
+
+/* Tooltip Little Arrow pointing to the left */
+.floating-help-btn .btn-tooltip::after {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(17, 17, 17, 0.95) transparent transparent;
+}
+
+.floating-help-btn:hover .btn-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .floating-help-container {
+        bottom: 20px;
+        left: 20px;
+        gap: 10px;
+    }
+
+    .floating-help-trigger {
+        width: 48px;
+        height: 48px;
+        font-size: 1.3rem;
+    }
+
+    .floating-help-option {
+        width: 40px;
+        height: 40px;
+        font-size: 1.15rem;
+    }
+
+    /* Hide tooltips on mobile since there is no hover, keeping it clean */
+    .floating-help-btn .btn-tooltip {
+        display: none;
+    }
+}
