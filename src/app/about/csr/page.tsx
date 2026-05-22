@@ -70,7 +70,7 @@ export default function CSRPage() {
   }, []);
 
   return (
-    <main>
+    <main className="sub-page">
       {/* Hero Section */}
       <section className="sub-hero">
         <div className="hero-bg">
@@ -97,7 +97,7 @@ export default function CSRPage() {
       </section>
 
       {/* Intro Section */}
-      <section style={{ background: 'var(--bg-cream)', padding: '8rem 6%' }}>
+      <section className="bg-cream" style={{ background: 'var(--bg-cream)', padding: '8rem 6%' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '6rem', alignItems: 'center' }}>
             <div className="reveal">
@@ -118,25 +118,42 @@ export default function CSRPage() {
       </section>
 
       {/* Initiatives Grid */}
-      <section style={{ background: '#fff', padding: '6rem 6%' }}>
+      <section style={{ background: '#000000', padding: '6rem 6%' }}>
         <div className="container">
-          <div className="init-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}>
+          <div className="init-grid">
             {initiatives.map((init, i) => (
               <div key={i} className="init-card" style={{
-                background: '#fcfcfc',
-                padding: '3rem 2rem',
+                background: 'rgba(255, 255, 255, 0.04)',
+                padding: '3.5rem 2.5rem',
                 borderRadius: '24px',
-                border: '1px solid #eee',
+                border: '1px solid rgba(255, 255, 255, 0.08)',
                 textAlign: 'center',
                 display: 'flex',
                 flexDirection: 'column',
-                height: '100%'
-              }}>
-                <div style={{ width: '60px', height: '60px', borderRadius: '50%', background: 'var(--bg-cream)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 2rem', flexShrink: 0 }}>
-                  <i className={`fa-solid ${init.icon}`} style={{ color: 'var(--primary)', fontSize: '1.5rem' }}></i>
+                height: '100%',
+                backdropFilter: 'blur(8px)',
+                WebkitBackdropFilter: 'blur(8px)',
+                transition: 'all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)',
+              }}
+              >
+                <div className="init-icon-circle" style={{ 
+                  width: '64px', 
+                  height: '64px', 
+                  borderRadius: '50%', 
+                  background: 'linear-gradient(135deg, var(--bg-cream) 0%, #e0d4bb 100%)', 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center', 
+                  margin: '0 auto 2rem', 
+                  flexShrink: 0,
+                  boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
+                  transition: 'transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)'
+                }}
+                >
+                  <i className={`fa-solid ${init.icon}`} style={{ color: 'var(--primary)', fontSize: '1.6rem' }}></i>
                 </div>
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#000', marginBottom: '1rem' }}>{init.title}</h3>
-                <p style={{ fontSize: '0.95rem', lineHeight: '1.6', color: '#666', marginTop: 'auto' }}>{init.desc}</p>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 700, color: '#ffffff', marginBottom: '1.2rem', letterSpacing: '0.02em' }}>{init.title}</h3>
+                <p style={{ fontSize: '0.98rem', lineHeight: '1.7', color: 'rgba(255, 255, 255, 0.7)', marginTop: 'auto' }}>{init.desc}</p>
               </div>
             ))}
           </div>
@@ -144,7 +161,7 @@ export default function CSRPage() {
       </section>
 
       {/* Photo Gallery */}
-      <section style={{ background: 'var(--bg-cream)', padding: '8rem 6%' }}>
+      <section className="bg-cream" style={{ background: 'var(--bg-cream)', padding: '8rem 6%' }}>
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '5rem' }}>
             <span style={{ color: 'var(--primary)', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Gallery</span>
@@ -157,10 +174,10 @@ export default function CSRPage() {
             gap: '2rem' 
           }}>
             {[
-              { src: "/images/csr_giving_ball.png", alt: "Supporting Local Youth", span: "row-span-2" },
-              { src: "/images/csr_smiling_children.png", alt: "Community Smiles" },
-              { src: "/images/csr_girl_reading.png", alt: "Empowering Education" },
-              { src: "/images/csr_hands_grains.png", alt: "Nourishing Communities" }
+              { src: "/images/CSR1.jpeg",alt: "CSR",span: "row-span-2" },
+              { src: "/images/CSR2.jpeg",alt: "CSR" },
+              { src: "/images/CSR3.jpeg",alt: "CSR" },
+              { src: "/images/CSR4.jpeg",alt: "CSR" }
             ].map((img, i) => (
               <div key={i} className="reveal" style={{ 
                 position: 'relative', 

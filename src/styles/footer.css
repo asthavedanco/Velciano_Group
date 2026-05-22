@@ -191,21 +191,33 @@
 /* Download Badge */
 .download-badge {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
-    width: 100px;
-    height: 100px;
+    bottom: 25px;
+    right: 25px;
+    width: 96px;
+    height: 96px;
     z-index: 9999;
     pointer-events: auto;
     transition: var(--transition);
-    mix-blend-mode: difference;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     --badge-txt: #ffffff;
-    --badge-inner-clr: #ffffff;
-    --badge-icon-clr: #ffffff;
+}
+
+.download-badge.light-bg-detected {
+    --badge-txt: #000000;
+}
+
+.download-badge.dark-bg-detected {
+    --badge-txt: #ffffff;
 }
 
 .download-badge:hover {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.08) translateY(-4px);
 }
 
 .badge-inner {
@@ -213,26 +225,29 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: var(--badge-inner-clr);
     z-index: 2;
-    transition: color 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #111111;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 4px;
 }
 
-.badge-inner i {
-    font-size: 1.2rem;
-    margin-bottom: 2px;
-    color: var(--badge-icon-clr);
-    transition: color 0.4s ease;
+.badge-memoji {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
 }
 
-.badge-inner span {
-    display: block;
-    font-size: 0.40rem;
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
+.download-badge:hover .badge-memoji {
+    transform: scale(1.15);
 }
 
 .download-badge svg {
@@ -305,10 +320,14 @@
     }
 
     .download-badge {
-        width: 80px;
-        height: 80px;
+        width: 72px;
+        height: 72px;
         bottom: 15px;
         right: 15px;
+    }
+    .badge-inner {
+        width: 36px;
+        height: 36px;
     }
     .badge-inner i {
         font-size: 1rem;

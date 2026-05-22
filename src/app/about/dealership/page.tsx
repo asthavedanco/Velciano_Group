@@ -121,7 +121,7 @@ export default function DealershipPage() {
             <div className="fade-up" style={{ position: "relative", height: "560px", borderRadius: "16px", overflow: "hidden", boxShadow: "0 24px 64px rgba(0,0,0,0.12)" }}>
               <Image src="/images/curtain_modern.png" alt="Partnership" fill style={{ objectFit: "cover" }} />
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 55%)" }}></div>
-              <div style={{ position: "absolute", bottom: "2.5rem", left: "2.5rem", right: "2.5rem" }}>
+              <div className="image-overlay-content" style={{ position: "absolute", bottom: "2.5rem", left: "2.5rem", right: "2.5rem" }}>
                 <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.85rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Trusted Partner Network</p>
                 <h3 style={{ color: "#fff", fontSize: "1.6rem", fontWeight: 700, lineHeight: 1.3 }}>Join the Velciano dealer family and grow together</h3>
               </div>
@@ -205,7 +205,7 @@ export default function DealershipPage() {
       </section>
 
       {/* Dealership Application Form */}
-      <section className="inquiry-new bg-white" id="apply" style={{ padding: "6rem 6% 6rem" }}>
+      <section className="inquiry-new inquiry-dark" id="apply" style={{ padding: "6rem 6% 6rem", backgroundColor: "#000000" }}>
         <div className="inquiry-container fade-up" style={{ alignItems: "stretch" }}>
           <div className="inquiry-left" style={{ position: "relative", minHeight: "400px", background: "var(--primary)", borderRadius: "16px", padding: "4rem", display: "flex", flexDirection: "column", justifyContent: "center" }}>
             <h2 style={{ color: "#fff", fontSize: "2.8rem", fontWeight: 700, marginBottom: "1.5rem", lineHeight: 1.2 }}>Apply Now</h2>

@@ -732,7 +732,7 @@ section {
 
 /* Redundant Section Styles Cleanup */
 .products-carousel {
-    background: #fff;
+    background: #000000;
     padding: 6rem 0;
     overflow: hidden;
     height: auto;
@@ -765,7 +765,7 @@ section {
     font-size: clamp(3rem, 6vw, 4.5rem);
     font-weight: 800;
     line-height: 1.1;
-    color: #000;
+    color: #ffffff;
     letter-spacing: -0.04em;
 }
 
@@ -1402,6 +1402,70 @@ section {
     background: #000;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   Dark Theme Overrides for Dealership / Contact Inquiry Section
+   ========================================================================== */
+.inquiry-dark {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.inquiry-dark .form-heading {
+    color: #ffffff !important;
+}
+
+.inquiry-dark .form-group label {
+    color: #ffffff !important;
+}
+
+.inquiry-dark .inquiry-form-new input,
+.inquiry-dark .inquiry-form-new select,
+.inquiry-dark .inquiry-form-new textarea {
+    color: #ffffff !important;
+    border-bottom-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.inquiry-dark .inquiry-form-new input::placeholder,
+.inquiry-dark .inquiry-form-new textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+    opacity: 1;
+}
+
+.inquiry-dark .inquiry-form-new input::-webkit-input-placeholder,
+.inquiry-dark .inquiry-form-new textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.inquiry-dark .inquiry-form-new input::-moz-placeholder,
+.inquiry-dark .inquiry-form-new textarea::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.inquiry-dark .inquiry-form-new input:focus,
+.inquiry-dark .inquiry-form-new select:focus,
+.inquiry-dark .inquiry-form-new textarea:focus {
+    border-bottom-color: var(--primary) !important;
+}
+
+.inquiry-dark .inquiry-submit-btn {
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #ffffff !important;
+    border-radius: 4px;
+}
+
+.inquiry-dark .inquiry-submit-btn:hover {
+    background: var(--primary-light) !important;
+    border-color: var(--primary-light) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(177, 125, 38, 0.2);
+}
+
+.inquiry-dark .inquiry-left ul li i {
+    color: var(--bg-cream) !important;
+    font-size: 1.2rem !important;
 }
 
 /* Responsive Inquiry */
@@ -2878,4 +2942,111 @@ section {
 
 .sub-page .btn-gold {
     color: #ffffff !important;
+}
+
+/* Image Overlay Content Specificity Overrides */
+.bg-cream .image-overlay-content h3,
+.image-overlay-content h3 {
+    color: #ffffff !important;
+}
+
+.bg-cream .image-overlay-content p,
+.image-overlay-content p {
+    color: var(--primary) !important;
+}
+
+/* Responsive Initiatives Grid */
+.init-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .init-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .init-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 639px) {
+    .init-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
+   CSR Initiatives Card High-Specificity Overrides & Hover Effects
+   ========================================================================== */
+.sub-page .init-card {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.sub-page .init-card:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: var(--primary) !important;
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(177, 125, 38, 0.2) !important;
+}
+
+.sub-page .init-card h3,
+.bg-cream .init-card h3,
+.bg-white .init-card h3,
+.init-card h3 {
+    color: #ffffff !important;
+    transition: color 0.3s ease !important;
+}
+
+.sub-page .init-card:hover h3 {
+    color: var(--primary) !important;
+}
+
+.sub-page .init-card p,
+.bg-cream .init-card p,
+.bg-white .init-card p,
+.init-card p {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.sub-page .init-icon-circle,
+.bg-cream .init-icon-circle,
+.bg-white .init-icon-circle,
+.init-icon-circle {
+    background: linear-gradient(135deg, var(--bg-cream) 0%, #e0d4bb 100%) !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease !important;
+}
+
+.sub-page .init-card:hover .init-icon-circle {
+    transform: scale(1.15) rotate(5deg) !important;
+    box-shadow: 0 12px 24px rgba(177, 125, 38, 0.35) !important;
+}
+
+.sub-page .init-icon-circle i,
+.bg-cream .init-icon-circle i,
+.bg-white .init-icon-circle i,
+.init-icon-circle i {
+    color: var(--primary) !important;
+}
+
+/* Button Link & Collection Card Legibility Styles */
+.btn-link {
+    color: var(--primary) !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease !important;
+}
+
+.btn-link:hover {
+    color: var(--primary-light) !important;
+}
+
+a.collection-card-wrap {
+    text-decoration: none !important;
+    color: inherit !important;
 }
