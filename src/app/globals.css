@@ -2095,6 +2095,11 @@ section {
     color: var(--text-dark);
 }
 
+.bg-dark, .bg-black {
+    background-color: #000000 !important;
+    color: var(--text-white) !important;
+}
+
 .bg-cream .circular-cta {
     border-color: rgba(0, 0, 0, 0.15);
     color: var(--text-dark);

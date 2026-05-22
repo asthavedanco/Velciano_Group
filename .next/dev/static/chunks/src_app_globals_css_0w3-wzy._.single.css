@@ -1984,6 +1984,11 @@ section {
   color: var(--text-dark);
 }
 
+.bg-dark, .bg-black {
+  color: var(--text-white) !important;
+  background-color: #000 !important;
+}
+
 .bg-cream .circular-cta {
   color: var(--text-dark);
   border-color: #00000026;
