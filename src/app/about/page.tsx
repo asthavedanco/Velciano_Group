@@ -145,7 +145,7 @@ export default function AboutPage() {
 
               <div className="team-member text-center">
                 <div className="member-img-wrap mb-10">
-                  <Image src="/images/Nachiket.png" alt="Nachiket Patel" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
+                  <Image src="/images/nachiket.png" alt="Nachiket Patel" width={200} height={200} className="rounded-full object-cover object-top transition-all duration-500 mx-auto" />
                 </div>
                 <h3 className="text-xl font-bold mb-2" >Nachiket Patel</h3>
                 <p className="text-gray-500 font-medium mt-2">Co-Founder</p>
