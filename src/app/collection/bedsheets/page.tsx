@@ -20,7 +20,9 @@ export default function BedsheetsPage() {
         { name: "Luxury Silk Edition", price: "$120", image: "/images/bedsheet_luxury.png" },
         { name: "Floral Cotton Series", price: "$85", image: "/images/bedsheet_floral.png" },
         { name: "Minimalist Linen Set", price: "$95", image: "/images/bedsheet_luxury.png" },
-        { name: "Royal Velvet Collection", price: "$150", image: "/images/bedsheet_floral.png" }
+        { name: "Royal Velvet Collection", price: "$150", image: "/images/bedsheet_floral.png" },
+        { name: "Jacquard Collection", price: "$130", image: "/images/bedsheet_jacquard.png" },
+        { name: "Dyed Collection", price: "$110", image: "/images/bedsheet_dyed.png" }
       ]}
       applications={[
         "Luxury Hotels and Resorts",

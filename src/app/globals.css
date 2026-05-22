@@ -2960,6 +2960,29 @@ section {
     color: var(--primary) !important;
 }
 
+/* Category Overlay Text Specificity Overrides inside bg-cream */
+.bg-cream .category-overlay h3 {
+    color: #ffffff !important;
+}
+
+.bg-cream .collection-card-wrap:hover .category-overlay h3,
+.bg-cream .category-card:hover .category-overlay h3 {
+    color: #F2C876 !important; /* High-contrast bright gold on hover */
+}
+
+.bg-cream .category-overlay p {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.bg-cream .category-overlay .btn-link {
+    color: var(--primary-light) !important; /* High-visibility gold */
+}
+
+.bg-cream .collection-card-wrap:hover .category-overlay .btn-link,
+.bg-cream .category-card:hover .category-overlay .btn-link {
+    color: #F2C876 !important; /* Elegant bright gold on hover */
+}
+
 /* Responsive Initiatives Grid */
 .init-grid {
     display: grid;

@@ -1,0 +1,274 @@
+/* E-Catalogue Business Head Section CSS */
+
+.business-head-section {
+    position: relative;
+    background-color: var(--bg-cream); /* Premium Cream Background */
+    color: var(--text-dark); /* Contrast dark typography */
+    padding: 8rem var(--container-px);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Technical Drafting Grid Overlay */
+.business-head-bg-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(177, 125, 38, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(177, 125, 38, 0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.business-head-container {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 6rem;
+    align-items: center;
+    z-index: 2;
+}
+
+/* Left Column - Portrait Image */
+.business-head-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Frame grid design matching screenshot */
+.business-head-left::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 120px;
+    height: 120px;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1) 2px, transparent 2px);
+    background-size: 16px 16px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.portrait-container {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    height: 520px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: transparent;
+    z-index: 2;
+}
+
+.portrait-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.6s ease;
+}
+
+.portrait-container:hover .portrait-image {
+    transform: scale(1.03);
+}
+
+/* Right Column - Content details */
+.business-head-right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.business-head-label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: rgba(177, 125, 38, 0.85); /* Secondary gold accent */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.business-head-label::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 1.5px;
+    background-color: rgba(177, 125, 38, 0.5);
+}
+
+.business-head-title {
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    line-height: 1.15;
+    margin-bottom: 1.8rem;
+    color: var(--text-dark);
+    letter-spacing: -1.5px;
+}
+
+.business-head-title b {
+    font-weight: 800;
+    color: #111111;
+}
+
+.business-head-title span {
+    font-weight: 300;
+    color: #555555;
+    font-family: inherit;
+}
+
+.business-head-desc {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+    margin-bottom: 3.5rem;
+    max-width: 620px;
+}
+
+/* 3D Isometric Buttons container */
+.business-head-buttons {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* 3D Isometric Button Base styles */
+.btn-3d {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 36px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transform: rotate(-10deg) skew(15deg);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                background-color 0.3s ease;
+}
+
+/* 3D LinkedIn Button (Blue) */
+.btn-3d.linkedin-3d {
+    background-color: #0a66c2;
+    color: #ffffff;
+    box-shadow: -6px 6px 0px #064b90, -12px 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-3d.linkedin-3d:hover {
+    background-color: #0d73da;
+    transform: translate(-6px, -6px) rotate(-10deg) skew(15deg);
+    box-shadow: -12px 12px 0px #064b90, -24px 24px 30px rgba(0, 0, 0, 0.25);
+}
+
+.btn-3d.linkedin-3d:active {
+    transform: translate(2px, -2px) rotate(-10deg) skew(15deg);
+    box-shadow: -4px 4px 0px #064b90, -8px 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-3d.linkedin-3d i {
+    font-size: 1.15rem;
+}
+
+/* 3D WhatsApp Button (White) */
+.btn-3d.whatsapp-3d {
+    background-color: #ffffff;
+    color: #111111;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: -6px 6px 0px #cfcfcf, -12px 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-3d.whatsapp-3d:hover {
+    background-color: #fafafa;
+    transform: translate(-6px, -6px) rotate(-10deg) skew(15deg);
+    box-shadow: -12px 12px 0px #cfcfcf, -24px 24px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn-3d.whatsapp-3d:active {
+    transform: translate(2px, -2px) rotate(-10deg) skew(15deg);
+    box-shadow: -4px 4px 0px #cfcfcf, -8px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-3d.whatsapp-3d i {
+    color: #25d366; /* Authentic WhatsApp Green for icon */
+    font-size: 1.25rem;
+}
+
+
+/* 📱 Responsive styling */
+@media (max-width: 1024px) {
+    .business-head-container {
+        gap: 3.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .business-head-section {
+        padding: 6rem 5%;
+    }
+
+    .business-head-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .business-head-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .business-head-label {
+        justify-content: center;
+    }
+
+    .portrait-container {
+        max-width: 100%;
+        height: 480px;
+    }
+
+    .business-head-buttons {
+        flex-direction: column;
+        gap: 2.2rem;
+        width: 100%;
+        max-width: 320px;
+        align-items: stretch;
+    }
+
+    .btn-3d {
+        transform: none; /* Flatten skew on mobile for easy tap accuracy */
+        justify-content: center;
+        padding: 18px 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-3d.linkedin-3d:hover,
+    .btn-3d.whatsapp-3d:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-3d.linkedin-3d:active,
+    .btn-3d.whatsapp-3d:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+}

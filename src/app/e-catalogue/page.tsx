@@ -5,6 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "@/styles/business-head.css";
+import CollaborateSection from "@/components/CollaborateSection";
+import BusinessHeadSection from "@/components/BusinessHeadSection";
 
 export default function ECataloguePage() {
   useEffect(() => {
@@ -95,7 +98,9 @@ export default function ECataloguePage() {
         </div>
       </section>
 
-
+      {/* Collaborate & Connect sections placed explicitly to control order */}
+      <CollaborateSection forceRender={true} />
+      <BusinessHeadSection />
 
     </main>
   );

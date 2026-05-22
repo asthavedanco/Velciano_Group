@@ -1,7 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-export default function CollaborateSection() {
+interface CollaborateSectionProps {
+  forceRender?: boolean;
+}
+
+export default function CollaborateSection({ forceRender = false }: CollaborateSectionProps) {
+  const pathname = usePathname();
+
+  // If we are on the E-Catalogue page and this is being rendered in the global slot, bypass it.
+  // This allows the page itself to render this CTA explicitly to order sections correctly.
+  if (pathname === "/e-catalogue" && !forceRender) {
+    return null;
+  }
+
   return (
     <section className="collaborate-cta">
       <div className="cta-bg">

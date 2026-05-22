@@ -2814,6 +2814,26 @@ section {
   color: var(--primary) !important;
 }
 
+.bg-cream .category-overlay h3 {
+  color: #fff !important;
+}
+
+.bg-cream .collection-card-wrap:hover .category-overlay h3, .bg-cream .category-card:hover .category-overlay h3 {
+  color: #f2c876 !important;
+}
+
+.bg-cream .category-overlay p {
+  color: #ffffffd9 !important;
+}
+
+.bg-cream .category-overlay .btn-link {
+  color: var(--primary-light) !important;
+}
+
+.bg-cream .collection-card-wrap:hover .category-overlay .btn-link, .bg-cream .category-card:hover .category-overlay .btn-link {
+  color: #f2c876 !important;
+}
+
 .init-grid {
   gap: 2rem;
   display: grid;
