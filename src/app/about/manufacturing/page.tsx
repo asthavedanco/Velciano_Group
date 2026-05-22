@@ -110,9 +110,9 @@ export default function ManufacturingPage() {
       {/* Intro Section */}
       <section className="mfg-content bg-cream" style={{ background: "var(--bg-cream)", padding: "7rem 6%" }}>
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(420px, 1fr))", gap: "6rem", alignItems: "center" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 400px), 1fr))", gap: "clamp(2rem, 6vw, 6rem)", alignItems: "center" }}>
             {/* Image */}
-            <div className="fade-up" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: '12px', height: '520px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.12)' }}>
+            <div className="fade-up" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: '12px', height: 'clamp(320px, 50vh, 520px)', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.12)' }}>
               <div style={{ position: 'relative', borderRadius: '8px', overflow: 'hidden' }}>
                 <Image src="/images/bedsheet_luxury.png" alt="Bedsheets" fill style={{ objectFit: 'cover' }} />
               </div>
@@ -132,7 +132,7 @@ export default function ManufacturingPage() {
               <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "1rem" }}>
                 Our Facilities
               </p>
-              <h2 style={{ fontSize: "2.8rem", fontWeight: 700, lineHeight: 1.2, color: "var(--text-dark)", marginBottom: "1.5rem", letterSpacing: "-0.02em" }}>
+              <h2 style={{ fontSize: "clamp(2rem, 5vw, 2.8rem)", fontWeight: 700, lineHeight: 1.2, color: "var(--text-dark)", marginBottom: "1.5rem", letterSpacing: "-0.02em" }}>
                 Our Manufacturing &amp; Processing Facilities
               </h2>
               <p style={{ fontSize: "1.15rem", lineHeight: 1.8, color: "#555", marginBottom: "1rem" }}>
@@ -153,12 +153,12 @@ export default function ManufacturingPage() {
             <p style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
               What Sets Us Apart
             </p>
-            <h2 style={{ fontSize: "3rem", fontWeight: 700, color: "#fff", letterSpacing: "-0.02em" }}>
+            <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3rem)", fontWeight: 700, color: "#fff", letterSpacing: "-0.02em" }}>
               Key Features
             </h2>
           </div>
 
-          <div className="features-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}>
+          <div className="features-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "2rem" }}>
             {keyFeatures.map((feature, i) => (
               <div
                 key={i}
@@ -197,13 +197,13 @@ export default function ManufacturingPage() {
       {/* Quality Control Section */}
       <section style={{ background: '#111', padding: '7rem 6%' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(420px, 1fr))', gap: '6rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: 'clamp(2rem, 6vw, 6rem)', alignItems: 'center' }}>
             {/* Text */}
             <div className="fade-up">
               <p style={{ color: 'var(--primary)', fontWeight: 700, fontSize: '0.9rem', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '1rem' }}>
                 Zero Compromise
               </p>
-              <h2 style={{ fontSize: '2.8rem', fontWeight: 700, lineHeight: 1.2, color: '#fff', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
+              <h2 style={{ fontSize: 'clamp(2rem, 5vw, 2.8rem)', fontWeight: 700, lineHeight: 1.2, color: '#fff', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
                 Quality Control &amp; Assurance
               </h2>
               <p style={{ fontSize: '1.1rem', lineHeight: 1.8, color: 'rgba(255,255,255,0.6)', marginBottom: '2rem' }}>
@@ -228,7 +228,7 @@ export default function ManufacturingPage() {
             </div>
 
             {/* Image */}
-            <div className="fade-up" style={{ display: 'flex', flexDirection: 'column', gap: '12px', height: '560px' }}>
+            <div className="fade-up" style={{ display: 'flex', flexDirection: 'column', gap: '12px', height: 'clamp(320px, 50vh, 560px)' }}>
               <div style={{ position: 'relative', flex: 2, borderRadius: '12px', overflow: 'hidden' }}>
                 <Image src="/images/curtain_geometric.png" alt="Quality Control" fill style={{ objectFit: 'cover' }} />
               </div>
@@ -248,12 +248,12 @@ export default function ManufacturingPage() {
       {/* Packaging Highlight */}
       <section className="bg-cream" style={{ background: "var(--bg-cream)", padding: "7rem 6%" }}>
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))", gap: "6rem", alignItems: "center" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 400px), 1fr))", gap: "clamp(2rem, 6vw, 6rem)", alignItems: "center" }}>
             <div className="fade-up">
               <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "1rem" }}>
                 Packaging &amp; Delivery
               </p>
-              <h2 style={{ fontSize: "2.8rem", fontWeight: 700, color: "var(--text-dark)", marginBottom: "1.5rem", letterSpacing: "-0.02em" }}>
+              <h2 style={{ fontSize: "clamp(2rem, 5vw, 2.8rem)", fontWeight: 700, color: "var(--text-dark)", marginBottom: "1.5rem", letterSpacing: "-0.02em" }}>
                 Customized Packaging
               </h2>
               <p style={{ fontSize: "1.1rem", color: "#555", lineHeight: 1.8, marginBottom: "2rem" }}>
@@ -271,7 +271,7 @@ export default function ManufacturingPage() {
               </ul>
             </div>
 
-            <div className="fade-up" style={{ position: 'relative', height: '480px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.12)' }}>
+            <div className="fade-up" style={{ position: 'relative', height: 'clamp(300px, 45vh, 480px)', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 60px rgba(0,0,0,0.12)' }}>
               <Image
                 src="/images/sofa_cover_luxury.png"
                 alt="Premium Packaging"

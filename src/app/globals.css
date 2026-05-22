@@ -1023,8 +1023,8 @@ section {
 /* Blog Section */
 .blog-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+    gap: clamp(1.5rem, 4vw, 3rem);
 }
 
 .blog-card {
@@ -1776,7 +1776,8 @@ section {
         gap: 2rem;
     }
 
-    .form-row {
+    .form-row,
+    .form-row.three-col {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -2530,7 +2531,7 @@ section {
     }
 
     .testimonial-card {
-        height: 450px;
+        height: auto;
     }
 }
 
@@ -2538,7 +2539,7 @@ section {
 /* Certification & Card Styles */
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
     gap: 2rem;
 }
 
@@ -3078,3 +3079,72 @@ a.collection-card-wrap {
     text-decoration: none !important;
     color: inherit !important;
 }
+
+/* ==========================================================================
+   Comprehensive Responsiveness Upgrades (Antigravity Updates)
+   ========================================================================== */
+
+/* Sub-hero responsiveness padding corrections */
+@media (max-width: 768px) {
+    .sub-hero {
+        height: auto !important;
+        min-height: 280px !important;
+    }
+    .sub-hero .container {
+        padding-top: 7rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+}
+
+/* Category grid & product slider card overrides on Tablet/Mobile */
+@media (max-width: 1024px) {
+    .products-carousel {
+        padding: 5rem 0 !important;
+        min-height: auto !important;
+    }
+    
+    .product-slider-container {
+        overflow-x: auto !important;
+        padding-bottom: 2rem !important;
+        -webkit-overflow-scrolling: touch !important;
+        scroll-snap-type: x mandatory !important;
+        scrollbar-width: none !important; /* Hide Firefox scrollbar */
+    }
+    
+    .product-slider-container::-webkit-scrollbar {
+        display: none !important; /* Hide Safari/Chrome scrollbar */
+    }
+    
+    .product-track {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        width: max-content !important;
+        padding-left: var(--container-px) !important;
+        padding-right: var(--container-px) !important;
+        gap: 1.5rem !important;
+    }
+    
+    .product-item {
+        flex: 0 0 min(80vw, 320px) !important; /* Advanced fluid scaling */
+        height: 380px !important;
+        margin-right: 0 !important;
+        scroll-snap-align: start !important;
+    }
+
+    .product-item .category-card {
+        height: 100% !important;
+        width: 100% !important;
+    }
+    
+    .slider-nav-btn {
+        display: none !important; /* Hide arrow controls on touch screens */
+    }
+}
+
+/* general layout grid gaps corrections on mobile */
+@media (max-width: 768px) {
+    /* Compress extreme structural gaps inside subpages */
+    .gap-12, .gap-16, .gap-8 {
+        gap: clamp(1.5rem, 4vw, 2.5rem) !important;
+    }
+}

@@ -131,13 +131,13 @@ export default function WhyUsPage() {
       <section style={{ background: '#111', padding: '8rem 6%' }}>
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '6rem' }}>
-            <h2 style={{ fontSize: '3rem', fontWeight: 700, color: '#fff' }}>The Velciano Advantage</h2>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 6vw, 3rem)', fontWeight: 700, color: '#fff' }}>The Velciano Advantage</h2>
             <p style={{ color: 'rgba(255,255,255,0.5)', marginTop: '1rem', fontSize: '1.1rem' }}>Comprehensive support and quality at every touchpoint.</p>
           </div>
           
           <div className="feat-grid" style={{ 
             display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 
+            gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', 
             gap: '1.5rem' 
           }}>
             {features.map((feat, i) => (

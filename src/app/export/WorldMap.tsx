@@ -183,7 +183,7 @@ export default function WorldMap() {
         id="chartdiv"
         style={{
           width: "100%",
-          height: "550px",
+          height: "clamp(300px, 50vh, 550px)",
           maxWidth: "1200px",
           background: "transparent",
           position: "relative",

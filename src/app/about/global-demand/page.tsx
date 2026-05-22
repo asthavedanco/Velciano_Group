@@ -92,14 +92,14 @@ export default function GlobalDemandPage() {
       {/* Stats/Intro Section */}
       <section style={{ background: 'var(--bg-cream)', padding: '8rem 6%' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '6rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: 'clamp(2rem, 6vw, 6rem)', alignItems: 'center' }}>
             <div className="reveal">
               <span style={{ color: 'var(--primary)', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Market Outlook</span>
-              <h2 style={{ fontSize: '3rem', fontWeight: 700, margin: '1.5rem 0', color: '#000', lineHeight: 1.2 }}>The Global Textile Renaissance</h2>
+              <h2 style={{ fontSize: 'clamp(2.2rem, 6vw, 3rem)', fontWeight: 700, margin: '1.5rem 0', color: '#000', lineHeight: 1.2 }}>The Global Textile Renaissance</h2>
               <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#444', marginBottom: '2rem' }}>
                 The international appetite for authentic, high-thread-count Indian textiles is at an all-time high. India's rich heritage in weaving, combined with modern manufacturing excellence, has positioned the country as the premier destination for home decor sourcing.
               </p>
-              <div style={{ display: 'flex', gap: '3rem' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'clamp(1.5rem, 5vw, 3rem)' }}>
                 <div>
                   <h4 style={{ fontSize: '2.5rem', fontWeight: 800, color: 'var(--primary)' }}>40+</h4>
                   <p style={{ color: '#666', fontWeight: 500 }}>Countries Reached</p>
@@ -110,7 +110,7 @@ export default function GlobalDemandPage() {
                 </div>
               </div>
             </div>
-            <div className="reveal" style={{ position: 'relative', height: '500px', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.15)' }}>
+            <div className="reveal" style={{ position: 'relative', height: 'clamp(300px, 50vh, 500px)', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.15)' }}>
               <Image src="/images/bedsheet_floral.png" alt="Global Export" fill className="object-cover" />
               <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.6), transparent)' }}></div>
               <div style={{ position: 'absolute', bottom: '2.5rem', left: '2.5rem' }}>
@@ -125,13 +125,13 @@ export default function GlobalDemandPage() {
       <section style={{ background: '#000', padding: '8rem 6%' }}>
         <div className="container">
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '5rem' }}>
-            <h2 style={{ fontSize: '3rem', fontWeight: 700, color: '#fff' }}>Strategic Advantages</h2>
+            <h2 style={{ fontSize: 'clamp(2.2rem, 6vw, 3rem)', fontWeight: 700, color: '#fff' }}>Strategic Advantages</h2>
             <p style={{ color: 'rgba(255,255,255,0.5)', marginTop: '1rem', fontSize: '1.1rem' }}>Why Velciano is the preferred choice for international partners.</p>
           </div>
           
           <div className="points-grid" style={{ 
             display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', 
             gap: '2.5rem' 
           }}>
             {keyPoints.map((point, i) => (
@@ -155,7 +155,7 @@ export default function GlobalDemandPage() {
       {/* Dealer Opportunity Section */}
       <section style={{ background: 'var(--bg-cream)', padding: '8rem 6%' }}>
         <div className="container" style={{ textAlign: 'center', maxWidth: '900px', margin: '0 auto' }}>
-          <h2 className="reveal" style={{ fontSize: '2.8rem', fontWeight: 700, color: '#000', marginBottom: '2rem' }}>Perfect for Dealers & Distributors</h2>
+          <h2 className="reveal" style={{ fontSize: 'clamp(2rem, 5vw, 2.8rem)', fontWeight: 700, color: '#000', marginBottom: '2rem' }}>Perfect for Dealers & Distributors</h2>
           <p className="reveal" style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#333', marginBottom: '3rem' }}>
             We provide the scale, quality consistency, and export documentation support needed to dominate your local market. Partner with us to tap into the booming demand for premium Indian home textiles.
           </p>

@@ -120,8 +120,8 @@ export default function Home() {
         <div className="why-new-grid">
           <div className="why-new-left">
             <div className="why-header-combo">
-              <h1 style={{ fontSize: "4rem", lineHeight: "0.8", marginBottom: "0" }}>Why</h1>
-              <h2 style={{ fontSize: "4rem", fontWeight: "300", marginTop: "0", color: "#333" }}>Choose Us</h2>
+              <h1 style={{ fontSize: "clamp(2.5rem, 8vw, 4rem)", lineHeight: "0.8", marginBottom: "0" }}>Why</h1>
+              <h2 style={{ fontSize: "clamp(2.5rem, 8vw, 4rem)", fontWeight: "300", marginTop: "0", color: "#333" }}>Choose Us</h2>
             </div>
             <div className="why-long-text">
               <p>Explore the benefits of choosing Velciano Group for your home textile needs. With strong industry expertise and a commitment to quality, we deliver products that combine comfort, durability, and modern design.</p>

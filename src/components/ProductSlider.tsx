@@ -86,7 +86,9 @@ export default function ProductSlider() {
   };
 
   useEffect(() => {
-    let ctx = gsap.context(() => {
+    let mm = gsap.matchMedia(sectionRef);
+
+    mm.add("(min-width: 1025px)", () => {
       const track = trackRef.current;
       const section = sectionRef.current;
 
@@ -111,10 +113,10 @@ export default function ProductSlider() {
           }
         });
       }
-    }, sectionRef);
+    });
 
     return () => {
-      ctx.revert();
+      mm.revert();
     };
   }, []);
 

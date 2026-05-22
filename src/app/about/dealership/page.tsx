@@ -116,9 +116,9 @@ export default function DealershipPage() {
       {/* Why Partner */}
       <section className="dealer-content bg-cream py-32">
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))", gap: "6rem", alignItems: "center" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 350px), 1fr))", gap: "clamp(2rem, 6vw, 6rem)", alignItems: "center" }}>
             {/* Image */}
-            <div className="fade-up" style={{ position: "relative", height: "560px", borderRadius: "16px", overflow: "hidden", boxShadow: "0 24px 64px rgba(0,0,0,0.12)" }}>
+            <div className="fade-up" style={{ position: "relative", height: "clamp(320px, 50vh, 560px)", borderRadius: "16px", overflow: "hidden", boxShadow: "0 24px 64px rgba(0,0,0,0.12)" }}>
               <Image src="/images/curtain_modern.png" alt="Partnership" fill style={{ objectFit: "cover" }} />
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 55%)" }}></div>
               <div className="image-overlay-content" style={{ position: "absolute", bottom: "2.5rem", left: "2.5rem", right: "2.5rem" }}>
@@ -130,7 +130,7 @@ export default function DealershipPage() {
             {/* Text */}
             <div className="fade-up">
               <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "1rem" }}>Grow with Us</p>
-              <h2 style={{ fontSize: "2.8rem", fontWeight: 700, lineHeight: 1.2, color: "var(--text-dark)", marginBottom: "1.5rem", letterSpacing: "-0.02em" }}>
+              <h2 style={{ fontSize: "clamp(2rem, 5vw, 2.8rem)", fontWeight: 700, lineHeight: 1.2, color: "var(--text-dark)", marginBottom: "1.5rem", letterSpacing: "-0.02em" }}>
                 Why Partner With Velciano
               </h2>
               <p style={{ fontSize: "1.1rem", lineHeight: 1.8, color: "#555", marginBottom: "2.5rem" }}>
@@ -159,11 +159,11 @@ export default function DealershipPage() {
         <div className="container">
           <div className="fade-up text-center mb-20">
             <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.75rem" }}>What You Get</p>
-            <h2 style={{ fontSize: "3rem", fontWeight: 700, color: "#fff", letterSpacing: "-0.02em", maxWidth: "600px", margin: "0 auto" }}>
+            <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3rem)", fontWeight: 700, color: "#fff", letterSpacing: "-0.02em", maxWidth: "600px", margin: "0 auto" }}>
               Benefits of Partnering with Us
             </h2>
           </div>
-          <div className="benefits-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}>
+          <div className="benefits-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "2rem" }}>
             {benefits.map((b, i) => (
               <div
                 key={i}
@@ -187,9 +187,9 @@ export default function DealershipPage() {
         <div className="container">
           <div className="fade-up text-center mb-20">
             <p className="primary-text" style={{ color: "var(--primary)", fontWeight: 700, fontSize: "0.9rem", letterSpacing: "0.15em", textTransform: "uppercase", marginBottom: "0.75rem" }}>How It Works</p>
-            <h2 style={{ fontSize: "3rem", fontWeight: 700, color: "var(--text-dark)", letterSpacing: "-0.02em" }}>Application Process</h2>
+            <h2 style={{ fontSize: "clamp(2.2rem, 6vw, 3rem)", fontWeight: 700, color: "var(--text-dark)", letterSpacing: "-0.02em" }}>Application Process</h2>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "3rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "clamp(1.5rem, 4vw, 3rem)" }}>
             {steps.map((step, i) => (
               <div key={i} className="fade-up" style={{ background: "#fff", borderRadius: "16px", padding: "2.5rem", boxShadow: "0 8px 32px rgba(0,0,0,0.06)", border: "1px solid rgba(0,0,0,0.05)", position: "relative", overflow: "hidden" }}>
                 <span style={{ position: "absolute", top: "1.5rem", right: "1.5rem", fontSize: "4rem", fontWeight: 900, color: "rgba(0,0,0,0.04)", lineHeight: 1 }}>{step.num}</span>
@@ -207,8 +207,8 @@ export default function DealershipPage() {
       {/* Dealership Application Form */}
       <section className="inquiry-new inquiry-dark" id="apply" style={{ padding: "6rem 6% 6rem", backgroundColor: "#000000" }}>
         <div className="inquiry-container fade-up" style={{ alignItems: "stretch" }}>
-          <div className="inquiry-left" style={{ position: "relative", minHeight: "400px", background: "var(--primary)", borderRadius: "16px", padding: "4rem", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            <h2 style={{ color: "#fff", fontSize: "2.8rem", fontWeight: 700, marginBottom: "1.5rem", lineHeight: 1.2 }}>Apply Now</h2>
+          <div className="inquiry-left" style={{ position: "relative", minHeight: "clamp(300px, 45vh, 400px)", background: "var(--primary)", borderRadius: "16px", padding: "clamp(1.5rem, 5vw, 4rem)", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <h2 style={{ color: "#fff", fontSize: "clamp(2rem, 5vw, 2.8rem)", fontWeight: 700, marginBottom: "1.5rem", lineHeight: 1.2 }}>Apply Now</h2>
             <p style={{ color: "rgba(255,255,255,0.9)", fontSize: "1.1rem", marginBottom: "2.5rem", lineHeight: 1.6 }}>Take the first step towards a profitable partnership. Fill out the application form, and our team will get back to you shortly.</p>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1.5rem" }}>
               <li style={{ display: "flex", alignItems: "center", gap: "1rem", color: "#fff", fontSize: "1.1rem" }}><i className="fa-solid fa-check-circle" style={{ color: "var(--bg-cream)", fontSize: "1.2rem" }}></i> Fast Approval Process</li>
@@ -260,10 +260,10 @@ export default function DealershipPage() {
       <section className="bg-cream py-24">
         <div className="container">
           <div className="fade-up" style={{ textAlign: "center", marginBottom: "3rem" }}>
-            <h2 style={{ fontSize: "2.5rem", fontWeight: 700, color: "var(--text-dark)", letterSpacing: "-0.02em" }}>Our Product Range</h2>
+            <h2 style={{ fontSize: "clamp(1.8rem, 5vw, 2.5rem)", fontWeight: 700, color: "var(--text-dark)", letterSpacing: "-0.02em" }}>Our Product Range</h2>
             <p style={{ fontSize: "1.05rem", color: "#666", marginTop: "1rem" }}>Explore the premium textile collection you will be distributing as a dealer.</p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.5rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px), 1fr))", gap: "1.5rem" }}>
             {[
               { img: "/images/bedsheet_luxury.png", name: "Bedsheets", href: "/collection/bedsheets" },
               { img: "/images/curtain_modern.png", name: "Curtains", href: "/collection/curtains" },

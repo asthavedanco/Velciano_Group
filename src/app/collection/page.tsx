@@ -69,10 +69,10 @@ export default function CollectionPage() {
 
       <section className="bg-cream" style={{ backgroundColor: 'var(--bg-cream)', padding: '8rem 0' }}>
         <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-6xl mx-auto">
             {categories.map((cat, i) => (
               <Link key={i} href={cat.link} className="collection-card-wrap group block cursor-pointer">
-                <div className="category-card !h-[450px] rounded-3xl overflow-hidden relative">
+                <div className="category-card !h-[clamp(300px,45vh,450px)] rounded-3xl overflow-hidden relative">
                   <Image 
                     src={cat.img} 
                     alt={cat.title} 
@@ -80,7 +80,7 @@ export default function CollectionPage() {
                     className="object-cover transition-transform duration-700 group-hover:scale-110" 
                   />
                   <div className="category-overlay !bg-black/40 group-hover:!bg-black/60 !bg-gradient-to-t !from-black/95 !via-black/40 !to-transparent flex flex-col justify-end p-10 transition-all duration-500">
-                    <h3 className="text-3xl font-bold !text-white group-hover:!text-primary transition-colors duration-300 mb-3 relative z-10">{cat.title}</h3>
+                    <h3 className="text-2xl md:text-3xl font-bold !text-white group-hover:!text-primary transition-colors duration-300 mb-3 relative z-10">{cat.title}</h3>
                     <p className="!text-white/90 text-sm leading-relaxed mb-8 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 relative z-10">{cat.desc}</p>
                     <div className="btn-link !text-primary !font-bold tracking-widest text-xs flex items-center gap-3 relative z-10">
                       VIEW DETAILS <i className="fa-solid fa-arrow-right"></i>

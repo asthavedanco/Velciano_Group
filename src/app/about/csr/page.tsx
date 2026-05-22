@@ -97,20 +97,20 @@ export default function CSRPage() {
       </section>
 
       {/* Intro Section */}
-      <section className="bg-cream" style={{ background: 'var(--bg-cream)', padding: '8rem 6%' }}>
+      <section className="bg-cream" style={{ background: 'var(--bg-cream)', padding: 'clamp(4rem, 8vw, 8rem) 6%' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '6rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: 'clamp(2rem, 6vw, 6rem)', alignItems: 'center' }}>
             <div className="reveal">
               <span style={{ color: 'var(--primary)', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Our Responsibility</span>
-              <h2 style={{ fontSize: '3.5rem', fontWeight: 700, margin: '1.5rem 0', color: '#000', lineHeight: 1.1 }}>Caring for People and the Planet</h2>
-              <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#444', marginBottom: '2.5rem' }}>
+              <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 700, margin: '1.5rem 0', color: '#000', lineHeight: 1.1 }}>Caring for People and the Planet</h2>
+              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)', lineHeight: '1.8', color: '#444', marginBottom: '2.5rem' }}>
                 At Velciano Group, our Corporate Social Responsibility (CSR) initiatives focus on sustainable development and community empowerment. We actively engage in projects that promote environmental conservation, education, and healthcare.
               </p>
-              <p style={{ fontSize: '1.1rem', lineHeight: '1.7', color: '#666' }}>
+              <p style={{ fontSize: '1rem', lineHeight: '1.7', color: '#666' }}>
                 Our commitment to social responsibility drives us to create a positive impact on society, ensuring a better future for generations to come. We believe in giving back and making meaningful contributions to the communities we serve.
               </p>
             </div>
-            <div className="reveal" style={{ position: 'relative', height: '550px', borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.1)' }}>
+            <div className="reveal" style={{ position: 'relative', height: 'clamp(300px, 50vh, 550px)', borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.1)' }}>
               <Image src="/images/csr_textile_sustainability.png" alt="Caring for Community" fill className="object-cover" />
             </div>
           </div>
@@ -170,8 +170,8 @@ export default function CSRPage() {
           
           <div className="gallery-grid" style={{ 
             display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
-            gap: '2rem' 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', 
+            gap: '1.5rem' 
           }}>
             {[
               { src: "/images/CSR1.jpeg",alt: "CSR",span: "row-span-2" },
@@ -181,7 +181,7 @@ export default function CSRPage() {
             ].map((img, i) => (
               <div key={i} className="reveal" style={{ 
                 position: 'relative', 
-                height: '400px', 
+                height: 'clamp(280px, 40vh, 400px)', 
                 borderRadius: '20px', 
                 overflow: 'hidden',
                 boxShadow: '0 15px 35px rgba(0,0,0,0.1)'

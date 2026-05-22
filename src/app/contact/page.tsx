@@ -115,8 +115,8 @@ export default function ContactPage() {
       {/* Inquiry Form */}
       <section className="inquiry-new" id="contact" style={{ padding: "5rem 6% 4rem" }}>
         <div className="inquiry-container" style={{ alignItems: "stretch" }}>
-          <div className="inquiry-left" style={{ position: "relative", minHeight: "400px" }}>
-            <Image src="/images/contact_illustration.png" alt="Contact Illustration" fill style={{ objectFit: 'contain', mixBlendMode: 'multiply', transform: 'scale(1.25)', transformOrigin: 'left center' }} />
+          <div className="inquiry-left" style={{ position: "relative", minHeight: "clamp(300px, 45vh, 400px)" }}>
+            <Image src="/images/contact_illustration.png" alt="Contact Illustration" fill style={{ objectFit: 'contain', mixBlendMode: 'multiply', transform: 'scale(1.1)', transformOrigin: 'center' }} />
           </div>
           <div className="inquiry-right">
             <h2 className="form-heading" style={{ fontSize: "1.3rem", fontWeight: "800", textTransform: "uppercase", marginBottom: "2.5rem" }}>SEND A MESSAGE</h2>
@@ -190,7 +190,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map */}
-      <section className="map-section" style={{ width: "100%", height: "650px", position: "relative" }}>
+      <section className="map-section" style={{ width: "100%", height: "clamp(300px, 50vh, 500px)", position: "relative" }}>
         <iframe 
           src="https://maps.google.com/maps?q=Surya+Nagar,+Nagpur,+Maharashtra+440008&t=&z=14&ie=UTF8&iwloc=&output=embed" 
           width="100%" 

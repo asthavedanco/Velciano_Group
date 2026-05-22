@@ -951,8 +951,8 @@ section {
 }
 
 .blog-grid {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
   display: grid;
 }
 
@@ -1675,7 +1675,7 @@ section {
     gap: 2rem;
   }
 
-  .form-row {
+  .form-row, .form-row.three-col {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
@@ -2414,12 +2414,12 @@ section {
   }
 
   .testimonial-card {
-    height: 450px;
+    height: auto;
   }
 }
 
 .cert-grid {
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 2rem;
   display: grid;
 }
@@ -2911,6 +2911,68 @@ section {
 a.collection-card-wrap {
   color: inherit !important;
   text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+  .sub-hero {
+    height: auto !important;
+    min-height: 280px !important;
+  }
+
+  .sub-hero .container {
+    padding-top: 7rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .products-carousel {
+    min-height: auto !important;
+    padding: 5rem 0 !important;
+  }
+
+  .product-slider-container {
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+    scrollbar-width: none !important;
+    padding-bottom: 2rem !important;
+    overflow-x: auto !important;
+  }
+
+  .product-slider-container::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .product-track {
+    width: max-content !important;
+    padding-left: var(--container-px) !important;
+    padding-right: var(--container-px) !important;
+    flex-wrap: nowrap !important;
+    gap: 1.5rem !important;
+    display: flex !important;
+  }
+
+  .product-item {
+    scroll-snap-align: start !important;
+    flex: 0 0 min(80vw, 320px) !important;
+    height: 380px !important;
+    margin-right: 0 !important;
+  }
+
+  .product-item .category-card {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .slider-nav-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .gap-12, .gap-16, .gap-8 {
+    gap: clamp(1.5rem, 4vw, 2.5rem) !important;
+  }
 }
 
 /*# sourceMappingURL=src_app_globals_css_0w3-wzy._.single.css.map*/

@@ -66,15 +66,15 @@ export default function ExportPage() {
       {/* Intro & Content Section */}
       <section className="content-section bg-cream" style={{ padding: "8rem 6%" }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '6rem', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: 'clamp(2rem, 6vw, 6rem)', alignItems: 'center' }}>
             {/* Left Column - Image */}
-            <div className="fade-up" style={{ position: 'relative', height: '600px', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(0,0,0,0.06)' }}>
+            <div className="fade-up" style={{ position: 'relative', height: 'clamp(320px, 50vh, 600px)', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(0,0,0,0.06)' }}>
                <Image src="/images/curtain_modern.png" alt="Export Logistics" fill className="object-cover" />
             </div>
 
             {/* Right Column - Text */}
             <div className="fade-up">
-              <h2 style={{ fontSize: '3rem', fontWeight: 700, lineHeight: 1.2, marginBottom: '2rem' }}>
+              <h2 style={{ fontSize: 'clamp(2.2rem, 6vw, 3rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '2rem' }}>
                 Supplying high-quality home textiles worldwide, trusted for comfort and elegance.
               </h2>
               <p style={{ fontSize: '1.25rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
@@ -99,7 +99,7 @@ export default function ExportPage() {
       {/* Export Stats Section */}
       <section className="fade-up bg-dark" style={{ padding: '8rem 6%', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
         <div className="container">
-          <h2 style={{ fontSize: '3.5rem', fontWeight: 300, maxWidth: '900px', margin: '0 auto', lineHeight: 1.3, letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 300, maxWidth: '900px', margin: '0 auto', lineHeight: 1.3, letterSpacing: '-0.02em' }}>
             Exporting to over <span style={{ color: 'var(--primary)', fontWeight: 700 }}>20+ countries</span> worldwide, ensuring uncompromising quality and reliability.
           </h2>
         </div>
@@ -108,7 +108,7 @@ export default function ExportPage() {
       {/* Global Presence Map Section */}
       <section className="fade-up bg-cream" style={{ padding: '8rem 6%', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
         <div className="container text-center">
-          <h2 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-1.5px' }}>
+          <h2 style={{ fontSize: 'clamp(2.2rem, 6vw, 3rem)', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-1.5px' }}>
             Velciano Global Reach
           </h2>
           <p style={{ fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto 4rem', lineHeight: 1.7 }}>
@@ -121,10 +121,10 @@ export default function ExportPage() {
       {/* CTA Section */}
       <section className="fade-up bg-dark" style={{ padding: '8rem 6%', textAlign: 'center' }}>
         <div className="container">
-          <h2 style={{ fontSize: '3.5rem', fontWeight: 700, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 700, marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>
             Let's build the next big thing together
           </h2>
-          <p style={{ fontSize: '1.5rem', color: 'rgba(255,255,255,0.65)', marginBottom: '4rem' }}>
+          <p style={{ fontSize: 'clamp(1.1rem, 3vw, 1.5rem)', color: 'rgba(255,255,255,0.65)', marginBottom: '4rem' }}>
             Partner with Velciano to bring luxurious textiles to your market.
           </p>
           <Link href="/contact" className="explore-btn-badge" style={{ margin: '0 auto' }}>

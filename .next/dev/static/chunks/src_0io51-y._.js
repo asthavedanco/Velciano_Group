@@ -527,28 +527,29 @@ function ProductSlider() {
     };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "ProductSlider.useEffect": ()=>{
-            let ctx = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["gsap"].context({
-                "ProductSlider.useEffect.ctx": ()=>{
+            let mm = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["gsap"].matchMedia(sectionRef);
+            mm.add("(min-width: 1025px)", {
+                "ProductSlider.useEffect": ()=>{
                     const track = trackRef.current;
                     const section = sectionRef.current;
                     if (!track || !section) return;
                     // Calculate how much we need to scroll horizontally
                     const getScrollDistance = {
-                        "ProductSlider.useEffect.ctx.getScrollDistance": ()=>track.scrollWidth - window.innerWidth + window.innerWidth * 0.12
-                    }["ProductSlider.useEffect.ctx.getScrollDistance"];
+                        "ProductSlider.useEffect.getScrollDistance": ()=>track.scrollWidth - window.innerWidth + window.innerWidth * 0.12
+                    }["ProductSlider.useEffect.getScrollDistance"];
                     // Only apply scroll hijacking if the track is wider than the screen
                     if (getScrollDistance() > 0) {
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["gsap"].to(track, {
                             x: {
-                                "ProductSlider.useEffect.ctx": ()=>-getScrollDistance()
-                            }["ProductSlider.useEffect.ctx"],
+                                "ProductSlider.useEffect": ()=>-getScrollDistance()
+                            }["ProductSlider.useEffect"],
                             ease: "none",
                             scrollTrigger: {
                                 trigger: section,
                                 start: "center center",
                                 end: {
-                                    "ProductSlider.useEffect.ctx": ()=>`+=${getScrollDistance()}`
-                                }["ProductSlider.useEffect.ctx"],
+                                    "ProductSlider.useEffect": ()=>`+=${getScrollDistance()}`
+                                }["ProductSlider.useEffect"],
                                 pin: true,
                                 scrub: 1,
                                 invalidateOnRefresh: true,
@@ -557,10 +558,10 @@ function ProductSlider() {
                         });
                     }
                 }
-            }["ProductSlider.useEffect.ctx"], sectionRef);
+            }["ProductSlider.useEffect"]);
             return ({
                 "ProductSlider.useEffect": ()=>{
-                    ctx.revert();
+                    mm.revert();
                 }
             })["ProductSlider.useEffect"];
         }
@@ -583,7 +584,7 @@ function ProductSlider() {
                             children: "OUR COLLECTIONS"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProductSlider.tsx",
-                            lineNumber: 125,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -591,13 +592,13 @@ function ProductSlider() {
                             children: "Signature Textiles"
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProductSlider.tsx",
-                            lineNumber: 126,
+                            lineNumber: 128,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ProductSlider.tsx",
-                    lineNumber: 124,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -611,12 +612,12 @@ function ProductSlider() {
                                 className: "fa-solid fa-chevron-left"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ProductSlider.tsx",
-                                lineNumber: 135,
+                                lineNumber: 137,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProductSlider.tsx",
-                            lineNumber: 130,
+                            lineNumber: 132,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -627,12 +628,12 @@ function ProductSlider() {
                                 className: "fa-solid fa-chevron-right"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/ProductSlider.tsx",
-                                lineNumber: 143,
+                                lineNumber: 145,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProductSlider.tsx",
-                            lineNumber: 138,
+                            lineNumber: 140,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -652,7 +653,7 @@ function ProductSlider() {
                                                 className: "product-img"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProductSlider.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 152,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -665,7 +666,7 @@ function ProductSlider() {
                                                             children: p.label
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProductSlider.tsx",
-                                                            lineNumber: 153,
+                                                            lineNumber: 155,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -673,51 +674,51 @@ function ProductSlider() {
                                                             children: p.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/ProductSlider.tsx",
-                                                            lineNumber: 154,
+                                                            lineNumber: 156,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/ProductSlider.tsx",
-                                                    lineNumber: 152,
+                                                    lineNumber: 154,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/ProductSlider.tsx",
-                                                lineNumber: 151,
+                                                lineNumber: 153,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/ProductSlider.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 151,
                                         columnNumber: 17
                                     }, this)
                                 }, i, false, {
                                     fileName: "[project]/src/components/ProductSlider.tsx",
-                                    lineNumber: 148,
+                                    lineNumber: 150,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/components/ProductSlider.tsx",
-                            lineNumber: 146,
+                            lineNumber: 148,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/ProductSlider.tsx",
-                    lineNumber: 129,
+                    lineNumber: 131,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/ProductSlider.tsx",
-            lineNumber: 123,
+            lineNumber: 125,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/ProductSlider.tsx",
-        lineNumber: 122,
+        lineNumber: 124,
         columnNumber: 5
     }, this);
 }
@@ -999,7 +1000,7 @@ function Home() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                                 style: {
-                                                    fontSize: "4rem",
+                                                    fontSize: "clamp(2.5rem, 8vw, 4rem)",
                                                     lineHeight: "0.8",
                                                     marginBottom: "0"
                                                 },
@@ -1011,7 +1012,7 @@ function Home() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                                 style: {
-                                                    fontSize: "4rem",
+                                                    fontSize: "clamp(2.5rem, 8vw, 4rem)",
                                                     fontWeight: "300",
                                                     marginTop: "0",
                                                     color: "#333"

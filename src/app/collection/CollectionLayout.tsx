@@ -45,14 +45,14 @@ export default function CollectionLayout({
       {/* Intro & Features Section - Cream Theme */}
       <section className="bg-cream" style={{ backgroundColor: 'var(--bg-cream)', padding: '7rem 0 6rem' }}>
         <div className="container text-center">
-          <h2 style={{ fontSize: '2.8rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-1.5px', lineHeight: 1.2 }}>
+          <h2 style={{ fontSize: 'clamp(2rem, 5vw, 2.8rem)', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-1.5px', lineHeight: 1.2 }}>
             {introTitle}
           </h2>
           <p style={{ fontSize: '1.15rem', lineHeight: 1.8, color: '#444444', maxWidth: '850px', margin: '0 auto 4rem', fontWeight: 500 }}>
             {introText}
           </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem', textAlign: 'left' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '2rem', textAlign: 'left' }}>
             {features.map((f: any, i: number) => (
               <div key={i} style={{ padding: '2rem', border: '1px solid #1a1a1a', borderRadius: '12px', background: 'var(--bg-cream)', boxShadow: 'none' }}>
                 <h4 style={{ fontSize: '1.3rem', fontWeight: 800, color: '#111111', marginBottom: '0.75rem', letterSpacing: '-0.5px' }}>{f.title}</h4>
@@ -66,13 +66,13 @@ export default function CollectionLayout({
       {/* Products Grid - Black Theme */}
       <section style={{ backgroundColor: '#050505', padding: '7rem 0', borderTop: '1px solid rgba(255, 255, 255, 0.05)', borderBottom: '1px solid rgba(255, 255, 255, 0.05)' }}>
         <div className="container">
-          <h2 style={{ fontSize: '2.8rem', fontWeight: 800, marginBottom: '4rem', textAlign: 'center', color: '#ffffff', letterSpacing: '-1.5px' }}>
+          <h2 style={{ fontSize: 'clamp(2rem, 5vw, 2.8rem)', fontWeight: 800, marginBottom: '4rem', textAlign: 'center', color: '#ffffff', letterSpacing: '-1.5px' }}>
             {title} Options
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '3rem' }}>
             {products.map((p: any, i: number) => (
               <Link key={i} href="/contact" className="group cursor-pointer block" style={{ textDecoration: 'none' }}>
-                <div style={{ position: 'relative', height: '340px', borderRadius: '16px', overflow: 'hidden', marginBottom: '1.5rem', border: '1px solid rgba(255, 255, 255, 0.08)' }}>
+                <div style={{ position: 'relative', height: 'clamp(280px, 40vh, 340px)', borderRadius: '16px', overflow: 'hidden', marginBottom: '1.5rem', border: '1px solid rgba(255, 255, 255, 0.08)' }}>
                   <Image src={p.image} alt={p.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                 </div>
                 <h3 className="group-hover:text-primary transition-colors duration-300" style={{ fontSize: '1.35rem', fontWeight: 800, marginBottom: '0.5rem', color: '#ffffff', textDecoration: 'none', letterSpacing: '-0.5px' }}>{p.name}</h3>
@@ -88,8 +88,8 @@ export default function CollectionLayout({
       {/* Applications - Cream Theme */}
       <section className="bg-cream" style={{ backgroundColor: 'var(--bg-cream)', padding: '7rem 0' }}>
         <div className="container">
-          <h2 style={{ fontSize: '2.8rem', fontWeight: 800, marginBottom: '4rem', color: '#111111', textAlign: 'center', letterSpacing: '-1.5px' }}>Discover the Possibilities</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.5rem' }}>
+          <h2 style={{ fontSize: 'clamp(2rem, 5vw, 2.8rem)', fontWeight: 800, marginBottom: '4rem', color: '#111111', textAlign: 'center', letterSpacing: '-1.5px' }}>Discover the Possibilities</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1.5rem' }}>
             {applications.map((app: string, i: number) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '1.2rem', background: 'var(--bg-cream)', padding: '1.5rem 2rem', borderRadius: '12px', border: '1px solid #1a1a1a', boxShadow: 'none' }}>
                 <i className="fa-solid fa-check-circle" style={{ color: 'var(--primary)', fontSize: '1.6rem' }}></i>
@@ -103,7 +103,7 @@ export default function CollectionLayout({
       {/* FAQ - Black Theme */}
       <section style={{ backgroundColor: '#050505', padding: '7rem 0', borderTop: '1px solid rgba(255, 255, 255, 0.05)' }}>
         <div className="container">
-          <h2 style={{ fontSize: '2.8rem', fontWeight: 800, marginBottom: '4rem', color: '#ffffff', textAlign: 'center', letterSpacing: '-1.5px' }}>Frequently Asked Questions</h2>
+          <h2 style={{ fontSize: 'clamp(2rem, 5vw, 2.8rem)', fontWeight: 800, marginBottom: '4rem', color: '#ffffff', textAlign: 'center', letterSpacing: '-1.5px' }}>Frequently Asked Questions</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', maxWidth: '850px', margin: '0 auto' }}>
             {faqs.map((faq: any, i: number) => (
               <FAQItem 
@@ -134,7 +134,7 @@ const FAQItem = ({ faq, isOpen, onClick }: { faq: any; isOpen: boolean; onClick:
       onClick={onClick}
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h4 style={{ fontSize: '1.3rem', fontWeight: 800, margin: 0, color: '#ffffff', letterSpacing: '-0.3px' }}>{faq.q}</h4>
+        <h4 style={{ fontSize: 'clamp(1.1rem, 4vw, 1.3rem)', fontWeight: 800, margin: 0, color: '#ffffff', letterSpacing: '-0.3px' }}>{faq.q}</h4>
         <i className={`fa-solid ${isOpen ? 'fa-minus' : 'fa-plus'}`} style={{ color: 'var(--primary)', transition: 'transform 0.3s ease', fontSize: '1.1rem' }}></i>
       </div>
       {isOpen && (
