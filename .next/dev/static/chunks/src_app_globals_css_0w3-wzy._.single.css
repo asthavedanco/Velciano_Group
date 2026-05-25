@@ -44,6 +44,14 @@ div[data-nextjs-static-indicator], #nextjs-portal, .next-dev-status, [data-nextj
   padding: 0;
 }
 
+.object-cover {
+  object-fit: cover;
+}
+
+.object-top {
+  object-position: top;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;

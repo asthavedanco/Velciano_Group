@@ -66,16 +66,16 @@ export default function ExportPage() {
       {/* Intro & Content Section */}
       <section className="content-section bg-cream" style={{ padding: "8rem 6%" }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: 'clamp(2rem, 6vw, 6rem)', alignItems: 'center' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: 'clamp(2rem, 6vw, 6rem)', alignItems: 'stretch' }}>
             {/* Left Column - Image */}
-            <div className="fade-up" style={{ position: 'relative', height: 'clamp(320px, 50vh, 600px)', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(0,0,0,0.06)' }}>
+            <div className="fade-up" style={{ position: 'relative', width: '100%', height: '100%', minHeight: '350px', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(0,0,0,0.06)' }}>
                <Image src="/images/curtain_modern.png" alt="Export Logistics" fill className="object-cover" />
             </div>
 
             {/* Right Column - Text */}
             <div className="fade-up">
               <h2 style={{ fontSize: 'clamp(2.2rem, 6vw, 3rem)', fontWeight: 700, lineHeight: 1.2, marginBottom: '2rem' }}>
-                Supplying high-quality home textiles worldwide, trusted for comfort and elegance.
+                Supplying high-quality home textiles worldwide
               </h2>
               <p style={{ fontSize: '1.25rem', lineHeight: 1.8, marginBottom: '1.5rem' }}>
                 The demand for high-quality, sustainable home textiles is on a steady rise across the globe, driven by a desire for luxurious, comfortable, and eco-friendly living spaces.

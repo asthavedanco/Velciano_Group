@@ -67,6 +67,15 @@ next-route-announcer,
     -webkit-font-smoothing: antialiased;
 }
 
+/* Utility classes */
+.object-cover {
+    object-fit: cover;
+}
+
+.object-top {
+    object-position: top;
+}
+
 html {
     font-size: 90%;
     scroll-behavior: smooth;
