@@ -10,11 +10,11 @@ export default function BusinessHeadSection() {
         {/* Left Column: Portrait */}
         <div className="business-head-left">
           <div className="portrait-container">
-            <Image 
-              src="/images/business_head_portrait_1776839185116.png" 
-              alt="Velciano Global Business Head" 
-              width={480} 
-              height={520} 
+            <Image
+              src="/images/amit.png"
+              alt="Velciano Global Business Head"
+              width={480}
+              height={520}
               className="portrait-image"
               priority
             />
@@ -24,22 +24,22 @@ export default function BusinessHeadSection() {
         {/* Right Column: Copywriting & Interactive Blocks */}
         <div className="business-head-right">
           <span className="business-head-label">Let&apos;s Talk</span>
-          
+
           <h2 className="business-head-title">
             <b>Connect with Our</b><br />
             <span>Global Business Head</span>
           </h2>
 
           <p className="business-head-desc">
-            As a Global Business Director with over 10 years of experience, I specialize in helping rubber mat importers overcome challenges and achieve rapid business growth. I understand the struggles importers face with low-quality mats from other exporters. My commitment is to provide only the highest quality products, ensuring durability and performance. Additionally, I offer unparalleled support to help you navigate the market and achieve sustained success. Partner with us for excellence and growth.
+            Velciano Group was established with a vision to provide premium home textile solutions that combine quality, comfort, and modern style. With a strong focus on innovation, durability, and customer satisfaction, we have built a trusted presence in global markets. Our commitment to excellence, reliable service, and high-quality products helps us create long-term relationships with clients while delivering elegant and comfortable textile solutions for homes worldwide.
           </p>
 
           <div className="business-head-buttons">
             {/* 3D LinkedIn isometric button block */}
-            <a 
-              href="https://www.linkedin.com/in/vansh-chug-velciano-bedsheets-flatbedsheet-hotellinen-cottonbedsheets-printedbedsheets-duvetcover/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://www.linkedin.com/in/vansh-chug-velciano-bedsheets-flatbedsheet-hotellinen-cottonbedsheets-printedbedsheets-duvetcover/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-3d linkedin-3d"
               aria-label="Connect with our Business Head on LinkedIn"
             >
@@ -48,10 +48,10 @@ export default function BusinessHeadSection() {
             </a>
 
             {/* 3D WhatsApp isometric button block */}
-            <a 
-              href="https://wa.me/918609373737?text=Hi%20Velciano%20Group,%20I'm%20interested%20in%20your%20products." 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://wa.me/918609373737?text=Hi%20Velciano%20Group,%20I'm%20interested%20in%20your%20products."
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-3d whatsapp-3d"
               aria-label="Chat with our Business Head on WhatsApp"
             >
