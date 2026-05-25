@@ -70,8 +70,11 @@ export default function CollectionLayout({
             {title} Options
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '3rem' }}>
-            {products.map((p: any, i: number) => (
-              <Link key={i} href="/contact" className="group cursor-pointer block" style={{ textDecoration: 'none' }}>
+            {products.map((p: any, i: number) => {
+              const slug = p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+              const productUrl = `/product/${slug}?name=${encodeURIComponent(p.name)}&image=${encodeURIComponent(p.image)}&category=${encodeURIComponent(title)}`;
+              return (
+              <Link key={i} href={productUrl} className="group cursor-pointer block" style={{ textDecoration: 'none' }}>
                 <div style={{ position: 'relative', height: 'clamp(280px, 40vh, 340px)', borderRadius: '16px', overflow: 'hidden', marginBottom: '1.5rem', border: '1px solid rgba(255, 255, 255, 0.08)' }}>
                   <Image src={p.image} alt={p.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                 </div>
@@ -80,7 +83,8 @@ export default function CollectionLayout({
                   <span style={{ color: 'var(--primary)', fontWeight: 700, textDecoration: 'underline' }}>Enquire Now</span>
                 </div>
               </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
