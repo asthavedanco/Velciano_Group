@@ -119,7 +119,10 @@ export default function ContactPage() {
             <Image src="/images/contact_illustration.png" alt="Contact Illustration" fill style={{ objectFit: 'contain', mixBlendMode: 'multiply', transform: 'scale(1.1)', transformOrigin: 'center' }} />
           </div>
           <div className="inquiry-right">
-            <h2 className="form-heading" style={{ fontSize: "1.3rem", fontWeight: "800", textTransform: "uppercase", marginBottom: "2.5rem" }}>SEND A MESSAGE</h2>
+            <h2 className="form-heading" style={{ fontSize: "1.3rem", fontWeight: "800", textTransform: "uppercase", marginBottom: "1.5rem" }}>SEND A MESSAGE</h2>
+            <p style={{ marginBottom: "2rem", color: "#555", fontSize: "0.95rem", lineHeight: "1.5" }}>
+              All queries and messages submitted through this form will be sent directly to our email address: <a href="mailto:export@velciano.com" style={{ color: "var(--primary)", fontWeight: "700", textDecoration: "none" }}>export@velciano.com</a>.
+            </p>
             <form className="inquiry-form-new" onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="form-group">

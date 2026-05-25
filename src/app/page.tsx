@@ -191,6 +191,9 @@ export default function Home() {
           </div>
 
           <div className="inquiry-right">
+            <p style={{ marginBottom: "2rem", color: "#555", fontSize: "0.95rem", lineHeight: "1.5" }}>
+              All queries and messages submitted through this form will be sent directly to our email address: <a href="mailto:export@velciano.com" style={{ color: "var(--primary)", fontWeight: "700", textDecoration: "none" }}>export@velciano.com</a>.
+            </p>
             <form className="inquiry-form-new">
               <div className="form-row">
                 <div className="form-group">
