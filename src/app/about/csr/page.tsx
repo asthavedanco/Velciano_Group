@@ -6,29 +6,6 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const initiatives = [
-  {
-    title: "Sustainable Development",
-    icon: "fa-seedling",
-    desc: "We integrate eco-friendly practices into our core manufacturing processes, ensuring that our growth contributes positively to the environment."
-  },
-  {
-    title: "Community Empowerment",
-    icon: "fa-users-rays",
-    desc: "We actively engage in projects that empower local communities, fostering self-reliance and economic stability through various support programs."
-  },
-  {
-    title: "Education for All",
-    icon: "fa-book-open-reader",
-    desc: "We believe in the power of knowledge. Our educational initiatives provide resources and infrastructure to local schools and underprivileged students."
-  },
-  {
-    title: "Healthcare Initiatives",
-    icon: "fa-heart-pulse",
-    desc: "Promoting health and well-being is a key pillar of our CSR. We support local health centers and organize wellness camps for the community."
-  }
-];
-
 export default function CSRPage() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -46,17 +23,6 @@ export default function CSRPage() {
         }
       });
 
-      gsap.from(".init-card", {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".init-grid",
-          start: "top 80%",
-        }
-      });
     });
 
     const timeout = setTimeout(() => {
@@ -96,68 +62,6 @@ export default function CSRPage() {
         </div>
       </section>
 
-      {/* Intro Section */}
-      <section className="bg-cream" style={{ background: 'var(--bg-cream)', padding: 'clamp(4rem, 8vw, 8rem) 6%' }}>
-        <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 400px), 1fr))', gap: 'clamp(2rem, 6vw, 6rem)', alignItems: 'center' }}>
-            <div className="reveal">
-              <span style={{ color: 'var(--primary)', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase' }}>Our Responsibility</span>
-              <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 700, margin: '1.5rem 0', color: '#000', lineHeight: 1.1 }}>Caring for People and the Planet</h2>
-              <p style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)', lineHeight: '1.8', color: '#444', marginBottom: '2.5rem' }}>
-                At Velciano Group, our Corporate Social Responsibility (CSR) initiatives focus on sustainable development and community empowerment. We actively engage in projects that promote environmental conservation, education, and healthcare.
-              </p>
-              <p style={{ fontSize: '1rem', lineHeight: '1.7', color: '#666' }}>
-                Our commitment to social responsibility drives us to create a positive impact on society, ensuring a better future for generations to come. We believe in giving back and making meaningful contributions to the communities we serve.
-              </p>
-            </div>
-            <div className="reveal" style={{ position: 'relative', height: 'clamp(300px, 50vh, 550px)', borderRadius: '30px', overflow: 'hidden', boxShadow: '0 25px 50px rgba(0,0,0,0.1)' }}>
-              <Image src="/images/csr_textile_sustainability.png" alt="Caring for Community" fill className="object-cover" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Initiatives Grid */}
-      <section style={{ background: '#000000', padding: '6rem 6%' }}>
-        <div className="container">
-          <div className="init-grid">
-            {initiatives.map((init, i) => (
-              <div key={i} className="init-card" style={{
-                background: 'rgba(255, 255, 255, 0.04)',
-                padding: '3.5rem 2.5rem',
-                borderRadius: '24px',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
-                textAlign: 'center',
-                display: 'flex',
-                flexDirection: 'column',
-                transition: 'background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)',
-                position: 'relative',
-                zIndex: 1
-              }}
-              >
-                <div className="init-icon-circle" style={{ 
-                  width: '64px', 
-                  height: '64px', 
-                  borderRadius: '50%', 
-                  background: 'linear-gradient(135deg, #f0e4cb 0%, #e0d4bb 100%)', 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  justifyContent: 'center', 
-                  margin: '0 auto 2rem', 
-                  flexShrink: 0,
-                  boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
-                  transition: 'transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)'
-                }}
-                >
-                  <i className={`fa-solid ${init.icon}`} style={{ color: '#B17D26', fontSize: '1.6rem' }}></i>
-                </div>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 700, color: '#ffffff', marginBottom: '1.2rem', letterSpacing: '0.02em', position: 'relative', zIndex: 2 }}>{init.title}</h3>
-                <p style={{ fontSize: '0.98rem', lineHeight: '1.7', color: 'rgba(255, 255, 255, 0.7)', marginTop: 'auto', position: 'relative', zIndex: 2 }}>{init.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Photo Gallery */}
       <section className="bg-cream" style={{ background: 'var(--bg-cream)', padding: '8rem 6%' }}>
@@ -169,18 +73,21 @@ export default function CSRPage() {
           
           <div className="gallery-grid" style={{ 
             display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+            gridAutoRows: 'minmax(250px, auto)',
             gap: '1.5rem' 
           }}>
             {[
               { src: "/images/CSR1.jpeg",alt: "CSR",span: "row-span-2" },
               { src: "/images/CSR2.jpeg",alt: "CSR" },
               { src: "/images/CSR3.jpeg",alt: "CSR" },
-              { src: "/images/CSR4.jpeg",alt: "CSR" }
+              { src: "/images/CSR4_fixed.jpeg",alt: "CSR" },
+              { src: "/images/CSR5.jpeg",alt: "CSR" }
             ].map((img, i) => (
-              <div key={i} className="reveal" style={{ 
+              <div key={i} className={`reveal ${img.span || ''}`} style={{ 
                 position: 'relative', 
-                height: 'clamp(280px, 40vh, 400px)', 
+                height: img.span ? '100%' : '280px',
+                minHeight: '280px',
                 borderRadius: '20px', 
                 overflow: 'hidden',
                 boxShadow: '0 15px 35px rgba(0,0,0,0.1)'

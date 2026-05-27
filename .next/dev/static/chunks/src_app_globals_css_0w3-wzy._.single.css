@@ -48,6 +48,10 @@ div[data-nextjs-static-indicator], #nextjs-portal, .next-dev-status, [data-nextj
   object-fit: cover;
 }
 
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
 .object-top {
   object-position: top;
 }
@@ -2840,70 +2844,6 @@ section {
 
 .bg-cream .collection-card-wrap:hover .category-overlay .btn-link, .bg-cream .category-card:hover .category-overlay .btn-link {
   color: #f2c876 !important;
-}
-
-.init-grid {
-  gap: 2rem;
-  display: grid;
-}
-
-@media (min-width: 1024px) {
-  .init-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 640px) and (max-width: 1023px) {
-  .init-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 639px) {
-  .init-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.sub-page .init-card {
-  background: #ffffff0a !important;
-  border: 1px solid #ffffff14 !important;
-  transition: background .4s, border-color .4s, box-shadow .4s, transform .4s cubic-bezier(.25, .8, .25, 1) !important;
-}
-
-.sub-page .init-card:hover {
-  border-color: var(--primary) !important;
-  background: #ffffff14 !important;
-  transform: translateY(-8px) !important;
-  box-shadow: 0 20px 40px #0009, 0 0 30px #b17d2633 !important;
-}
-
-.sub-page .init-card h3, .bg-cream .init-card h3, .bg-white .init-card h3, .init-card h3 {
-  color: #fff !important;
-  transition: color .3s !important;
-}
-
-.sub-page .init-card:hover h3 {
-  color: var(--primary) !important;
-}
-
-.sub-page .init-card p, .bg-cream .init-card p, .bg-white .init-card p, .init-card p {
-  color: #ffffffb3 !important;
-}
-
-.sub-page .init-icon-circle, .bg-cream .init-icon-circle, .bg-white .init-icon-circle, .init-icon-circle {
-  background: linear-gradient(135deg, var(--bg-cream) 0%, #e0d4bb 100%) !important;
-  transition: transform .4s cubic-bezier(.25, .8, .25, 1), box-shadow .4s !important;
-  box-shadow: 0 8px 16px #0003 !important;
-}
-
-.sub-page .init-card:hover .init-icon-circle {
-  transform: scale(1.15)rotate(5deg) !important;
-  box-shadow: 0 12px 24px #b17d2659 !important;
-}
-
-.sub-page .init-icon-circle i, .bg-cream .init-icon-circle i, .bg-white .init-icon-circle i, .init-icon-circle i {
-  color: var(--primary) !important;
 }
 
 .btn-link {
