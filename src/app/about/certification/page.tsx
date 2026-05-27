@@ -36,7 +36,7 @@ const certifications = [
     title: "ICE GATE",
   },
   {
-    img: "/images/dgft.jfif",
+    img: "/images/dgft.jpg",
     title: "DGFT",
   },
   {
@@ -44,7 +44,7 @@ const certifications = [
     title: "ECGC",
   },
   {
-    img: "/images/icc.jfif",
+    img: "/images/icc.jpg",
     title: "ICC",
   },
   {
@@ -56,7 +56,7 @@ const certifications = [
     title: "GSTN",
   },
   {
-    img: "/images/logo-msc.png",
+    img: "/images/msc.png",
     title: "MSC",
   },
   {
