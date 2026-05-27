@@ -1,5 +1,14 @@
 import CollectionLayout from "../CollectionLayout";
 
+export const bedsheetsProducts = [
+  { name: "Luxury Silk Edition", price: "$120", image: "/images/bedsheet_luxury.png" },
+  { name: "Floral Cotton Series", price: "$85", image: "/images/bedsheet_floral.png" },
+  { name: "Minimalist Linen Set", price: "$95", image: "/images/bedsheet_luxury.png" },
+  { name: "Royal Velvet Collection", price: "$150", image: "/images/bedsheet_floral.png" },
+  { name: "Jacquard Collection", price: "$130", image: "/images/bedsheet_jacquard.png" },
+  { name: "Dyed Collection", price: "$110", image: "/images/bedsheet_dyed.png" }
+];
+
 export default function BedsheetsPage() {
   return (
     <CollectionLayout
@@ -16,14 +25,7 @@ export default function BedsheetsPage() {
         { title: "Hypoallergenic", desc: "Safe for sensitive skin, crafted from materials that naturally resist dust mites and allergens." },
         { title: "Perfect Fit", desc: "Deep pockets and durable elastic ensure a snug fit around any mattress type." }
       ]}
-      products={[
-        { name: "Luxury Silk Edition", price: "$120", image: "/images/bedsheet_luxury.png" },
-        { name: "Floral Cotton Series", price: "$85", image: "/images/bedsheet_floral.png" },
-        { name: "Minimalist Linen Set", price: "$95", image: "/images/bedsheet_luxury.png" },
-        { name: "Royal Velvet Collection", price: "$150", image: "/images/bedsheet_floral.png" },
-        { name: "Jacquard Collection", price: "$130", image: "/images/bedsheet_jacquard.png" },
-        { name: "Dyed Collection", price: "$110", image: "/images/bedsheet_dyed.png" }
-      ]}
+      products={bedsheetsProducts}
       applications={[
         "Luxury Hotels and Resorts",
         "Boutique Guest Houses",

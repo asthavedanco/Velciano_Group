@@ -1,5 +1,12 @@
 import CollectionLayout from "../CollectionLayout";
 
+export const pillowCoversProducts = [
+  { name: "Silk Embroidered Cover", price: "$45", image: "/images/pillow_cover_decorative.png" },
+  { name: "Linen Textured Pillow", price: "$35", image: "/images/pillow_cover_decorative.png" },
+  { name: "Velvet Throw Cushion", price: "$50", image: "/images/pillow_cover_decorative.png" },
+  { name: "Geometric Print Cover", price: "$40", image: "/images/pillow_cover_decorative.png" }
+];
+
 export default function PillowCoversPage() {
   return (
     <CollectionLayout
@@ -16,12 +23,7 @@ export default function PillowCoversPage() {
         { title: "Hypoallergenic Options", desc: "Available in natural organic cottons and silks for sensitive skin." },
         { title: "Perfect Fit", desc: "Tailored to fit standard insert sizes perfectly without sagging." }
       ]}
-      products={[
-        { name: "Silk Embroidered Cover", price: "$45", image: "/images/pillow_cover_decorative.png" },
-        { name: "Linen Textured Pillow", price: "$35", image: "/images/pillow_cover_decorative.png" },
-        { name: "Velvet Throw Cushion", price: "$50", image: "/images/pillow_cover_decorative.png" },
-        { name: "Geometric Print Cover", price: "$40", image: "/images/pillow_cover_decorative.png" }
-      ]}
+      products={pillowCoversProducts}
       applications={[
         "Living Room Sofas and Armchairs",
         "Master Bedroom Bedding Accents",

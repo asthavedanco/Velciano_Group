@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+import { usePathname } from "next/navigation";
+
 export default function CollectionLayout({ 
   title, 
   subtitle, 
@@ -16,6 +18,7 @@ export default function CollectionLayout({
   faqs 
 }: any) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  const pathname = usePathname();
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -72,7 +75,7 @@ export default function CollectionLayout({
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '3rem' }}>
             {products.map((p: any, i: number) => {
               const slug = p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-              const productUrl = `/product/${slug}?name=${encodeURIComponent(p.name)}&image=${encodeURIComponent(p.image)}&category=${encodeURIComponent(title)}`;
+              const productUrl = `${pathname}/${slug}`;
               return (
               <Link key={i} href={productUrl} className="group cursor-pointer block" style={{ textDecoration: 'none' }}>
                 <div style={{ position: 'relative', height: 'clamp(280px, 40vh, 340px)', borderRadius: '16px', overflow: 'hidden', marginBottom: '1.5rem', border: '1px solid rgba(255, 255, 255, 0.08)' }}>

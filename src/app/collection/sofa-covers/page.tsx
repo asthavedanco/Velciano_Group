@@ -1,5 +1,12 @@
 import CollectionLayout from "../CollectionLayout";
 
+export const sofaCoversProducts = [
+  { name: "Premium Stretch Cover", price: "$80", image: "/images/sofa_cover_luxury.png" },
+  { name: "Velvet Plush Protector", price: "$110", image: "/images/sofa_cover_luxury.png" },
+  { name: "L-Shape Sectional Fit", price: "$130", image: "/images/sofa_cover_luxury.png" },
+  { name: "Waterproof Pet Cover", price: "$95", image: "/images/sofa_cover_luxury.png" }
+];
+
 export default function SofaCoversPage() {
   return (
     <CollectionLayout
@@ -16,12 +23,7 @@ export default function SofaCoversPage() {
         { title: "Easy to Clean", desc: "Fully machine washable for quick and effortless maintenance." },
         { title: "Cost-Effective", desc: "A smart alternative to reupholstering or buying new furniture." }
       ]}
-      products={[
-        { name: "Premium Stretch Cover", price: "$80", image: "/images/sofa_cover_luxury.png" },
-        { name: "Velvet Plush Protector", price: "$110", image: "/images/sofa_cover_luxury.png" },
-        { name: "L-Shape Sectional Fit", price: "$130", image: "/images/sofa_cover_luxury.png" },
-        { name: "Waterproof Pet Cover", price: "$95", image: "/images/sofa_cover_luxury.png" }
-      ]}
+      products={sofaCoversProducts}
       applications={[
         "Family Living Rooms",
         "Homes with Pets and Children",

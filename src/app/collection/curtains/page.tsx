@@ -1,5 +1,12 @@
 import CollectionLayout from "../CollectionLayout";
 
+export const curtainsProducts = [
+  { name: "Velvet Blackout Curtains", price: "$140", image: "/images/curtain_modern.png" },
+  { name: "Sheer Linen Drapes", price: "$90", image: "/images/curtain_geometric.png" },
+  { name: "Thermal Insulated Set", price: "$120", image: "/images/curtain_modern.png" },
+  { name: "Classic Pleated Curtains", price: "$110", image: "/images/curtain_geometric.png" }
+];
+
 export default function CurtainsPage() {
   return (
     <CollectionLayout
@@ -16,12 +23,7 @@ export default function CurtainsPage() {
         { title: "Easy Installation", desc: "Designed with versatile heading styles to fit any standard curtain rod or track." },
         { title: "Fade Resistant", desc: "UV-resistant dyes ensure the colors stay vibrant even with direct sunlight exposure." }
       ]}
-      products={[
-        { name: "Velvet Blackout Curtains", price: "$140", image: "/images/curtain_modern.png" },
-        { name: "Sheer Linen Drapes", price: "$90", image: "/images/curtain_geometric.png" },
-        { name: "Thermal Insulated Set", price: "$120", image: "/images/curtain_modern.png" },
-        { name: "Classic Pleated Curtains", price: "$110", image: "/images/curtain_geometric.png" }
-      ]}
+      products={curtainsProducts}
       applications={[
         "Luxury Residential Living Rooms",
         "Home Theaters and Media Rooms",
