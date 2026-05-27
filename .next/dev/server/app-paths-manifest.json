@@ -1,10 +1,5 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/about/csr/page": "app/about/csr/page.js",
   "/collection/bedsheets/page": "app/collection/bedsheets/page.js",
-  "/collection/curtains/page": "app/collection/curtains/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/e-catalogue/page": "app/e-catalogue/page.js",
-  "/export/page": "app/export/page.js",
-  "/page": "app/page.js",
-  "/product/[slug]/page": "app/product/[slug]/page.js"
+  "/export/page": "app/export/page.js"
 }

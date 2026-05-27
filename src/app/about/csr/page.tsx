@@ -131,16 +131,16 @@ export default function CSRPage() {
                 display: 'flex',
                 flexDirection: 'column',
                 height: '100%',
-                backdropFilter: 'blur(8px)',
-                WebkitBackdropFilter: 'blur(8px)',
                 transition: 'all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)',
+                position: 'relative',
+                zIndex: 1
               }}
               >
                 <div className="init-icon-circle" style={{ 
                   width: '64px', 
                   height: '64px', 
                   borderRadius: '50%', 
-                  background: 'linear-gradient(135deg, var(--bg-cream) 0%, #e0d4bb 100%)', 
+                  background: 'linear-gradient(135deg, #f0e4cb 0%, #e0d4bb 100%)', 
                   display: 'flex', 
                   alignItems: 'center', 
                   justifyContent: 'center', 
@@ -150,10 +150,10 @@ export default function CSRPage() {
                   transition: 'transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)'
                 }}
                 >
-                  <i className={`fa-solid ${init.icon}`} style={{ color: 'var(--primary)', fontSize: '1.6rem' }}></i>
+                  <i className={`fa-solid ${init.icon}`} style={{ color: '#B17D26', fontSize: '1.6rem' }}></i>
                 </div>
-                <h3 style={{ fontSize: '1.4rem', fontWeight: 700, color: '#ffffff', marginBottom: '1.2rem', letterSpacing: '0.02em' }}>{init.title}</h3>
-                <p style={{ fontSize: '0.98rem', lineHeight: '1.7', color: 'rgba(255, 255, 255, 0.7)', marginTop: 'auto' }}>{init.desc}</p>
+                <h3 style={{ fontSize: '1.4rem', fontWeight: 700, color: '#ffffff', marginBottom: '1.2rem', letterSpacing: '0.02em', position: 'relative', zIndex: 2 }}>{init.title}</h3>
+                <p style={{ fontSize: '0.98rem', lineHeight: '1.7', color: 'rgba(255, 255, 255, 0.7)', marginTop: 'auto', position: 'relative', zIndex: 2 }}>{init.desc}</p>
               </div>
             ))}
           </div>
