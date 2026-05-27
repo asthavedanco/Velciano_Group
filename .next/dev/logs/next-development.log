@@ -180,3 +180,4 @@
 {"timestamp":"01:58:02.257","source":"Browser","level":"WARN","message":"Image with src \"/images/CSR4.jpeg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
 {"timestamp":"01:58:02.257","source":"Server","level":"WARN","message":"[browser] \"Image with src \\\"/images/CSR4.jpeg\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\""}
 {"timestamp":"01:58:02.258","source":"Browser","level":"WARN","message":"Image with src \"/images/CSR4.jpeg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
+{"timestamp":"02:01:59.947","source":"Server","level":"LOG","message":"✓ Compiled in 93ms"}
