@@ -1,5 +1,7 @@
 {
   "/about/csr/page": "app/about/csr/page.js",
   "/collection/bedsheets/page": "app/collection/bedsheets/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/e-catalogue/page": "app/e-catalogue/page.js",
   "/export/page": "app/export/page.js"
 }

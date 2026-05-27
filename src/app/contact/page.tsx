@@ -196,9 +196,7 @@ export default function ContactPage() {
       <section className="map-section" style={{ width: "100%", height: "clamp(300px, 50vh, 500px)", position: "relative" }}>
         <iframe 
           src="https://maps.google.com/maps?q=Surya+Nagar,+Nagpur,+Maharashtra+440008&t=&z=14&ie=UTF8&iwloc=&output=embed" 
-          width="100%" 
-          height="100%" 
-          style={{ border: 0 }} 
+          style={{ border: 0, width: "100%", height: "100%", position: "absolute", top: 0, left: 0 }} 
           allowFullScreen 
           loading="lazy"
         ></iframe>

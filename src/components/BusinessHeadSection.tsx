@@ -11,7 +11,7 @@ export default function BusinessHeadSection() {
         <div className="business-head-left">
           <div className="portrait-container">
             <Image
-              src="/images/vansh.png"
+              src="/images/Vansh1.png"
               alt="Velciano Global Business Head"
               width={480}
               height={520}
