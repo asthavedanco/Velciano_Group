@@ -159,7 +159,7 @@ export default function Footer() {
       </div>
 
       {/* Download Badge */}
-      <a href="/COMPANY%20PROFILE%20VELCIANO.pdf" download="COMPANY_PROFILE_VELCIANO.pdf" className="download-badge" style={{ textDecoration: 'none', color: 'inherit', display: 'flex' }}>
+      <a href="/_COMPANY%20PROFILE.pdf" download="_COMPANY PROFILE.pdf" className="download-badge" style={{ textDecoration: 'none', color: 'inherit', display: 'flex' }}>
         <div className="badge-inner">
           <Image 
             src="/images/memoji_thumbsup.png" 

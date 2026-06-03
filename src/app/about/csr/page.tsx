@@ -41,13 +41,13 @@ export default function CSRPage() {
       <section className="sub-hero">
         <div className="hero-bg">
           <Image 
-            src="/images/bedsheet_floral.png" 
+            src="/images/csr_hero_background.png" 
             alt="CSR Activities" 
             fill 
             className="object-cover"
             priority
           />
-          <div className="hero-overlay-dark"></div>
+          <div className="hero-overlay-dark" style={{ background: 'rgba(0,0,0,0.6)' }}></div>
         </div>
         <div className="container">
           <div className="breadcrumb reveal">
