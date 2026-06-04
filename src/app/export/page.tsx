@@ -44,10 +44,11 @@ export default function ExportPage() {
       <section className="sub-hero">
         <div className="hero-bg">
           <Image 
-            src="/images/bedsheet_luxury.png" 
+            src="/images/global_export_hero_bg.png" 
             alt="Global Export" 
             fill 
             className="object-cover"
+            style={{ objectPosition: "center 20%" }}
             priority
           />
           <div className="hero-overlay-dark"></div>

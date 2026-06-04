@@ -48,7 +48,7 @@ export default function CollectionPage() {
       <section className="sub-hero">
         <div className="hero-bg">
           <Image 
-            src="/images/bedsheet_floral.png" 
+            src="/images/collection_hero_bg.png" 
             alt="Our Collection" 
             fill 
             className="object-cover"

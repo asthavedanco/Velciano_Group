@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function ContactPage() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    
+
     gsap.from(".reveal", {
       y: 50,
       opacity: 0,
@@ -62,7 +62,7 @@ export default function ContactPage() {
       <section className="sub-hero">
         <div className="hero-bg">
           <Image 
-            src="/images/sofa_cover_luxury.png" 
+            src="/images/contact_clean_bg.png" 
             alt="Contact Us" 
             fill 
             className="object-cover"
@@ -127,42 +127,42 @@ export default function ContactPage() {
               <div className="form-row">
                 <div className="form-group">
                   <label>Name:<span>*</span></label>
-                  <input 
-                    type="text" 
-                    placeholder="Enter Name" 
-                    required 
+                  <input
+                    type="text"
+                    placeholder="Enter Name"
+                    required
                     value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   />
                 </div>
                 <div className="form-group">
                   <label>Email:<span>*</span></label>
-                  <input 
-                    type="email" 
-                    placeholder="Enter Email" 
-                    required 
+                  <input
+                    type="email"
+                    placeholder="Enter Email"
+                    required
                     value={formData.email}
-                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   />
                 </div>
               </div>
               <div className="form-row">
                 <div className="form-group">
                   <label>Phone/WhatsApp:<span>*</span></label>
-                  <input 
-                    type="text" 
-                    placeholder="Mobile Number" 
+                  <input
+                    type="text"
+                    placeholder="Mobile Number"
                     required
                     value={formData.phone}
-                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   />
                 </div>
                 <div className="form-group">
                   <label>Subject:<span>*</span></label>
-                  <select 
+                  <select
                     value={formData.subject}
                     required
-                    onChange={(e) => setFormData({...formData, subject: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                   >
                     <option>-Select-</option>
                     <option>Bedsheets</option>
@@ -175,11 +175,11 @@ export default function ContactPage() {
               </div>
               <div className="form-group">
                 <label>Message:<span>*</span></label>
-                <textarea 
+                <textarea
                   placeholder="Enter Your Requirements"
                   required
                   value={formData.message}
-                  onChange={(e) => setFormData({...formData, message: e.target.value})}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 ></textarea>
               </div>
               <button type="submit" className="inquiry-submit-btn" disabled={status === "loading"}>
@@ -194,10 +194,10 @@ export default function ContactPage() {
 
       {/* Map */}
       <section className="map-section" style={{ width: "100%", height: "clamp(300px, 50vh, 500px)", position: "relative" }}>
-        <iframe 
-          src="https://maps.google.com/maps?q=Surya+Nagar,+Nagpur,+Maharashtra+440008&t=&z=14&ie=UTF8&iwloc=&output=embed" 
-          style={{ border: 0, width: "100%", height: "100%", position: "absolute", top: 0, left: 0 }} 
-          allowFullScreen 
+        <iframe
+          src="https://maps.google.com/maps?q=Surya+Nagar,+Nagpur,+Maharashtra+440008&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          style={{ border: 0, width: "100%", height: "100%", position: "absolute", top: 0, left: 0 }}
+          allowFullScreen
           loading="lazy"
         ></iframe>
       </section>

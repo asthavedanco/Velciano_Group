@@ -84,7 +84,7 @@ export default function ManufacturingPage() {
       <section className="sub-hero">
         <div className="hero-bg">
           <Image
-            src="/images/bedsheet_floral.png"
+            src="/images/manufacturing_traditional_hero.png"
             alt="Manufacturing"
             fill
             className="object-cover"

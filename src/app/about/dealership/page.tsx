@@ -97,7 +97,7 @@ export default function DealershipPage() {
       {/* Hero */}
       <section className="sub-hero">
         <div className="hero-bg">
-          <Image src="/images/bedsheet_luxury.png" alt="Dealership" fill className="object-cover" priority />
+          <Image src="/images/dealership_hero_bg.png" alt="Dealership" fill className="object-cover" priority />
           <div className="hero-overlay-dark"></div>
         </div>
         <div className="container" style={{ position: "relative", zIndex: 2 }}>

@@ -84,7 +84,7 @@ export default function TestimonialsPage() {
       <section className="sub-hero">
         <div className="hero-bg">
           <Image
-            src="/images/bedsheet_floral.png"
+            src="/images/testimonials_hero_bg.png"
             alt="Testimonials"
             fill
             className="object-cover"

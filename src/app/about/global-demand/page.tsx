@@ -67,10 +67,10 @@ export default function GlobalDemandPage() {
       {/* Hero Section */}
       <section className="sub-hero">
         <div className="hero-bg">
-          <Image 
-            src="/images/bedsheet_luxury.png" 
-            alt="Global Demand" 
-            fill 
+          <Image
+            src="/images/global_demand_map_bg.png"
+            alt="Global Demand"
+            fill
             className="object-cover"
             priority
           />
@@ -128,11 +128,11 @@ export default function GlobalDemandPage() {
             <h2 style={{ fontSize: 'clamp(2.2rem, 6vw, 3rem)', fontWeight: 700, color: '#fff' }}>Strategic Advantages</h2>
             <p style={{ color: 'rgba(255,255,255,0.5)', marginTop: '1rem', fontSize: '1.1rem' }}>Why Velciano is the preferred choice for international partners.</p>
           </div>
-          
-          <div className="points-grid" style={{ 
-            display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', 
-            gap: '2.5rem' 
+
+          <div className="points-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+            gap: '2.5rem'
           }}>
             {keyPoints.map((point, i) => (
               <div key={i} className="point-card" style={{

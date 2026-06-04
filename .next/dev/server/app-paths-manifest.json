@@ -2,5 +2,15 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/about/certification/page": "app/about/certification/page.js",
   "/about/csr/page": "app/about/csr/page.js",
+  "/about/dealership/page": "app/about/dealership/page.js",
+  "/about/global-demand/page": "app/about/global-demand/page.js",
+  "/about/manufacturing/page": "app/about/manufacturing/page.js",
+  "/about/testimonials/page": "app/about/testimonials/page.js",
+  "/about/why-us/page": "app/about/why-us/page.js",
+  "/collection/bedsheets/page": "app/collection/bedsheets/page.js",
+  "/collection/page": "app/collection/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/e-catalogue/page": "app/e-catalogue/page.js",
+  "/export/page": "app/export/page.js",
   "/page": "app/page.js"
 }

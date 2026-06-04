@@ -104,10 +104,11 @@ export default function CertificationPage() {
       <section className="sub-hero">
         <div className="hero-bg">
           <Image
-            src="/images/bedsheet_luxury.png"
+            src="/images/certification_premium_bg.png"
             alt="Accreditations and Standards"
             fill
             className="object-cover"
+            style={{ objectPosition: "20% 50%" }}
             priority
           />
           <div className="hero-overlay-dark"></div>

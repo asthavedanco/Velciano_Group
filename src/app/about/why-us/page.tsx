@@ -93,7 +93,7 @@ export default function WhyUsPage() {
       <section className="sub-hero">
         <div className="hero-bg">
           <Image 
-            src="/images/curtain_modern.png" 
+            src="/images/premium_home_textiles_hero.png" 
             alt="Why Us" 
             fill 
             className="object-cover"
